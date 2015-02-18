@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<color name="button_dark_transparent_background">#6000</color>
+	
+	<color name="default_background">#000</color>
+    <color name="slideshow_background">#000</color>
+    <color name="slidingmenu_background">#ffe2e2e2</color>
+    <color name="slidingmenu_subitem_background">#ffeeeeee</color>
+    <color name="slidingmenu_font_color">#ff000000</color>
+    <color name="slidingmenu_font_disabled_color">#ff777777</color>
+    <color name="slidingmenu_font_inverse_color">#ffffffff</color>
+    <color name="slidingmenu_subfont_color">#ff333333</color>
+    <color name="slidingmenu_message_textcolor">#ff000000</color>
+    <color name="slidingmenu_message_bgcolor">#fffcfc03</color>
+    <color name="slidingmenu_message_bgcolor_pressed">#fff36916</color>
+	
+	<color name="photo_background">#000</color>
+    <color name="photo_placeholder">#333</color>
+    <color name="photo_details_background">#22888888</color>
+    <color name="photo_comments_background">#cc000000</color>
+    <color name="photo_main_background">#fb000000</color>
+    <color name="photo_action_textcolor">#ffffffff</color>
+    <color name="photo_controls_background">#22888888</color>
+    <color name="photo_controls_thumb_background">#44888888</color>
+    <color name="photo_controls_title_color">#ffeeeeee</color>
+    <color name="photo_controls_subtitle_color">#ff999999</color>
+    <color name="photo_controls_comments_textcolor">#ffcccccc</color>
+    <color name="photo_controls_favorites_textcolor">#ffcccccc</color>
+    <color name="photo_controls_likes_textcolor">#ffcccccc</color>
+    <color name="photo_details_item_name_textcolor">#ffeeeeee</color>
+    <color name="photo_details_item_value_textcolor">#ffcccccc</color>
+    <color name="photo_exifs_item_name_textcolor">#ffeeeeee</color>
+    <color name="photo_exifs_item_value_textcolor">#ffcccccc</color>
+    <color name="photo_progress_background_color">#ff000000</color>
+    <color name="photo_progress_foreground_color">#ff33b5e5</color>
+    <color name="photo_progress_text_color">#ffffffff</color>
+    <color name="photo_progress_text_shadowcolor">#ff000000</color>
+	
+</resources>

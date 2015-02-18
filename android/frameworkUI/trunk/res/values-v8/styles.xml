@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="ProgressBar">
+    </style>
+    
+    <style name="ProgressBar.Small" parent="@*android:style/Widget.ProgressBar">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">24dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
+    
+    <style name="ProgressBar.Large" parent="@*android:style/Widget.ProgressBar.Large">
+    </style>
+	
+    <style name="ActionButton">
+    </style>
+    
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text size for action bar titles -->
+    <dimen name="action_bar_title_text_size_nosub">16sp</dimen>
+    <dimen name="action_bar_title_text_size">14sp</dimen>
+    <!-- Text size for action bar subtitles -->
+    <dimen name="action_bar_subtitle_text_size">11sp</dimen>
+
+</resources>

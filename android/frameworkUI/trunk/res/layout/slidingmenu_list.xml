@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+	<FrameLayout android:id="@+id/slidingmenu_menu_behind"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:visibility="gone"
+	    />
+    
+	<LinearLayout android:id="@+id/slidingmenu_menu_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    >
+	    
+		<FrameLayout android:id="@+id/slidingmenu_menu_header"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/slidingmenu_background"
+		    android:visibility="gone"
+		    />
+	    
+		<View android:id="@+id/slidingmenu_menu_header_divider"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/slidingmenu_divider_height"
+		    android:background="@drawable/slidingmenu_divider"
+		    android:visibility="gone"
+		    />
+		
+		<ListView android:id="@android:id/list"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:paddingLeft="@dimen/slidingmenu_list_padding"
+		    android:paddingRight="@dimen/slidingmenu_list_padding" 
+		    android:divider="@drawable/slidingmenu_divider"
+		    android:cacheColorHint="@color/slidingmenu_background"
+		    android:background="@color/slidingmenu_background"
+		    android:listSelector="@null"
+		    android:scrollbars="none"
+		    />
+	
+		<View android:id="@+id/slidingmenu_menu_bottom_divider"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/slidingmenu_divider_height"
+		    android:background="@drawable/slidingmenu_divider"
+		    android:visibility="gone"
+		    />
+		
+		<FrameLayout android:id="@+id/slidingmenu_menu_bottom"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@color/slidingmenu_background"
+		    android:visibility="gone"
+		    />
+		
+	</LinearLayout>
+
+	<FrameLayout android:id="@+id/slidingmenu_menu_above"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:visibility="gone"
+	    />
+	
+</FrameLayout>

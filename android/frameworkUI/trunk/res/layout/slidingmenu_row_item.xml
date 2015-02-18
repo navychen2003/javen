@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/slidingmenu_rowitem_height"
+    android:orientation="horizontal"
+    >
+
+    <ImageView android:id="@+id/slidingmenu_row_item_icon"
+        android:layout_width="@dimen/slidingmenu_rowitem_icon_width"
+        android:layout_height="@dimen/slidingmenu_rowitem_icon_height"
+        android:layout_gravity="right|center_vertical"
+        android:paddingLeft="@dimen/slidingmenu_rowitem_icon_paddingleft"
+        android:paddingRight="@dimen/slidingmenu_rowitem_icon_paddingright"
+        />
+
+    <TextView android:id="@+id/slidingmenu_row_item_title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="@dimen/slidingmenu_rowitem_title_paddingleft"
+        android:paddingRight="@dimen/slidingmenu_rowitem_title_paddingright"
+        android:paddingTop="@dimen/slidingmenu_rowitem_title_paddingtop"
+        android:paddingBottom="@dimen/slidingmenu_rowitem_title_paddingbottom"
+        android:textAppearance="@android:style/TextAppearance.Medium" 
+        android:textColor="@color/slidingmenu_subfont_color"
+        android:textSize="@dimen/slidingmenu_rowitem_title_textsize"
+        android:ellipsize="marquee" 
+        android:singleLine="true"
+        />
+
+</LinearLayout>

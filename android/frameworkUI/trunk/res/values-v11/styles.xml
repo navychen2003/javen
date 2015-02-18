@@ -1,0 +1,27 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+
+    <style name="ProgressBar">
+    </style>
+    
+    <style name="ProgressBar.Small" parent="@*android:style/Widget.Holo.Light.ProgressBar">
+        <item name="android:minWidth">24dp</item>
+        <item name="android:maxWidth">24dp</item>
+        <item name="android:minHeight">24dp</item>
+        <item name="android:maxHeight">24dp</item>
+    </style>
+    
+    <style name="ProgressBar.Large" parent="@*android:style/Widget.Holo.Light.ProgressBar.Large">
+    </style>
+    
+    <style name="ActionButton" parent="@*android:style/Widget.Holo.Light.ActionButton">
+    </style>
+    
+</resources>

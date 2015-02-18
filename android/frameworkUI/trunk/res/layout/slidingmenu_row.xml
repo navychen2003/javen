@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+	<LinearLayout android:id="@+id/slidingmenu_row_main"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/slidingmenu_row_height"
+	    android:orientation="horizontal"
+	    >
+	    
+	    <ImageView android:id="@+id/slidingmenu_row_icon"
+	        android:layout_width="@dimen/slidingmenu_row_icon_width"
+	        android:layout_height="@dimen/slidingmenu_row_icon_height"
+	        android:layout_gravity="right|center_vertical"
+	        android:paddingLeft="@dimen/slidingmenu_row_icon_paddingleft"
+	        android:paddingRight="@dimen/slidingmenu_row_icon_paddingright"
+	        />
+	
+	    <TextView android:id="@+id/slidingmenu_row_title"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="left|center_vertical"
+	        android:padding="@dimen/slidingmenu_row_title_padding"
+	        android:textAppearance="@android:style/TextAppearance.Medium" 
+	        android:textColor="@color/slidingmenu_row_title_color"
+	        android:ellipsize="marquee" 
+	        android:singleLine="true"
+	        />
+	</LinearLayout>
+	
+	<org.javenstudio.cocoka.app.SlidingMenuLayout 
+	    android:id="@+id/slidingmenu_row_subcontainer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    >
+	    
+		<LinearLayout android:id="@+id/slidingmenu_row_sub"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    />
+	</org.javenstudio.cocoka.app.SlidingMenuLayout>
+	
+</LinearLayout>

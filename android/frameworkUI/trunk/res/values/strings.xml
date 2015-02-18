@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FrameworkUI</string>
+    <string name="share_action_provider_class">android.widget.ShareActionProvider</string>
+    
+    <string name="no_thumbnail">No thumbnail</string>
+    
+    <string name="label_deleted">Deleted</string>
+    <string name="label_undo">UNDO</string>
+    <string name="label_share">Share</string>
+    <string name="label_shareto">Share to</string>
+    <string name="label_download">Download</string>
+    <string name="label_delete">Delete</string>
+    <string name="label_slideshow">Slideshow</string>
+    <string name="label_edit">Edit</string>
+    <string name="label_rotate_left">Rotate left</string>
+    <string name="label_rotate_right">Rotate right</string>
+    <string name="label_crop">Crop</string>
+    <string name="label_trim">Trim</string>
+    <string name="label_set_image">Set picture as</string>
+    <string name="label_details">Details</string>
+    <string name="label_ok">Ok</string>
+    <string name="label_cancel">Cancel</string>
+    
+    <string name="unit_mm">mm</string>
+    <string name="details_ms">%1$02d:%2$02d</string>
+    <string name="details_hms">%1$d:%2$02d:%3$02d</string>
+    
+    <string name="delete_processing_message">Delete processing</string>
+    <string name="label_action_share_photo">Share photo</string>
+    
+    <plurals name="delete_photo_message">
+        <item quantity="one">Delete this photo?</item>
+        <item quantity="other">Delete selected photos?</item>
+    </plurals>
+    
+    <plurals name="delete_album_message">
+        <item quantity="one">Delete this album?</item>
+        <item quantity="other">Delete selected albums?</item>
+    </plurals>
+    
+</resources>

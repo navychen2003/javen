@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ptr_pull_label">Pull to refresh</string>
+    <string name="ptr_release_label">Release to refresh</string>
+    <string name="ptr_refreshing_label">Loading</string>
+
+    <!-- Just use standard Pull Down String when pulling up. These can be set for languages which require it -->
+    <string name="ptr_from_bottom_pull_label">@string/ptr_pull_label</string>
+    <string name="ptr_from_bottom_release_label">@string/ptr_release_label</string>
+    <string name="ptr_from_bottom_refreshing_label">@string/ptr_refreshing_label</string>
+
+</resources>

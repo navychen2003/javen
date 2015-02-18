@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidingmenu_content_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >
+    
+	<org.javenstudio.cocoka.widget.SimpleFrameLayout 
+	    android:id="@+id/slidingmenu_content_behind"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:visibility="gone"
+	    />
+    
+	<org.javenstudio.cocoka.widget.SimpleFrameLayout 
+	    android:id="@+id/slidingmenu_content"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    />
+    
+	<org.javenstudio.cocoka.widget.SimpleFrameLayout 
+	    android:id="@+id/slidingmenu_content_above"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:visibility="gone"
+	    />
+	
+	<ProgressBar android:id="@+id/slidingmenu_content_progressbar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+        android:layout_marginTop="@dimen/slidingmenu_progressbar_margin"
+        android:layout_marginBottom="@dimen/slidingmenu_progressbar_margin"
+        android:layout_marginLeft="@dimen/slidingmenu_progressbar_margin"
+        android:layout_marginRight="@dimen/slidingmenu_progressbar_margin"
+        android:paddingBottom="@dimen/slidingmenu_progressbar_paddingbottom"
+        android:visibility="gone"
+	    style="@style/ProgressBar.Large"
+	    />
+	
+    <TextView android:id="@+id/slidingmenu_content_message" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center_horizontal|top"
+    	android:layout_margin="@dimen/slidingmenu_message_margin" 
+    	android:padding="@dimen/slidingmenu_message_padding"
+    	android:textSize="@dimen/slidingmenu_message_textsize" 
+    	android:textStyle="normal" 
+    	android:textColor="@color/slidingmenu_message_textcolor" 
+    	android:background="@drawable/slidingmenu_message_background"
+    	android:singleLine="false" 
+    	android:minLines="1"
+    	android:maxLines="3"
+    	android:visibility="gone"
+    	/>
+	
+</FrameLayout>

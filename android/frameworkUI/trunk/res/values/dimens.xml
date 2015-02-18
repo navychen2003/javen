@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Text size for action bar titles -->
+    <dimen name="action_bar_title_text_size_dropdown_nosub">17sp</dimen>
+    <dimen name="action_bar_title_text_size_nosub">18sp</dimen>
+    <dimen name="action_bar_title_text_size">17sp</dimen>
+    <!-- Text size for action bar subtitles -->
+    <dimen name="action_bar_subtitle_text_size">12sp</dimen>
+
+    <dimen name="action_bar_list_item_paddingleft">8dp</dimen>
+    <dimen name="action_bar_list_item_paddingright">8dp</dimen>
+    <dimen name="action_bar_list_item_minheight">48dp</dimen>
+    <dimen name="action_bar_list_icon_width">35dp</dimen>
+    <dimen name="action_bar_list_icon_height">35dp</dimen>
+    <dimen name="action_bar_list_icon_paddingleft">0dp</dimen>
+    <dimen name="action_bar_list_icon_paddingright">5dp</dimen>
+    <dimen name="action_bar_list_icon_paddingtop">5dp</dimen>
+    <dimen name="action_bar_list_icon_paddingbottom">5dp</dimen>
+    <dimen name="action_bar_list_dropdownicon_width">35dp</dimen>
+    <dimen name="action_bar_list_dropdownicon_height">35dp</dimen>
+    <dimen name="action_bar_list_dropdownicon_paddingleft">0dp</dimen>
+    <dimen name="action_bar_list_dropdownicon_paddingright">0dp</dimen>
+    <dimen name="action_bar_list_dropdownicon_paddingtop">5dp</dimen>
+    <dimen name="action_bar_list_dropdownicon_paddingbottom">5dp</dimen>
+    <dimen name="action_bar_custom_item_paddingleft">4dp</dimen>
+    
+    <dimen name="photo_details_header_height">@dimen/abs__action_bar_default_height</dimen>
+    <dimen name="photo_action_textsize">16sp</dimen>
+    <dimen name="photo_controls_height">80dp</dimen>
+    <dimen name="photo_controls_padding">10dp</dimen>
+    <dimen name="photo_controls_thumb_width">60dp</dimen>
+    <dimen name="photo_controls_thumb_height">60dp</dimen>
+    <dimen name="photo_controls_title_size">14sp</dimen>
+    <dimen name="photo_controls_title_marginleft">4dp</dimen>
+    <dimen name="photo_controls_subtitle_size">11sp</dimen>
+    <dimen name="photo_controls_subtitle_marginleft">4dp</dimen>
+    <dimen name="photo_controls_comments_textsize">13sp</dimen>
+    <dimen name="photo_controls_comments_marginleft">10dp</dimen>
+    <dimen name="photo_controls_favorites_textsize">13sp</dimen>
+    <dimen name="photo_controls_favorites_marginleft">10dp</dimen>
+    <dimen name="photo_controls_likes_textsize">13sp</dimen>
+    <dimen name="photo_controls_likes_marginleft">10dp</dimen>
+    <dimen name="photo_controls_logo_width">20dp</dimen>
+    <dimen name="photo_controls_logo_height">20dp</dimen>
+    <dimen name="photo_controls_logo_marginleft">10dp</dimen>
+    <dimen name="photo_bottom_list_margin">10dp</dimen>
+    <dimen name="photo_details_action_height">40dp</dimen>
+    <dimen name="photo_details_item_margin">2dp</dimen>
+    <dimen name="photo_details_item_name_textsize">14sp</dimen>
+    <dimen name="photo_details_item_name_paddingright">5dp</dimen>
+    <dimen name="photo_details_item_value_textsize">14sp</dimen>
+    <dimen name="photo_details_item_value_paddingleft">5dp</dimen>
+    <dimen name="photo_exifs_item_margin">2dp</dimen>
+    <dimen name="photo_exifs_item_name_textsize">14sp</dimen>
+    <dimen name="photo_exifs_item_name_paddingright">5dp</dimen>
+    <dimen name="photo_exifs_item_value_textsize">14sp</dimen>
+    <dimen name="photo_exifs_item_value_paddingleft">5dp</dimen>
+    <dimen name="photo_progress_padding">25dp</dimen>
+    <dimen name="photo_progress_background_height">8dp</dimen>
+    <dimen name="photo_progress_foreground_width">10dp</dimen>
+    <dimen name="photo_progress_foreground_height">8dp</dimen>
+    <dimen name="photo_progress_text_size">14sp</dimen>
+    <dimen name="photo_progress_text_paddingbottom">8dp</dimen>
+    
+</resources>

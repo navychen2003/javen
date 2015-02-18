@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/action_bar_list_item_paddingleft"
+    android:paddingRight="@dimen/action_bar_list_item_paddingright"
+    android:minHeight="@dimen/action_bar_list_item_minheight"
+    android:orientation="horizontal"
+	android:enabled="false" 
+	>
+
+	<ImageView android:id="@+id/actionbar_list_item_icon" 
+        android:layout_width="@dimen/action_bar_list_dropdownicon_width"
+        android:layout_height="@dimen/action_bar_list_dropdownicon_height"
+        android:layout_gravity="center_vertical|left"
+        android:paddingLeft="@dimen/action_bar_list_dropdownicon_paddingleft"
+        android:paddingRight="@dimen/action_bar_list_dropdownicon_paddingright"
+        android:paddingTop="@dimen/action_bar_list_dropdownicon_paddingtop"
+        android:paddingBottom="@dimen/action_bar_list_dropdownicon_paddingbottom"
+        android:visibility="gone"
+	    />
+
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:orientation="vertical" 
+        >
+        
+		<TextView android:id="@+id/actionbar_list_item_title" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textAppearance="@style/ActionBar.Title"
+		    android:gravity="center_vertical|left"
+		    android:ellipsize="marquee" 
+		    android:singleLine="true" 
+			/>
+        
+        <TextView android:id="@+id/actionbar_list_item_subtitle" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textAppearance="@style/ActionBar.Subtitle" 
+		    android:gravity="center_vertical|left"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:visibility="gone" 
+	        />
+        
+    </LinearLayout>
+</LinearLayout>

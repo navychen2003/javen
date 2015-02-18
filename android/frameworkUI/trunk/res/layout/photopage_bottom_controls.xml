@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/photopage_bottom_controls"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/photo_controls_height"
+	android:background="@color/photo_controls_background"
+	android:padding="@dimen/photo_controls_padding"
+	>
+	
+	<LinearLayout 
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+	    >
+    
+		<ImageView android:id="@+id/photopage_bottom_controls_thumb" 
+			android:layout_width="@dimen/photo_controls_thumb_width" 
+			android:layout_height="@dimen/photo_controls_thumb_height"
+			android:layout_gravity="left|top"
+			android:background="@color/photo_controls_thumb_background"
+			/>
+	    
+		<LinearLayout 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:orientation="vertical"
+		    >
+			
+		    <TextView android:id="@+id/photopage_bottom_controls_title" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginLeft="@dimen/photo_controls_title_marginleft" 
+		    	android:textSize="@dimen/photo_controls_title_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/photo_controls_title_color" 
+		    	android:singleLine="false" 
+		    	android:maxLines="2"
+		    	/>
+		    
+		    <TextView android:id="@+id/photopage_bottom_controls_subtitle" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginLeft="@dimen/photo_controls_subtitle_marginleft" 
+		    	android:textSize="@dimen/photo_controls_subtitle_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/photo_controls_subtitle_color" 
+		    	android:singleLine="false" 
+		    	android:maxLines="2"
+		    	/>
+		    
+	    </LinearLayout>
+	</LinearLayout>
+	
+    <LinearLayout android:id="@+id/photopage_bottom_controls_counts" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="right|bottom"
+    	android:orientation="horizontal"
+    	android:visibility="gone"
+        >
+    
+	    <TextView android:id="@+id/photopage_bottom_controls_comments" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_gravity="right|bottom"
+	    	android:gravity="left|center_vertical"
+	    	android:layout_marginLeft="@dimen/photo_controls_comments_marginleft"
+	    	android:textSize="@dimen/photo_controls_comments_textsize" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/photo_controls_comments_textcolor" 
+	    	android:singleLine="true" 
+	    	android:text="0"
+	    	/>
+    
+	    <TextView android:id="@+id/photopage_bottom_controls_favorites" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_gravity="right|bottom"
+	    	android:gravity="left|center_vertical"
+	    	android:layout_marginLeft="@dimen/photo_controls_favorites_marginleft"
+	    	android:textSize="@dimen/photo_controls_favorites_textsize" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/photo_controls_favorites_textcolor" 
+	    	android:singleLine="true" 
+	    	android:text="0"
+	    	/>
+	    
+	    <TextView android:id="@+id/photopage_bottom_controls_likes" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_gravity="right|bottom"
+	    	android:gravity="left|center_vertical"
+	    	android:layout_marginLeft="@dimen/photo_controls_likes_marginleft"
+	    	android:textSize="@dimen/photo_controls_likes_textsize" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/photo_controls_likes_textcolor" 
+	    	android:singleLine="true" 
+	    	android:text="0"
+	    	/>
+	    
+		<ImageView android:id="@+id/photopage_bottom_controls_logo" 
+			android:layout_width="@dimen/photo_controls_logo_width" 
+			android:layout_height="@dimen/photo_controls_logo_height"
+			android:layout_gravity="right|bottom"
+			android:layout_marginLeft="@dimen/photo_controls_logo_marginleft"
+			/>
+	    
+    </LinearLayout>
+</FrameLayout>

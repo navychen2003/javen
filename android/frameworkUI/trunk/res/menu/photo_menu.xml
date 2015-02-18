@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/photo_action_progress"
+        android:showAsAction="always"
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_share"
+	    android:title="@string/label_share"
+	    android:showAsAction="always" 
+	    android:visible="true"
+	    />
+    
+    <item 
+        android:id="@+id/photo_action_download"
+	    android:title="@string/label_download"
+	    android:showAsAction="always" 
+	    android:visible="true"
+	    />
+    
+    <item 
+        android:id="@+id/photo_action_slideshow"
+        android:title="@string/label_slideshow"
+        android:showAsAction="never" 
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_setas"
+        android:title="@string/label_set_image"
+        android:showAsAction="never" 
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_shareto"
+	    android:title="@string/label_shareto"
+	    android:showAsAction="never" 
+	    android:visible="false"
+	    />
+    
+    <item 
+        android:id="@+id/photo_action_delete"
+        android:title="@string/label_delete"
+        android:showAsAction="never" 
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_edit"
+        android:title="@string/label_edit"
+        android:showAsAction="never"
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_rotate_ccw"
+        android:title="@string/label_rotate_left" 
+        android:showAsAction="never"
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_rotate_cw"
+        android:title="@string/label_rotate_right" 
+        android:showAsAction="never"
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_crop"
+        android:title="@string/label_crop"
+        android:showAsAction="never" 
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_trim"
+        android:title="@string/label_trim"
+        android:showAsAction="never" 
+        android:visible="false"
+        />
+    
+    <item 
+        android:id="@+id/photo_action_details"
+        android:title="@string/label_details"
+        android:showAsAction="never" 
+        android:visible="true"
+        />
+    
+</menu>

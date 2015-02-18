@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photopage_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    >
+    
+    <View 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/photo_details_header_height" 
+        />
+    
+    <LinearLayout android:id="@+id/photopage_details_actionlayout" 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/photo_details_action_height" 
+	    android:orientation="horizontal"
+        />
+    
+    <FrameLayout android:id="@+id/photopage_details_contentlayout" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent" 
+    	android:background="@color/photo_details_background"
+    	/>
+    
+</LinearLayout>

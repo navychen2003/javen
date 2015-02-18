@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="ptr_pull_label">下拉刷新</string>
+    <string name="ptr_release_label">放开刷新</string>
+    <string name="ptr_refreshing_label">装载中</string>
+
+</resources>

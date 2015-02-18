@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/photopage_progress_bar"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_alignParentBottom="true"
+	android:layout_alignParentLeft="true"
+	android:padding="@dimen/photo_progress_padding"
+	android:visibility="invisible"
+	>
+	
+    <View
+	    android:id="@+id/photopage_progress_background"
+	    android:background="@color/photo_progress_background_color"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/photo_progress_background_height"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="visible"
+	    />
+    
+    <View
+	    android:id="@+id/photopage_progress_foreground"
+	    android:background="@color/photo_progress_foreground_color"
+	    android:layout_width="@dimen/photo_progress_foreground_width"
+	    android:layout_height="@dimen/photo_progress_foreground_height"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentBottom="true"
+	    android:visibility="visible"
+	    />
+    
+    <TextView
+	    android:id="@+id/photopage_progress_bar_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_above="@id/photopage_progress_background"
+	    android:paddingBottom="@dimen/photo_progress_text_paddingbottom"
+	    android:textColor="@color/photo_progress_text_color"
+	    android:textSize="@dimen/photo_progress_text_size"
+	    android:shadowColor="@color/photo_progress_text_shadowcolor"
+	    android:shadowDx="0"
+	    android:shadowDy="0"
+	    android:shadowRadius="2"
+	    android:visibility="visible"
+	    />
+    
+</RelativeLayout>
