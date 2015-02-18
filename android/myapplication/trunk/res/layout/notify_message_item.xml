@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+  	>
+  	
+	<View android:id="@+id/notify_message_divider"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/notify_divider_height"
+	    android:background="@drawable/notify_divider"
+	    />
+    
+    <LinearLayout android:id="@+id/notify_message_body" 
+		android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+        >
+        
+		<LinearLayout android:id="@+id/notify_message_user" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+		  	>
+		  	
+	        <ImageView android:id="@+id/notify_message_user_avatar" 
+				android:layout_width="@dimen/notify_item_avatar_size" 
+				android:layout_height="@dimen/notify_item_avatar_size"
+				android:layout_margin="@dimen/notify_item_avatar_margin" 
+				android:layout_gravity="left|top"
+	            />
+		    
+        </LinearLayout>
+        
+		<LinearLayout 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+		  	>
+        
+		    <TextView android:id="@+id/notify_message_title" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="@dimen/notify_item_title_margintop" 
+		    	android:layout_marginLeft="@dimen/notify_item_title_marginleft" 
+		    	android:layout_marginBottom="@dimen/notify_item_title_marginbottom" 
+		    	android:layout_marginRight="@dimen/notify_item_title_marginright" 
+		    	android:textSize="@dimen/notify_item_title_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/notify_item_title_color" 
+		    	android:singleLine="false" 
+		    	android:maxLines="2"
+		    	/>
+		    
+		    <TextView android:id="@+id/notify_message_text" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="@dimen/notify_item_subtitle_margintop" 
+		    	android:layout_marginLeft="@dimen/notify_item_subtitle_marginleft" 
+		    	android:layout_marginBottom="@dimen/notify_item_subtitle_marginbottom" 
+		    	android:layout_marginRight="@dimen/notify_item_subtitle_marginright" 
+		    	android:textSize="@dimen/notify_item_subtitle_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/notify_item_subtitle_color" 
+		    	android:singleLine="false" 
+		    	/>
+		    
+		    <View 
+		        android:layout_width="match_parent" 
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="1"
+		        />
+		    
+		    <LinearLayout 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="@dimen/notify_item_date_margintop" 
+		    	android:layout_marginLeft="@dimen/notify_item_date_marginleft" 
+		    	android:layout_marginBottom="@dimen/notify_item_date_marginbottom" 
+		    	android:layout_marginRight="@dimen/notify_item_date_marginright" 
+		    	android:orientation="horizontal"
+		    	android:visibility="gone"
+		        >
+		        
+			    <TextView android:id="@+id/notify_message_date" 
+			    	android:layout_width="0dp" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_weight="1"
+			    	android:layout_gravity="right|bottom"
+			    	android:gravity="right|center_vertical"
+			    	android:paddingRight="@dimen/notify_item_date_paddingright"
+			    	android:textSize="@dimen/notify_item_date_size" 
+			    	android:textStyle="normal" 
+			    	android:textColor="@color/notify_item_date_color" 
+			    	android:ellipsize="marquee" 
+			    	android:singleLine="true" 
+			    	/>
+			    
+		    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

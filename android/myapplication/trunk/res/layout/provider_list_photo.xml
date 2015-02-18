@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <org.javenstudio.cocoka.app.RefreshListView 
+        android:id="@+id/provider_list_listview" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent" 
+    	android:layout_marginLeft="@dimen/list_margin_size"
+    	android:layout_marginRight="@dimen/list_margin_size"
+    	android:layout_marginBottom="@dimen/list_margin_size"
+    	android:dividerHeight="@dimen/photo_space_size"
+    	android:cacheColorHint="#00000000" 
+    	android:listSelector="#00000000" 
+    	android:divider="#00000000"
+    	android:scrollbars="none"
+    	/>
+
+</FrameLayout>

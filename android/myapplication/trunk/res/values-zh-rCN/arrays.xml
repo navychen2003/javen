@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="setting_autofetch_entries">
+        <item>允许</item>
+        <item>询问</item>
+        <item>禁止</item>
+    </string-array>
+    
+    <string-array name="setting_autofetch_summaries">
+        <item>允许自动下载</item>
+        <item>自动下载时询问</item>
+        <item>禁止自动下载</item>
+    </string-array>
+    
+</resources>

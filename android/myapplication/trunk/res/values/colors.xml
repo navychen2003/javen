@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="holo_light_background">#ff33b5e5</color>
+    <color name="photo_comments_background">#cc000000</color>
+    <color name="section_list_header_background">#ffe0e0e0</color>
+    <color name="section_list_footer_background">#ffeeeeee</color>
+    
+    <color name="setting_category_title_color">#ff555555</color>
+    <color name="setting_title_enabled_color">#ff000000</color>
+    <color name="setting_title_disabled_color">#ff777777</color>
+    <color name="setting_summary_color">#ff777777</color>
+    <color name="setting_righttext_color">#ffffffff</color>
+    <color name="setting_edittext_background">#00000000</color>
+    <color name="setting_edittext_color">#ff555555</color>
+    <color name="setting_edittext_hint_color">#ffaaaaaa</color>
+    <color name="setting_plugin_title_color">#ff000000</color>
+    <color name="setting_plugin_subtitle_color">#ff555555</color>
+    <color name="setting_plugin_summary_color">#ff555555</color>
+    <color name="setting_accountitem_title_color">#ff000000</color>
+    <color name="setting_accountitem_subtitle_color">#ff555555</color>
+    <color name="setting_accountitem_action_background">#ddffffff</color>
+    
+    <color name="section_category_textcolor">#dd777777</color>
+    <color name="section_shortcut_button_textcolor">#ff222222</color>
+    <color name="section_list_item_title_color">#ff000000</color>
+    <color name="section_list_item_subtitle_color">#dd777777</color>
+    <color name="section_list_item_poster_background">#dddddddd</color>
+    <color name="section_list_item_image_background">#ffffffff</color>
+    <color name="section_list_item_background">#ffffffff</color>
+    <color name="section_grid_item_title_color">#ff000000</color>
+    <color name="section_grid_item_icon_background">#00000000</color>
+    <color name="section_grid_item_poster_background">#dddddddd</color>
+    <color name="section_grid_item_background">#ffffffff</color>
+    <color name="section_dropdown_category_textcolor">#dd777777</color>
+    <color name="section_dropdown_item_title_color">#ff000000</color>
+    <color name="section_dropdown_item_subtitle_color">#dd777777</color>
+    <color name="section_dropdown_item_poster_background">#dddddddd</color>
+    <color name="section_dropdown_item_image_background">#ffffffff</color>
+    <color name="section_dropdown_item_background">#ffffffff</color>
+    
+    <color name="select_list_category_textcolor">#dd777777</color>
+    <color name="select_list_item_title_color">#ff000000</color>
+    <color name="select_list_item_subtitle_color">#dd777777</color>
+    <color name="select_list_item_poster_background">#dddddddd</color>
+    <color name="select_list_item_image_background">#ffffffff</color>
+    <color name="select_list_item_background">#ffffffff</color>
+    <color name="select_list_item_action_background">#ddffffff</color>
+    <color name="host_input_name_color">#ff000000</color>
+    <color name="host_input_edit_color">#ff000000</color>
+    <color name="host_input_prompt_color">#fff50a3f</color>
+    
+    <color name="dashboardsection_hint_color">#ff999999</color>
+    <color name="dashboardsection_header_background">#ffffffff</color>
+    <color name="dashboardsection_body_background">#ffffffff</color>
+    <color name="dashboardsection_user_title_color">#ff000000</color>
+    <color name="dashboardsection_user_subtitle_color">#ff555555</color>
+    <color name="dashboardsection_item_title_color">#ff555555</color>
+    <color name="dashboardsection_item_sizeinfo_color">#ff888888</color>
+    
+    <color name="sectioninfo_actions_background">#ffeeeeee</color>
+    <color name="sectioninfo_header_background">#ffffffff</color>
+    <color name="sectioninfo_header_name_color">#ff000000</color>
+    <color name="sectioninfo_header_icon_background">#00000000</color>
+    <color name="sectioninfo_action_divider">#ffe0e0e0</color>
+    <color name="sectioninfo_action_disabled_textcolor">#dd777777</color>
+    <color name="sectioninfo_action_enabled_textcolor">#dd333333</color>
+    <color name="sectioninfo_card_title_textcolor">#ff777777</color>
+    <color name="sectioninfo_card_itemname_textcolor">#ff000000</color>
+    <color name="sectioninfo_card_itemvalue_textcolor">#ff444444</color>
+    
+    <color name="accountmenu_title_enabled_color">#ff000000</color>
+    <color name="accountmenu_title_disabled_color">#ff777777</color>
+    <color name="accountmenu_subtitle_enabled_color">#ff111111</color>
+    <color name="accountmenu_subtitle_disabled_color">#ff777777</color>
+    <color name="accountmenu_footer_title_color">#ff777777</color>
+    <color name="accountmenu_footer_subtitle_color">#dd888888</color>
+    <color name="accountmenu_footer_icon_color">#dd888888</color>
+    
+    <color name="accountinfo_actions_background">#ffeeeeee</color>
+    <color name="accountinfo_header_background">#ffffffff</color>
+    <color name="accountinfo_header_name_color">#ff000000</color>
+    <color name="accountinfo_header_count_value_color">#ff000000</color>
+    <color name="accountinfo_header_count_label_color">#ff000000</color>
+    <color name="accountinfo_action_divider">#ffe0e0e0</color>
+    <color name="accountinfo_action_disabled_textcolor">#dd777777</color>
+    <color name="accountinfo_action_enabled_textcolor">#dd333333</color>
+    <color name="accountinfo_card_title_textcolor">#ff777777</color>
+    <color name="accountinfo_card_itemname_textcolor">#ff000000</color>
+    <color name="accountinfo_card_itemvalue_textcolor">#ff444444</color>
+    
+    <color name="overviewspace_title_color">#ff000000</color>
+    <color name="overviewspace_subtitle_color">#ff444444</color>
+    <color name="overviewspace_percent_below_color">#dddddddd</color>
+    <color name="overviewspace_percent_above_color">#ff4480ee</color>
+    <color name="overviewused_title_color">#ff000000</color>
+    <color name="overviewused_subtitle_color">#ff444444</color>
+    <color name="overviewfree_title_color">#ff000000</color>
+    <color name="overviewfree_subtitle_color">#ff444444</color>
+    <color name="userspace_title_color">#ff000000</color>
+    <color name="userspace_subtitle_color">#ff444444</color>
+	
+    <color name="notify_title_color">#ff000000</color>
+    <color name="notify_item_title_color">#ff000000</color>
+    <color name="notify_item_subtitle_color">#ff555555</color>
+    <color name="notify_item_date_color">#ff888888</color>
+    <color name="notify_more_title_color">#ff888888</color>
+    <color name="systemalert_title_color">#ffffffff</color>
+    <color name="systemalert_subtitle_color">#ffffffff</color>
+    
+    <color name="upload_item_title_color">#ff000000</color>
+    <color name="upload_item_subtitle_color">#dd777777</color>
+    <color name="upload_item_status_color">#dd777777</color>
+    <color name="upload_item_poster_background">#dddddddd</color>
+    <color name="upload_item_image_background">#ffffffff</color>
+    <color name="upload_item_background">#ffffffff</color>
+    <color name="upload_item_percent_below_color">#dddddddd</color>
+    <color name="upload_item_percent_above_color">#ff4480ee</color>
+    
+    <color name="download_item_title_color">#ff000000</color>
+    <color name="download_item_subtitle_color">#dd777777</color>
+    <color name="download_item_status_color">#dd777777</color>
+    <color name="download_item_poster_background">#dddddddd</color>
+    <color name="download_item_image_background">#ffffffff</color>
+    <color name="download_item_background">#ffffffff</color>
+    <color name="download_item_percent_below_color">#dddddddd</color>
+    <color name="download_item_percent_above_color">#ff4480ee</color>
+    
+</resources>

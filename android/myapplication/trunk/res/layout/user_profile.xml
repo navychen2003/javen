@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/list_item_selector"
+	android:minHeight="@dimen/profile_item_minheight"
+  	>
+  	
+    <TextView android:id="@+id/user_profile_title" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="2.0dp" 
+    	android:layout_marginLeft="4.0dp" 
+    	android:layout_marginBottom="2.0dp" 
+    	android:layout_marginRight="4.0dp" 
+    	android:textSize="16sp" 
+    	android:textStyle="normal" 
+    	android:textColor="#ff000000" 
+    	android:ellipsize="marquee" 
+    	android:singleLine="true" 
+    	/>
+    
+	<LinearLayout android:id="@+id/user_profile_items" 
+		android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:layout_marginTop="2.0dp" 
+    	android:layout_marginLeft="4.0dp" 
+    	android:layout_marginBottom="8.0dp" 
+    	android:layout_marginRight="4.0dp" 
+		android:orientation="vertical"
+	  	/>
+	    
+</LinearLayout>

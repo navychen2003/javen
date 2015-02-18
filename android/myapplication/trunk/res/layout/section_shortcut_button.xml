@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="0dp" 
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:orientation="vertical"
+  	>
+  	
+	<ImageView android:id="@+id/section_shortcut_button_icon" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/section_shortcut_button_icon_margintop"
+		android:layout_marginBottom="@dimen/section_shortcut_button_icon_marginbottom"
+		android:layout_gravity="center_horizontal|top"
+     	/>
+    
+    <TextView android:id="@+id/section_shortcut_button_title" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center_horizontal|top"
+    	android:gravity="center_horizontal|top"
+    	android:textSize="@dimen/section_shortcut_button_textsize" 
+    	android:textStyle="normal" 
+    	android:textColor="@color/section_shortcut_button_textcolor" 
+    	android:singleLine="true" 
+    	android:shadowColor="#ffffffff"
+    	android:shadowRadius="2"
+    	android:shadowDx="0"
+    	android:shadowDy="0"
+    	/>
+    
+</LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+   	android:layout_height="match_parent" 
+	android:background="@drawable/list_item_selector"
+	android:minHeight="250dp"
+    >
+    
+	<LinearLayout 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	  	>
+	  	
+	    <FrameLayout android:id="@+id/accountlist_item_header" 
+			android:layout_width="match_parent" 
+			android:layout_height="100dp"
+			android:layout_margin="@dimen/thumb_margin_size"
+	        >
+	        
+	        <ImageView android:id="@+id/accountlist_item_header_image" 
+				android:layout_width="match_parent" 
+				android:layout_height="match_parent"
+				android:scaleType="centerCrop"
+	            />
+		    
+	        <ImageView android:id="@+id/accountlist_item_header_overlay" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="10.0dp"
+				android:layout_marginRight="10.0dp"
+				android:layout_marginBottom="6.0dp"
+				android:layout_gravity="left|bottom"
+	            />
+	        
+	    </FrameLayout>
+	    
+	    <FrameLayout android:id="@+id/accountlist_item_body" 
+			android:layout_width="match_parent" 
+	    	android:layout_height="0dp" 
+	    	android:layout_weight="1"
+	        >
+	        
+			<LinearLayout 
+				android:layout_width="match_parent" 
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+			  	>
+	        
+			    <TextView android:id="@+id/accountlist_item_title" 
+			    	android:layout_width="match_parent" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_marginTop="6.0dp" 
+			    	android:layout_marginLeft="4.0dp" 
+			    	android:layout_marginBottom="2.0dp" 
+			    	android:layout_marginRight="4.0dp" 
+			    	android:textSize="18sp" 
+			    	android:textStyle="normal" 
+			    	android:textColor="#ff000000" 
+			    	android:singleLine="false" 
+			    	android:maxLines="3"
+			    	/>
+			    
+	        </LinearLayout>
+		    
+	    </FrameLayout>
+	    
+	</LinearLayout>
+	
+    <FrameLayout android:id="@+id/accountlist_item_avatar" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="right|center_vertical"
+		android:layout_margin="2.0dp"
+        >
+        
+        <ImageView android:id="@+id/accountlist_item_avatar_image" 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			android:scaleType="centerCrop"
+            />
+	    
+    </FrameLayout>
+	
+</FrameLayout>

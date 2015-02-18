@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.javenstudio.cocoka.widget.SimpleRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+  	android:layout_height="match_parent" 
+	>
+      
+	<FrameLayout android:id="@+id/accountinfo_above_center" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone"
+		/>
+    
+	<FrameLayout android:id="@+id/accountinfo_above_header" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:visibility="gone"
+		/>
+	
+	<FrameLayout android:id="@+id/accountinfo_above_footer" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:visibility="gone"
+		/>
+	
+</org.javenstudio.cocoka.widget.SimpleRelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/list_item_selector"
+  	>
+  	
+    <LinearLayout 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	  	>
+       
+	    <TextView android:id="@+id/overviewused_item_title" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="@dimen/overviewspace_title_margintop" 
+	    	android:layout_marginLeft="@dimen/overviewspace_title_marginleft" 
+	    	android:layout_marginBottom="@dimen/overviewspace_title_marginbottom" 
+	    	android:layout_marginRight="@dimen/overviewspace_title_marginright" 
+	    	android:textSize="@dimen/overviewused_title_size" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/overviewused_title_color" 
+	    	android:singleLine="true" 
+	    	/>
+	    
+        <ImageView android:id="@+id/overviewused_item_percent" 
+			android:layout_width="match_parent" 
+			android:layout_height="@dimen/overviewspace_percent_height"
+			android:layout_marginLeft="@dimen/overviewspace_percent_marginleft" 
+			android:layout_marginRight="@dimen/overviewspace_percent_marginright" 
+			android:layout_gravity="right|center_vertical"
+            />
+	    
+	    <TextView android:id="@+id/overviewused_item_subtitle" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="@dimen/overviewspace_subtitle_margintop" 
+	    	android:layout_marginLeft="@dimen/overviewspace_subtitle_marginleft" 
+	    	android:layout_marginBottom="@dimen/overviewspace_subtitle_marginbottom" 
+	    	android:layout_marginRight="@dimen/overviewspace_subtitle_marginright" 
+	    	android:textSize="@dimen/overviewused_subtitle_size" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/overviewused_subtitle_color" 
+	    	android:singleLine="false" 
+	    	/>
+	    
+	</LinearLayout>
+    
+</LinearLayout>

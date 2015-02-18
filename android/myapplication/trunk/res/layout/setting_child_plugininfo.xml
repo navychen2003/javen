@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.javenstudio.android.setting.SettingListItem 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    
+    <LinearLayout 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal|top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+    
+	    <ImageView android:id="@+id/setting_child_image" 
+	        android:layout_width="@dimen/setting_plugin_icon_size" 
+	        android:layout_height="@dimen/setting_plugin_icon_size" 
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_margin="@dimen/setting_icon_marginleft" 
+	        />
+	    
+	    <LinearLayout 
+	        android:layout_width="@dimen/setting_plugin_title_width" 
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="left|top"
+	        android:layout_margin="@dimen/setting_plugin_title_margin" 
+	        android:gravity="center"
+	        android:orientation="vertical"
+	        >
+		    
+		    <TextView android:id="@+id/setting_child_title" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:layout_gravity="left|top"
+		        android:layout_marginTop="@dimen/setting_plugin_title_margintop" 
+		        android:textSize="@dimen/setting_title_size" 
+		        android:textStyle="normal" 
+		        android:textColor="@color/setting_plugin_title_color" 
+		        android:ellipsize="marquee" 
+		        android:singleLine="true" 
+		        />
+		    
+		    <TextView android:id="@+id/setting_child_subtitle" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content" 
+		        android:layout_gravity="left|top"
+		        android:layout_marginTop="@dimen/setting_plugin_subtitle_margintop" 
+		        android:textSize="@dimen/setting_subtitle_size" 
+		        android:textStyle="normal" 
+		        android:textColor="@color/setting_plugin_subtitle_color" 
+		        android:ellipsize="marquee" 
+		        android:singleLine="true" 
+		        />
+		    
+    	</LinearLayout>
+	</LinearLayout>
+	
+    <TextView android:id="@+id/setting_child_summary" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="left|top"
+        android:layout_margin="@dimen/setting_plugin_summary_margin" 
+        android:textSize="@dimen/setting_summary_size" 
+        android:textStyle="normal" 
+        android:textColor="@color/setting_plugin_summary_color" 
+        android:singleLine="false" 
+        />
+    
+</org.javenstudio.android.setting.SettingListItem>

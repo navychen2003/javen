@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+  	>
+  	
+    <View 
+        android:layout_width="match_parent" 
+        android:layout_height="@dimen/sectioninfo_details_item_margintop"
+        />
+    
+	<LinearLayout android:id="@+id/sectioninfo_details_content" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:minHeight="@dimen/sectioninfo_details_item_minheight"
+		android:background="@drawable/list_item_selector"
+		android:orientation="vertical"
+	  	>
+	    
+	    <TextView android:id="@+id/sectioninfo_details_title" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="@dimen/sectioninfo_card_title_margintop" 
+	    	android:layout_marginLeft="@dimen/sectioninfo_card_title_marginleft" 
+	    	android:layout_marginBottom="@dimen/sectioninfo_card_title_marginbottom" 
+	    	android:layout_marginRight="@dimen/sectioninfo_card_title_marginright" 
+	    	android:textSize="@dimen/sectioninfo_card_title_size" 
+	    	android:textColor="@color/sectioninfo_card_title_textcolor" 
+	    	android:textStyle="normal" 
+	    	android:ellipsize="marquee" 
+	    	android:singleLine="true" 
+	    	/>
+	    
+		<LinearLayout android:id="@+id/sectioninfo_details_items" 
+			android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="@dimen/sectioninfo_card_items_margintop" 
+	    	android:layout_marginLeft="@dimen/sectioninfo_card_items_marginleft" 
+	    	android:layout_marginBottom="@dimen/sectioninfo_card_items_marginbottom" 
+	    	android:layout_marginRight="@dimen/sectioninfo_card_items_marginright" 
+			android:orientation="vertical"
+		  	/>
+	</LinearLayout>
+	
+</LinearLayout>

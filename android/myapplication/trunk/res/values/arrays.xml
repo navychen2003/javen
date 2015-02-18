@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="setting_autofetch_entries">
+        <item>Allow</item>
+        <item>Confirm</item>
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="setting_autofetch_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <string-array name="setting_autofetch_summaries">
+        <item>allow auto download</item>
+        <item>confirm when auto download</item>
+        <item>disable auto download</item>
+    </string-array>
+    
+</resources>

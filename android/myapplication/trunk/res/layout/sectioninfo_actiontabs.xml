@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+   	android:layout_height="wrap_content" 
+   	android:isScrollContainer="true"
+   	android:orientation="vertical"
+    >
+    
+	<org.javenstudio.cocoka.widget.ActionTabLayout 
+	    android:id="@+id/sectioninfo_header_actions" 
+		android:layout_width="match_parent" 
+		android:layout_height="@dimen/sectioninfo_action_height" 
+		android:background="@color/sectioninfo_actions_background"
+		android:orientation="horizontal"
+	  	/>
+    
+</LinearLayout>

@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="setting_account_title">Account</string>
+    <string name="setting_general_title">General</string>
+    <string name="setting_plugin_title">Plugin</string>
+    <string name="setting_task_title">Task</string>
+    <string name="setting_about_title">About</string>
+    <string name="setting_logdebug_title">Output debug log</string>
+    <string name="setting_showwarning_title">Show warning message</string>
+    <string name="setting_notifytraffic_title">Mobile traffic notification</string>
+    <string name="setting_autofetch_title">Auto download in mobile network</string>
+    <string name="setting_orientationsensor_title">Enable orientation sensor</string>
+    <string name="setting_plugin_builtin">built-in</string>
+    <string name="setting_account_add_label">Add account</string>
+    
+    <string name="accountinfo_details_brief_title">Story</string>
+    <string name="accountinfo_details_basic_title">Basic Information</string>
+    <string name="sectioninfo_details_library_title">Library</string>
+    <string name="sectioninfo_details_file_title">File</string>
+    <string name="sectioninfo_details_folder_title">Folder</string>
+    <string name="sectioninfo_details_image_title">Photo</string>
+    <string name="sectioninfo_details_audio_title">Music</string>
+    <string name="sectioninfo_details_video_title">Movie</string>
+    <string name="sectioninfo_details_media_title">Media</string>
+    <string name="sectioninfo_details_media_infos_title">Media</string>
+    <string name="sectioninfo_details_media_tags_title">Media Tags</string>
+    <string name="sectioninfo_details_metadata_infos_title">Details</string>
+    <string name="sectioninfo_details_metadata_tags_title">File Tags</string>
+    
+    <string name="label_action_upload">Upload</string>
+    <string name="label_action_download">Download</string>
+    <string name="label_action_create">Create</string>
+    <string name="label_action_scan">Photo</string>
+    <string name="label_action_share">Share</string>
+    <string name="label_action_refresh">Refresh</string>
+    <string name="label_action_browser">Browser</string>
+    <string name="label_action_viewtype">View by ...</string>
+    <string name="label_action_viewtype_large">Large mode</string>
+    <string name="label_action_viewtype_list">List mode</string>
+    <string name="label_action_viewtype_small">Thumbnail grid</string>
+    <string name="label_action_search">Search</string>
+    <string name="label_action_search_hints">Search keywords</string>
+    <string name="label_action_select">Select</string>
+    <string name="label_action_delete">Delete</string>
+    <string name="label_action_move">Move</string>
+    <string name="label_action_addalbum">Create album</string>
+    <string name="label_action_tasks">Tasks</string>
+    <string name="label_action_settings">Settings</string>
+    <string name="label_action_open">Open</string>
+    <string name="label_action_about">About</string>
+    <string name="label_action_property">Property</string>
+    <string name="label_action_media">Media</string>
+    <string name="label_action_metadata">Details</string>
+    <string name="label_action_logout">Sign out</string>
+    <string name="label_action_notify">Notification</string>
+    <string name="label_action_view_list">View as List</string>
+    <string name="label_action_view_grid">View as Grid</string>
+    <string name="label_action_filterby">Filter by ...</string>
+    <string name="label_action_sortby">Sort by ...</string>
+
+    <string name="label_sortby_name_asc">Name (A-Z)</string>
+    <string name="label_sortby_name_desc">Name (Z-A)</string>
+    <string name="label_sortby_modified_asc">Date updated (Oldest - Newest)</string>
+    <string name="label_sortby_modified_desc">Date updated (Newest - Oldest)</string>
+    <string name="label_sortby_size_asc">Size (Smallest - Largest)</string>
+    <string name="label_sortby_size_desc">Size (Largest - Smallest)</string>
+    <string name="label_sortby_type_asc">Type (A-Z)</string>
+    <string name="label_sortby_type_desc">Type (Z-A)</string>
+    <string name="label_filterby_all">All files</string>
+    <string name="label_filterby_image">Only pictures</string>
+    <string name="label_filterby_audio">Only songs</string>
+    <string name="label_filterby_video">Only movies</string>
+    <string name="label_operation_move">Move</string>
+    <string name="label_operation_delete">Delete</string>
+    <string name="label_operation_rename">Rename</string>
+    <string name="label_operation_modify">Modify</string>
+    <string name="label_operation_share">Share</string>
+    <string name="label_operation_details">Details</string>
+    <string name="label_operation_open">Open with</string>
+    <string name="label_operation_select">Select</string>
+    <string name="label_operation_download">Download</string>
+    
+    <string name="label_local_albums">Local albums</string>
+    <string name="label_download_albums">Download picture</string>
+    <string name="label_album_info">%1$d photos</string>
+    <string name="label_tagselect_title">Popular Tags</string>
+    <string name="label_tagselect_all">(all)</string>
+    <string name="label_photo_details">Details</string>
+    <string name="label_photo_exifs">Exifs</string>
+    <string name="label_photo_comments">Comments</string>
+    <string name="label_user_photos">Photos</string>
+    <string name="label_user_likes">Likes</string>
+    <string name="label_user_follows">Follows</string>
+    <string name="label_user_comments">Comments</string>
+    <string name="label_action_comment">Comments</string>
+    <string name="label_action_album">Albums</string>
+    <string name="label_action_group">Groups</string>
+    <string name="label_action_favorite">Favorites</string>
+    <string name="label_action_contact">Contacts</string>
+    <string name="label_action_blog">Blogs</string>
+    <string name="label_action_member">Members</string>
+    <string name="label_action_topic">Topics</string>
+    <string name="label_action_photo">Photos</string>
+    <string name="label_group_name">Group</string>
+    <string name="label_group_members">Members</string>
+    <string name="label_group_topics">Topics</string>
+    <string name="label_group_follows">Follows</string>
+    <string name="label_group_photos">Photos</string>
+    <string name="label_title_album">Album:</string>
+    <string name="label_title_groupprofile">Group profile</string>
+    <string name="label_title_groupdesc">Group description</string>
+    <string name="label_title_grouprule">Group rules</string>
+    <string name="label_host_domain">Domain</string>
+    <string name="label_host_domain_hint">(optional)</string>
+    <string name="label_host_address">Address</string>
+    <string name="label_host_address_hint">192.168.x.x:80</string>
+    
+    <string name="details_source">Source</string>
+    <string name="details_location">Location</string>
+    <string name="details_filepath">File path</string>
+    <string name="details_filename">File name</string>
+    <string name="details_contenttype">File type</string>
+    <string name="details_filesize">File size</string>
+    <string name="details_lastmodified">Modified</string>
+    <string name="details_updated">Last updated</string>
+    <string name="details_posted">Posted</string>
+    <string name="details_owner">Owner</string>
+    <string name="details_checksum">Checksum</string>
+    <string name="details_date">Date</string>
+    <string name="details_taken">Taken</string>
+    <string name="details_title">Title</string>
+    <string name="details_summary">Summary</string>
+    <string name="details_author">Author</string>
+    <string name="details_nickname">Nickname</string>
+    <string name="details_email">Email</string>
+    <string name="details_credit">Media credit</string>
+    <string name="details_description">Description</string>
+    <string name="details_imagesize">Image size</string>
+    <string name="details_albumtitle">Album title</string>
+    <string name="details_albumdesc">Album description</string>
+    <string name="details_copyright">Copyright</string>
+    <string name="details_realname">Realname</string>
+    <string name="details_accountname">Account</string>
+    <string name="details_user_location">Location</string>
+    <string name="details_createdate">Created</string>
+    <string name="details_groupname">Group name</string>
+    <string name="details_group_summary">Total %1$d members</string>
+    <string name="details_group_blast">Blast</string>
+    <string name="details_group_blastdate">Blast date</string>
+    <string name="details_brief">Tagline</string>
+    <string name="details_introduction">Introduction</string>
+    <string name="details_tags">Tags</string>
+    <string name="details_hostname">Host</string>
+    
+    <string name="exifs_flash">Flash</string>
+    <string name="exifs_imagewidth">Width</string>
+    <string name="exifs_imagelength">Height</string>
+    <string name="exifs_make">Make</string>
+    <string name="exifs_model">Model</string>
+    <string name="exifs_aperture">Aperture</string>
+    <string name="exifs_iso">ISO</string>
+    <string name="exifs_whitebalance">White Balance</string>
+    <string name="exifs_exposuretime">Exposure Time</string>
+    <string name="exifs_focallength">Focal Length</string>
+    <string name="exifs_datetime">Taken</string>
+    
+	<string name="folder_camera">Camera</string>
+    <string name="folder_download">Download</string>
+    <string name="folder_edited_online_photos">Edited Online Photos</string>
+    <string name="folder_imported">Imported</string>
+    <string name="folder_screenshot">Screenshot</string>
+    
+    <string name="select_upload_title">Upload File</string>
+    <string name="select_store_folder_title">Select folder to save file</string>
+    <string name="select_create_title">Create Item</string>
+    <string name="select_create_textfile_title">Create text file</string>
+    <string name="select_create_folder_title">Create folder</string>
+    <string name="select_create_library_title">Create library</string>
+    <string name="select_create_textfile_subtitle">create new text file in folder %1$s and type something.</string>
+    <string name="select_create_folder_subtitle">create new subdirectory in folder %1$s.</string>
+    <string name="select_create_library_subtitle">create new library for account %1$s.</string>
+    <string name="select_photo_title">Upload Photo</string>
+    <string name="select_photo_pick_category">Photo</string>
+    <string name="select_photo_capture_category">Camera</string>
+    
+    <string name="dialog_filterby_title">Filter by</string>
+    <string name="dialog_sortby_title">Sort by</string>
+    <string name="dialog_warning_title">Warning</string>
+    <string name="dialog_hide_warning">Hide Warning</string>
+    <string name="dialog_show_trace">Show Details</string>
+    <string name="dialog_copied_trace_message">Message details has copied to clipboard.</string>
+    <string name="dialog_auto_fetch_message">"Auto download large thumbnails in mobile network?"</string>
+    <string name="dialog_downloadalbum_scanning_message">"Scanning download photo..."</string>
+    <string name="dialog_localalbum_scanning_message">"Scanning local album..."</string>
+    <string name="dialog_exit_button">Exit program</string>
+    <string name="dialog_close_button">Close</string>
+    <string name="dialog_noconfirm_button">No confirm</string>
+    <string name="dialog_ok_button">Ok</string>
+    <string name="dialog_yes_button">Yes</string>
+    <string name="dialog_no_button">No</string>
+    <string name="dialog_create_button">Create</string>
+    <string name="dialog_cancel_button">Cancel</string>
+    <string name="dialog_copy_button">Copy</string>
+    <string name="dialog_select_button">Select</string>
+    <string name="dialog_add_button">Add</string>
+    
+    <string name="dialog_addhost_button">Add Host</string>
+    <string name="dialog_addhost_title">Add Host</string>
+    <string name="dialog_host_address_required">this field is required.</string>
+    <string name="dialog_host_address_invalid">this address is invalid or not found, e.g. 192.168.1.10:80 or 192.168.1.10.</string>
+    <string name="dialog_host_domain_invalid">this domain is invalid or not found, e.g. www.anybox.org.</string>
+    
+    <string name="download_notsupported_message">"Can not download %1$s!"</string>
+    <string name="share_notsupported_message">"Can not share %1$s to others!"</string>
+    <string name="move_notsupported_message">"Can not move %1$s!"</string>
+    <string name="delete_notsupported_message">"Can not delete %1$s!"</string>
+    <string name="delete_confirm_message">"Are you sure to delete these items?"</string>
+    <string name="select_empty_message">"Please select item first."</string>
+    <string name="logout_confirm_title">Sign Out</string>
+    <string name="logout_confirm_message">"Are you sure to sign out current account(%1$s)?"</string>
+    <string name="switchaccount_confirm_title">Switch Account</string>
+    <string name="switchaccount_confirm_message">"Are you sure to sign out and switch to account(%1$s)?"</string>
+    <string name="deleteaccount_confirm_title">Delete Account</string>
+    <string name="deleteaccount_confirm_message">"Are you sure to delete this account(%1$s)? Note that account still exists on server, you can add it next time."</string>
+    <string name="addaccount_confirm_title">Add Account</string>
+    <string name="addaccount_confirm_message">"Are you sure to sign out and add other account?"</string>
+    
+    <string name="remaining_space_title">Remaining %1$s space</string>
+    <string name="remaining_space">Remaining %1$s space.</string>
+    <string name="total_space_title">Total %1$s</string>
+    <string name="total_used_space_title">Total %1$s Used</string>
+    <string name="user_total_used_space_message">User: %1$s has total %2$s used.</string>
+    <string name="group_total_used_space_message">Group: %1$s has total %2$s used.</string>
+    <string name="total_free_space">Total %1$s free space</string>
+    <string name="total_free_space_normal">Total %1$s free space for normal user.</string>
+    <string name="free_space_title">Free Space</string>
+    <string name="user_space_title">User: %1$s</string>
+    <string name="group_space_title">Group: %1$s</string>
+    <string name="host_space_title">Host: %1$s</string>
+    <string name="updated_timeago_title">%1$s updated</string>
+    <string name="visited_timeago_title">%1$s visited</string>
+    <string name="login_timeago_message">%1$s signed in.</string>
+    <string name="loading_title">loading ...</string>
+    <string name="refreshing_title">refreshing ...</string>
+    
+    <string name="files_category_label">Files</string>
+    <string name="folders_category_label">Folders</string>
+    <string name="folder_category_label">Folder</string>
+    <string name="library_category_label">Library</string>
+    <string name="search_category_label">Search</string>
+    <string name="local_category_label">Local</string>
+    <string name="application_category_label">Application</string>
+    <string name="file_information_label">%1$s, modified %2$s.</string>
+    <string name="folder_information_label">%1$s files(%2$s), modified %3$s.</string>
+    <string name="folder_count_information_label">%1$s files(%2$s).</string>
+    <string name="folder_empty_information_label">no files.</string>
+    <string name="modified_information_label">modified %1$s.</string>
+    <string name="download_image_label">click to download</string>
+    <string name="search_name_label">Search %1$s</string>
+    <string name="search_count_information_label">%1$s files found.</string>
+    <string name="search_notfound_information_label">no file found.</string>
+    <string name="root_folder_information_label">root folder.</string>
+    
+    <string name="notify_message_title">Message</string>
+    <string name="notify_invite_title">Invite</string>
+    <string name="notify_systemalert_title">Alert</string>
+    <string name="notify_announcement_title">Announcement</string>
+    <string name="notify_task_title">Task</string>
+    <string name="notify_empty_message">All caught up!</string>
+    <string name="invite_be_friend_message">wants to be your friend.</string>
+    <string name="invite_not_accepted_message">has not accepted yet.</string>
+    
+    <plurals name="plurals_notify_moremessage_title">
+        <item quantity="one">There are one message yet.</item>
+        <item quantity="other">There are %1$s messages yet.</item>
+    </plurals>
+    
+    <plurals name="plurals_notify_moreinvite_title">
+        <item quantity="one">There are one invite yet.</item>
+        <item quantity="other">There are %1$s invites yet.</item>
+    </plurals>
+    
+    <string name="report_message_error">Please report to us: %1$s</string>
+    <string name="retry_again_message">"Something wrong, please retry again later."</string>
+    <string name="unsupported_operation">"Process failed, unsupported operation."</string>
+    <string name="out_of_memory_error">"Out of memory error."</string>
+    <string name="response_parse_error">"Response format error, please retry again later."</string>
+    <string name="mobile_traffic_notification">"About %2$s mobile data used from %1$s."</string>
+    <string name="google_services_framework_not_installed">"GoogleServicesFramework not installed and not supported add google account or other operations."</string>
+    <string name="ellipsize_end"></string>
+    
+    <string name="album_delete_notempty_error">"Album still has photos, cannot be deleted."</string>
+    <string name="album_create_unsupported">"Cannot create album in this account."</string>
+    <string name="album_create_processing">"Creating album: %1$s"</string>
+    <string name="album_create_failed">"Album: %1$s create failed"</string>
+    <string name="actionmode_selected_photo_title">"%1$s photos selected"</string>
+    <string name="actionmode_selected_album_title">"%1$s albums selected"</string>
+    
+    <string name="label_select_operation">Select operation</string>
+    <string name="label_action_share_information">Share information</string>
+    <string name="label_action_copy_text">Copy text</string>
+    <string name="label_action_take_photo">Take photo</string>
+    <string name="label_action_pick_photo">Pick a photo</string>
+    <string name="label_action_pick_video">Pick a video</string>
+    <string name="information_copied_message">Information has copied to clipboard</string>
+    
+    <string name="intent_no_image_capture">Camera application not found</string>
+    <string name="intent_no_image_picker">Photo picker not found</string>
+    <string name="intent_no_image_croper">Photo croper not found</string>
+    <string name="intent_no_video_picker">Video picker not found</string>
+    <string name="intent_no_audio_picker">Audio picker not found</string>
+    
+    <string name="create_album_title">Create album</string>
+    <string name="label_album_name">Album name</string>
+    <string name="label_album_name_hint">input name</string>
+    <string name="label_album_name_empty">name is empty</string>
+    <string name="label_album_location">Location</string>
+    <string name="label_album_location_hint">taken location</string>
+    <string name="label_album_keywords">Keywords</string>
+    <string name="label_album_keywords_hint">search keywords split by space</string>
+    <string name="label_album_summary">Summary</string>
+    <string name="label_album_access">Access</string>
+    <string name="label_album_access_public">Public</string>
+    <string name="label_album_access_private">Private</string>
+    
+    <string name="upload_unknown_title">Untitled</string>
+    <string name="upload_item_status_added">upload queued</string>
+    <string name="upload_item_status_pending">waiting for upload</string>
+    <string name="upload_item_status_running">uploading</string>
+    <string name="upload_item_status_finished">upload done</string>
+    <string name="upload_item_status_failed">upload failed</string>
+    <string name="upload_item_status_aborted">upload aborted</string>
+    <string name="upload_notification_running">uploading</string>
+    <string name="upload_notification_finished">upload done</string>
+    <string name="upload_notification_failed">upload failed</string>
+    <string name="upload_notification_percent"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+    <string name="upload_notification_filename_separator">", "</string>
+    <string name="upload_notification_filename_extras">" and <xliff:g id="number" example="27">%d</xliff:g> more"</string>
+    <string name="upload_cancel_title">Cancel upload</string>
+    <string name="upload_cancel_message">"Are you sure to cancel upload %1$s?"</string>
+    <string name="upload_cancel_message_running">"File %1$s is uploading, are you sure to cancel?"</string>
+    <string name="upload_file_not_exists_message">"file %1$s not exists or can not read."</string>
+    <string name="upload_information_label">%1$s, %2$s.</string>
+    <string name="upload_error_no_account">no account</string>
+    <string name="upload_error_no_uploader">no uploader</string>
+    <string name="upload_error_code">code %1$s</string>
+    
+    <string name="download_cancel_title">Cancel download</string>
+    <string name="download_cancel_message">"Are you sure to cancel download %1$s?"</string>
+    <string name="download_cancel_message_running">"File %1$s is downloading, are you sure to cancel?"</string>
+    
+    <string name="fetch_not_found">not found</string>
+    <string name="fetch_forbidden">Forbidden</string>
+    <string name="fetch_bad_request">Bad request</string>
+    <string name="fetch_unauthorized">Unauthorized</string>
+    <string name="fetch_request_timeout">Request timeout</string>
+    <string name="fetch_method_not_allowed">Method not allowed</string>
+    <string name="fetch_unsupported_media_type">Unsupported Media Type</string>
+    <string name="fetch_internal_server_error">Internal server error</string>
+    <string name="fetch_bad_gateway">Bad gateway</string>
+    <string name="fetch_service_unavailable">Service unavailable</string>
+    <string name="fetch_gateway_timeout">Gateway timeout</string>
+    <string name="fetch_connect_timeout">Connect timeout</string>
+    <string name="fetch_http_error">"Cannot access %1$s (Code %2$s)"</string>
+    
+    <string name="socket_action_connect">connecting</string>
+    <string name="socket_action_read">reading</string>
+    <string name="socket_action_write">writting</string>
+    <string name="socket_action_close">closed</string>
+    <string name="socket_network_3g_name">3G network</string>
+    <string name="socket_network_wifi_name">Wifi network</string>
+    <string name="socket_message_readbytes">read</string>
+    <string name="socket_message_writebytes">writted</string>
+    <string name="socket_message_bytes">bytes</string>
+    <string name="socket_network_unreachable">Network unreachable.</string>
+    <string name="socket_network_error">Network error.</string>
+    <string name="socket_connect_timeout">Connect to server timeout.</string>
+    <string name="socket_connect_error">Can not connect to server.</string>
+    
+    <string name="error_user_not_found">User not found!</string>
+    <string name="error_group_not_found">Group not found!</string>
+    <string name="error_file_not_found">File not found!</string>
+    <string name="error_channel_not_found">Channel not found!</string>
+    
+    <string name="filesize_bytes">%1$s bytes</string>
+    
+	<string name="timeago_prefixago"></string>
+	<string name="timeago_prefixfromnow"></string>
+	<string name="timeago_suffixago">" ago"</string>
+	<string name="timeago_suffixfromnow">" from now"</string>
+	<string name="timeago_seconds">less than a minute</string>
+	<string name="timeago_minute">about a minute</string>
+	<string name="timeago_hour">about an hour</string>
+	<string name="timeago_day">a day</string>
+	<string name="timeago_week">about a week</string>
+	<string name="timeago_month">about a month</string>
+	<string name="timeago_year">about a year</string>
+	
+	<plurals name="plurals_timeago_minutes">
+        <item quantity="one">a minute</item>
+        <item quantity="other">%1$s minutes</item>
+    </plurals>
+	
+	<plurals name="plurals_timeago_hours">
+        <item quantity="one">an hour</item>
+        <item quantity="other">%1$s hours</item>
+    </plurals>
+	
+	<plurals name="plurals_timeago_days">
+        <item quantity="one">a day</item>
+        <item quantity="other">%1$s days</item>
+    </plurals>
+	
+	<plurals name="plurals_timeago_weeks">
+        <item quantity="one">a week</item>
+        <item quantity="other">%1$s weeks</item>
+    </plurals>
+	
+    <plurals name="plurals_timeago_months">
+        <item quantity="one">a month</item>
+        <item quantity="other">%1$s months</item>
+    </plurals>
+	
+    <plurals name="plurals_timeago_years">
+        <item quantity="one">a year</item>
+        <item quantity="other">%1$s years</item>
+    </plurals>
+	
+	<string name="timeago_number_0">0</string>
+	<string name="timeago_number_1">1</string>
+	<string name="timeago_number_2">2</string>
+	<string name="timeago_number_3">3</string>
+	<string name="timeago_number_4">4</string>
+	<string name="timeago_number_5">5</string>
+	<string name="timeago_number_6">6</string>
+	<string name="timeago_number_7">7</string>
+	<string name="timeago_number_8">8</string>
+	<string name="timeago_number_9">9</string>
+	<string name="timeago_number_10">10</string>
+    
+</resources>

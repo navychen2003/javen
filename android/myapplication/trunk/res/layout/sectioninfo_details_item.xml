@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sectioninfo_details_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    >
+    
+	<LinearLayout android:id="@+id/sectioninfo_details_item_layout" 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content" 
+	    android:layout_weight="1"
+	    android:layout_marginLeft="@dimen/sectioninfo_card_item_marginleft"
+	    android:layout_marginRight="@dimen/sectioninfo_card_item_marginright"
+	    android:layout_marginTop="@dimen/sectioninfo_card_item_margintop"
+	    android:layout_marginBottom="@dimen/sectioninfo_card_item_marginbottom"
+	    android:orientation="vertical"
+	    >
+	    
+		<TextView android:id="@+id/sectioninfo_details_item_name" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/sectioninfo_card_itemname_textcolor"
+		    android:textSize="@dimen/sectioninfo_card_itemname_textsize"
+		    android:textStyle="bold"
+		    android:gravity="left|top"
+		    android:ellipsize="marquee" 
+		    android:singleLine="true" 
+			/>
+	    
+		<TextView android:id="@+id/sectioninfo_details_item_value" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/sectioninfo_card_itemvalue_textcolor"
+		    android:textSize="@dimen/sectioninfo_card_itemvalue_textsize"
+		    android:textStyle="normal"
+		    android:gravity="left|top"
+		    android:singleLine="false" 
+			/>
+	</LinearLayout>
+	
+	<ImageView android:id="@+id/sectioninfo_details_item_button" 
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/sectioninfo_card_item_marginright"
+		android:layout_gravity="left|center_vertical"
+		android:src="@drawable/btn_edit_selector"
+	    />
+	
+</LinearLayout>

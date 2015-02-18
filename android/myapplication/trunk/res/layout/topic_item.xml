@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@drawable/list_item_selector"
+	android:minHeight="100dp"
+  	>
+  	
+    <LinearLayout android:id="@+id/topic_item_body" 
+		android:layout_width="match_parent" 
+    	android:layout_height="0dp" 
+    	android:layout_weight="1"
+    	android:orientation="horizontal"
+        >
+        
+		<LinearLayout android:id="@+id/topic_item_user" 
+			android:layout_width="wrap_content" 
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+		  	>
+		  	
+	        <ImageView android:id="@+id/topic_item_user_avatar" 
+				android:layout_width="50dp" 
+				android:layout_height="50dp"
+				android:layout_marginTop="@dimen/thumb_margin_size" 
+		    	android:layout_marginLeft="@dimen/thumb_margin_size" 
+				android:layout_gravity="left|top"
+	            />
+		    
+		    <TextView android:id="@+id/topic_item_user_name" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="2.0dp" 
+		    	android:layout_marginLeft="4.0dp" 
+		    	android:layout_marginBottom="2.0dp" 
+		    	android:layout_marginRight="2.0dp" 
+		    	android:layout_gravity="left|top"
+		    	android:gravity="left"
+		    	android:textSize="@dimen/list_item_username_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="#ff444444" 
+		    	android:ellipsize="marquee" 
+		    	android:singleLine="true" 
+		    	/>
+	        
+        </LinearLayout>
+        
+		<LinearLayout 
+			android:layout_width="match_parent" 
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+		  	>
+        
+		    <TextView android:id="@+id/topic_item_title" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="0.0dp" 
+		    	android:layout_marginLeft="4.0dp" 
+		    	android:layout_marginBottom="2.0dp" 
+		    	android:layout_marginRight="4.0dp" 
+		    	android:textSize="16sp" 
+		    	android:textStyle="normal" 
+		    	android:textColor="#ff000000" 
+		    	android:singleLine="false" 
+		    	android:maxLines="3"
+		    	/>
+		    
+		    <TextView android:id="@+id/topic_item_text" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="0.0dp" 
+		    	android:layout_marginLeft="4.0dp" 
+		    	android:layout_marginBottom="2.0dp" 
+		    	android:layout_marginRight="4.0dp" 
+		    	android:textSize="14sp" 
+		    	android:textStyle="normal" 
+		    	android:textColor="#ff444444" 
+		    	android:singleLine="false" 
+		    	/>
+		    
+		    <View 
+		        android:layout_width="match_parent" 
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="1"
+		        />
+		    
+		    <LinearLayout 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="2.0dp" 
+		    	android:layout_marginLeft="4.0dp" 
+		    	android:layout_marginBottom="2.0dp" 
+		    	android:layout_marginRight="4.0dp" 
+		    	android:orientation="horizontal"
+		        >
+		        
+			    <TextView android:id="@+id/topic_item_date" 
+			    	android:layout_width="0dp" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_weight="1"
+			    	android:layout_gravity="right|bottom"
+			    	android:gravity="right|center_vertical"
+			    	android:paddingRight="4.0dp"
+			    	android:textSize="12sp" 
+			    	android:textStyle="normal" 
+			    	android:textColor="#ff444444" 
+			    	android:ellipsize="marquee" 
+			    	android:singleLine="true" 
+			    	/>
+			    
+			    <TextView android:id="@+id/topic_item_comment" 
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_gravity="right|bottom"
+			    	android:gravity="right|center_vertical"
+			    	android:paddingRight="4.0dp"
+			    	android:textSize="@dimen/photo_item_date_size" 
+			    	android:textStyle="normal" 
+			    	android:textColor="#ff444444" 
+			    	android:ellipsize="marquee" 
+			    	android:singleLine="true" 
+			    	android:visibility="gone"
+			    	android:text="0"
+			    	/>
+			    
+		        <ImageView android:id="@+id/topic_item_logo" 
+					android:layout_width="16dp" 
+					android:layout_height="16dp"
+					android:layout_gravity="right|center_vertical"
+					android:layout_marginBottom="1.0dp" 
+					android:visibility="gone"
+		            />
+			    
+		    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

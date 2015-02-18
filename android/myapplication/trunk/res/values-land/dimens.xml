@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="album_item_gridthumb_width">120dp</dimen>
+    <dimen name="album_item_gridthumb_height">112dp</dimen>
+    <dimen name="photo_item_gridthumb_width">120dp</dimen>
+    <dimen name="photo_item_gridthumb_height">120dp</dimen>
+    
+    <dimen name="popup_tagselect_height">250dp</dimen>
+    <dimen name="user_header_offset">105dp</dimen>
+
+</resources>

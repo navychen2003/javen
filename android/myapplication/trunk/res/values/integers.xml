@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <integer name="ds_activity_short_dur">300</integer>
+    <integer name="ds_activity_default_dur">440</integer>
+    <integer name="ds_activity_long_dur">800</integer>
+    
+    <integer name="list_column_size">1</integer>
+    <integer name="photo_column_size">3</integer>
+    <integer name="tagselect_column_size">3</integer>
+    <integer name="section_grid_column_size">2</integer>
+    
+</resources>

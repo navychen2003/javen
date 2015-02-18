@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+  	>
+  	
+    <FrameLayout android:id="@+id/dashboardsection_item_header" 
+        android:layout_width="match_parent" 
+		android:layout_height="wrap_content" 
+        >
+	    <LinearLayout 
+			android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:orientation="vertical"
+	        >
+		    <RelativeLayout 
+				android:layout_width="match_parent" 
+		    	android:layout_height="@dimen/dashboardsection_hint_height" 
+		        >
+			    <TextView android:id="@+id/dashboardsection_item_hint" 
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_alignParentRight="true"
+			    	android:layout_alignParentBottom="true"
+			    	android:layout_marginRight="@dimen/dashboardsection_hint_marginright"
+			    	android:textSize="@dimen/dashboardsection_hint_textsize" 
+			    	android:textStyle="normal" 
+			    	android:textColor="@color/dashboardsection_hint_color" 
+			    	android:singleLine="true" 
+			    	android:visibility="gone"
+			    	/>
+	        </RelativeLayout>
+	        
+		    <LinearLayout android:id="@+id/dashboardsection_item_headerbg" 
+				android:layout_width="match_parent" 
+		    	android:layout_height="@dimen/dashboardsection_title_height" 
+		    	android:paddingLeft="@dimen/dashboardsection_title_paddingleft"
+		    	android:background="@color/dashboardsection_header_background"
+		    	android:orientation="vertical"
+		        >
+			    <TextView android:id="@+id/dashboardsection_item_user_title" 
+			    	android:layout_width="match_parent" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_gravity="left|center_vertical"
+			    	android:layout_marginTop="@dimen/dashboardsection_user_title_margintop"
+			    	android:layout_marginLeft="@dimen/dashboardsection_user_title_marginleft"
+			    	android:textSize="@dimen/dashboardsection_user_title_textsize" 
+			    	android:textStyle="normal" 
+			    	android:textColor="@color/dashboardsection_user_title_color" 
+			    	android:singleLine="true" 
+			    	/>
+			    
+			    <TextView android:id="@+id/dashboardsection_item_user_subtitle" 
+			    	android:layout_width="match_parent" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_gravity="left|center_vertical"
+			    	android:layout_marginLeft="@dimen/dashboardsection_user_title_marginleft"
+			    	android:textSize="@dimen/dashboardsection_user_subtitle_textsize" 
+			    	android:textStyle="normal" 
+			    	android:textColor="@color/dashboardsection_user_subtitle_color" 
+			    	android:singleLine="true" 
+			    	android:visibility="gone"
+			    	/>
+			    
+			    <View 
+			        android:layout_width="match_parent"
+			        android:layout_height="0dp"
+			        android:layout_weight="1"
+			        />
+			    
+			    <LinearLayout 
+					android:layout_width="match_parent" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_gravity="left|center_vertical"
+			    	android:layout_marginRight="@dimen/dashboardsection_title_marginright"
+			    	android:layout_marginBottom="@dimen/dashboardsection_title_marginbottom"
+			    	android:orientation="horizontal"
+			        >
+				    <TextView android:id="@+id/dashboardsection_item_title" 
+				    	android:layout_width="0dp" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_weight="1"
+				    	android:layout_gravity="left|center_vertical"
+				    	android:textSize="@dimen/dashboardsection_item_title_textsize" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/dashboardsection_item_title_color" 
+				    	android:ellipsize="middle"
+				    	android:singleLine="true" 
+				    	/>
+				    
+				    <TextView android:id="@+id/dashboardsection_item_sizeinfo" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="left|center_vertical"
+				    	android:textSize="@dimen/dashboardsection_item_sizeinfo_textsize" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/dashboardsection_item_sizeinfo_color" 
+				    	android:singleLine="true" 
+				    	/>
+			    </LinearLayout>
+	        </LinearLayout>
+        </LinearLayout>
+        
+	    <LinearLayout 
+			android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_gravity="left|center_vertical"
+	    	android:layout_marginLeft="@dimen/dashboardsection_avatar_marginleft"
+	    	android:orientation="vertical"
+	        >
+	        <ImageView android:id="@+id/dashboardsection_item_user_avatar" 
+				android:layout_width="@dimen/dashboardsection_avatar_size" 
+				android:layout_height="@dimen/dashboardsection_avatar_size"
+				android:layout_gravity="left|center_vertical"
+				android:padding="@dimen/dashboardsection_avatar_padding"
+				android:scaleType="fitCenter"
+	            />
+	    </LinearLayout>
+    </FrameLayout>
+    
+    <LinearLayout android:id="@+id/dashboardsection_item_body" 
+		android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:background="@color/dashboardsection_body_background"
+        >
+        
+    </LinearLayout>
+    
+</LinearLayout>

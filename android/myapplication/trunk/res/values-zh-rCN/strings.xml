@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="setting_account_title">帐号</string>
+    <string name="setting_general_title">常规</string>
+    <string name="setting_plugin_title">插件</string>
+    <string name="setting_task_title">任务</string>
+    <string name="setting_about_title">关于</string>
+    <string name="setting_logdebug_title">输出调试日志</string>
+    <string name="setting_showwarning_title">弹出警告信息</string>
+    <string name="setting_notifytraffic_title">通知手机流量使用情况</string>
+    <string name="setting_autofetch_title">手机网络下载处理</string>
+    <string name="setting_orientationsensor_title">自动翻转屏幕</string>
+    <string name="setting_plugin_builtin">内置</string>
+    <string name="setting_account_add_label">添加帐号</string>
+    
+    <string name="accountinfo_details_brief_title">描述</string>
+    <string name="accountinfo_details_basic_title">基本信息</string>
+    <string name="sectioninfo_details_library_title">库</string>
+    <string name="sectioninfo_details_file_title">文件</string>
+    <string name="sectioninfo_details_folder_title">文件夹</string>
+    <string name="sectioninfo_details_image_title">照片</string>
+    <string name="sectioninfo_details_audio_title">音乐</string>
+    <string name="sectioninfo_details_video_title">视频</string>
+    <string name="sectioninfo_details_media_title">媒体</string>
+    <string name="sectioninfo_details_media_infos_title">媒体</string>
+    <string name="sectioninfo_details_media_tags_title">标签</string>
+    <string name="sectioninfo_details_metadata_infos_title">资料</string>
+    <string name="sectioninfo_details_metadata_tags_title">标签</string>
+    
+    <string name="label_action_upload">上传</string>
+    <string name="label_action_download">下载</string>
+    <string name="label_action_create">创建</string>
+    <string name="label_action_scan">拍照</string>
+    <string name="label_action_share">分享</string>
+    <string name="label_action_refresh">刷新</string>
+    <string name="label_action_browser">浏览器</string>
+    <string name="label_action_viewtype">查看方式</string>
+    <string name="label_action_viewtype_large">摘要大图</string>
+    <string name="label_action_viewtype_list">列表视图</string>
+    <string name="label_action_viewtype_small">缩略小图</string>
+    <string name="label_action_search">搜索</string>
+    <string name="label_action_search_hints">搜索关键词</string>
+    <string name="label_action_select">选择</string>
+    <string name="label_action_delete">删除</string>
+    <string name="label_action_move">移动</string>
+    <string name="label_action_addalbum">创建相册</string>
+    <string name="label_action_tasks">任务</string>
+    <string name="label_action_settings">设置</string>
+    <string name="label_action_open">打开</string>
+    <string name="label_action_about">关于</string>
+    <string name="label_action_property">属性</string>
+    <string name="label_action_media">媒体</string>
+    <string name="label_action_metadata">资料</string>
+    <string name="label_action_logout">退出</string>
+    <string name="label_action_notify">通知</string>
+    <string name="label_action_view_list">列表视图</string>
+    <string name="label_action_view_grid">方块视图</string>
+    <string name="label_action_filterby">过滤...</string>
+    <string name="label_action_sortby">排序...</string>
+
+    <string name="label_sortby_name_asc">名称 (A-Z)</string>
+    <string name="label_sortby_name_desc">名称 (Z-A)</string>
+    <string name="label_sortby_modified_asc">更新日期 (最旧 - 最新)</string>
+    <string name="label_sortby_modified_desc">更新日期 (最新 - 最旧)</string>
+    <string name="label_sortby_size_asc">大小 (最小 - 最大)</string>
+    <string name="label_sortby_size_desc">大小 (最大 - 最小)</string>
+    <string name="label_sortby_type_asc">类型 (A-Z)</string>
+    <string name="label_sortby_type_desc">类型 (Z-A)</string>
+    <string name="label_filterby_all">全部</string>
+    <string name="label_filterby_image">只列出图片</string>
+    <string name="label_filterby_audio">只列出音乐</string>
+    <string name="label_filterby_video">只列出视频</string>
+    <string name="label_operation_move">移动</string>
+    <string name="label_operation_delete">删除</string>
+    <string name="label_operation_rename">改名</string>
+    <string name="label_operation_modify">修改</string>
+    <string name="label_operation_share">分享</string>
+    <string name="label_operation_details">信息</string>
+    <string name="label_operation_open">打开</string>
+    <string name="label_operation_select">选定</string>
+    <string name="label_operation_download">下载</string>
+    
+    <string name="label_local_albums">本地相册</string>
+    <string name="label_download_albums">下载图片</string>
+    <string name="label_album_info">%1$d 张照片</string>
+    <string name="label_tagselect_title">热门标签</string>
+    <string name="label_tagselect_all">(全部)</string>
+    <string name="label_photo_details">详细资料</string>
+    <string name="label_photo_exifs">Exif信息</string>
+    <string name="label_photo_comments">用户评论</string>
+    <string name="label_user_photos">照片</string>
+    <string name="label_user_likes">赞</string>
+    <string name="label_user_follows">关注</string>
+    <string name="label_user_comments">评论</string>
+    <string name="label_action_comment">评论</string>
+    <string name="label_action_album">相册</string>
+    <string name="label_action_group">群组</string>
+    <string name="label_action_favorite">收藏</string>
+    <string name="label_action_contact">朋友</string>
+    <string name="label_action_blog">信息</string>
+    <string name="label_action_member">成员</string>
+    <string name="label_action_topic">讨论</string>
+    <string name="label_action_photo">照片</string>
+    <string name="label_group_name">群组</string>
+    <string name="label_group_members">成员</string>
+    <string name="label_group_topics">讨论</string>
+    <string name="label_group_follows">关注</string>
+    <string name="label_group_photos">照片</string>
+    <string name="label_title_album">相册:</string>
+    <string name="label_title_groupprofile">群组简介</string>
+    <string name="label_title_groupdesc">群组描述</string>
+    <string name="label_title_grouprule">群组规则</string>
+    <string name="label_host_domain">主机域名</string>
+    <string name="label_host_domain_hint">(可选)</string>
+    <string name="label_host_address">主机地址</string>
+    <string name="label_host_address_hint">192.168.x.x:80</string>
+    
+    <string name="details_source">来源</string>
+    <string name="details_location">资源路径</string>
+    <string name="details_filepath">文件路径</string>
+    <string name="details_filename">文件名</string>
+    <string name="details_contenttype">文件类型</string>
+    <string name="details_filesize">文件大小</string>
+    <string name="details_lastmodified">修改时间</string>
+    <string name="details_updated">更新时间</string>
+    <string name="details_posted">发布时间</string>
+    <string name="details_owner">所有者</string>
+    <string name="details_checksum">校验码</string>
+    <string name="details_taken">拍摄时间</string>
+    <string name="details_date">日期</string>
+    <string name="details_title">标题</string>
+    <string name="details_summary">摘要</string>
+    <string name="details_author">作者</string>
+    <string name="details_nickname">昵称</string>
+    <string name="details_email">电子邮箱</string>
+    <string name="details_credit">媒体信用</string>
+    <string name="details_description">描述</string>
+    <string name="details_imagesize">图片大小</string>
+    <string name="details_albumtitle">相册名</string>
+    <string name="details_albumdesc">相册描述</string>
+    <string name="details_copyright">版权</string>
+    <string name="details_realname">真名</string>
+    <string name="details_accountname">帐号</string>
+    <string name="details_user_location">位置</string>
+    <string name="details_createdate">注册于</string>
+    <string name="details_groupname">群组名</string>
+    <string name="details_group_summary">共有%1$d位成员</string>
+    <string name="details_group_blast">通知</string>
+    <string name="details_group_blastdate">时间</string>
+    <string name="details_brief">标语</string>
+    <string name="details_introduction">介绍</string>
+    <string name="details_tags">标签</string>
+    <string name="details_hostname">主机</string>
+    
+    <string name="exifs_flash">闪光灯</string>
+    <string name="exifs_imagewidth">图像宽</string>
+    <string name="exifs_imagelength">图像高</string>
+    <string name="exifs_make">制造商</string>
+    <string name="exifs_model">型号</string>
+    <string name="exifs_aperture">光圈</string>
+    <string name="exifs_iso">ISO</string>
+    <string name="exifs_whitebalance">白平衡</string>
+    <string name="exifs_exposuretime">曝光时间</string>
+    <string name="exifs_focallength">焦距</string>
+    <string name="exifs_datetime">拍摄时间</string>
+    
+    <string name="folder_camera">"相机"</string>
+    <string name="folder_download">"下载"</string>
+    <string name="folder_edited_online_photos">"编辑过的在线照片"</string>
+    <string name="folder_imported">"已导入"</string>
+    <string name="folder_screenshot">"屏幕截图"</string>
+    
+    <string name="select_upload_title">上传文件</string>
+    <string name="select_store_folder_title">选择保存文件的目录</string>
+    <string name="select_create_title">创建项目</string>
+    <string name="select_create_textfile_title">创建文本文件</string>
+    <string name="select_create_folder_title">创建文件夹</string>
+    <string name="select_create_library_title">创建资料库</string>
+    <string name="select_create_textfile_subtitle">在文件夹 %1$s 中创建文本文件并输入文字.</string>
+    <string name="select_create_folder_subtitle">在文件夹 %1$s 中创建子目录.</string>
+    <string name="select_create_library_subtitle">为账号 %1$s 创建新的资料库.</string>
+    <string name="select_photo_title">上传照片</string>
+    <string name="select_photo_pick_category">照片</string>
+    <string name="select_photo_capture_category">拍照</string>
+    
+    <string name="dialog_filterby_title">过滤</string>
+    <string name="dialog_sortby_title">排序</string>
+    <string name="dialog_warning_title">警告</string>
+    <string name="dialog_hide_warning">忽略警告消息</string>
+    <string name="dialog_show_trace">显示详细信息</string>
+    <string name="dialog_copied_trace_message">详细信息已复制到剪贴板。</string>
+    <string name="dialog_auto_fetch_message">"您的手机目前使用移动通信网络，传输大图可能会消耗较多流量，是否自动处理？"</string>
+    <string name="dialog_downloadalbum_scanning_message">"正在扫描下载的图片..."</string>
+    <string name="dialog_localalbum_scanning_message">"正在扫描本地相册..."</string>
+    <string name="dialog_exit_button">关闭应用</string>
+    <string name="dialog_close_button">关闭</string>
+    <string name="dialog_noconfirm_button">不再提示</string>
+    <string name="dialog_ok_button">好</string>
+    <string name="dialog_yes_button">是</string>
+    <string name="dialog_no_button">否</string>
+    <string name="dialog_create_button">创建</string>
+    <string name="dialog_cancel_button">取消</string>
+    <string name="dialog_copy_button">复制</string>
+    <string name="dialog_select_button">选择</string>
+    <string name="dialog_add_button">添加</string>
+    
+    <string name="dialog_addhost_button">添加主机</string>
+    <string name="dialog_addhost_title">添加主机</string>
+    <string name="dialog_host_address_required">该输入项不能空.</string>
+    <string name="dialog_host_address_invalid">该主机地址不合法或不存在, 举例 192.168.1.10:80 或者 192.168.1.10.</string>
+    <string name="dialog_host_domain_invalid">该主机域名不合法或不存在, 举例 www.anybox.org.</string>
+    
+    <string name="download_notsupported_message">"不能下载 %1$s！"</string>
+    <string name="share_notsupported_message">"不能分享 %1$s to others！"</string>
+    <string name="move_notsupported_message">"不能移动 %1$s！"</string>
+    <string name="delete_notsupported_message">"不能删除 %1$s！"</string>
+    <string name="delete_confirm_message">"你确定要删除这些项目吗？"</string>
+    <string name="select_empty_message">"请先选择项目."</string>
+    <string name="logout_confirm_title">退出</string>
+    <string name="logout_confirm_message">"你确实要退出当前帐号(%1$s)吗？"</string>
+    <string name="switchaccount_confirm_title">切换帐号</string>
+    <string name="switchaccount_confirm_message">"你确实要退出并切换到帐号(%1$s)吗？"</string>
+    <string name="deleteaccount_confirm_title">删除帐号</string>
+    <string name="deleteaccount_confirm_message">"你确实要删除帐号(%1$s)吗？帐号仍然会在服务器端保留，你可以下次再次添加。"</string>
+    <string name="addaccount_confirm_title">添加帐号</string>
+    <string name="addaccount_confirm_message">"你确实要退出并添加另外的帐号吗？"</string>
+    
+    <string name="remaining_space_title">剩余 %1$s 空间</string>
+    <string name="remaining_space">剩余 %1$s 空间</string>
+    <string name="total_space_title">共 %1$s</string>
+    <string name="total_used_space_title">共使用 %1$s</string>
+    <string name="user_total_used_space_message">用户: %1$s 共使用 %2$s</string>
+    <string name="group_total_used_space_message">群组: %1$s 共使用 %2$s</string>
+    <string name="total_free_space">共 %1$s 免费空间</string>
+    <string name="total_free_space_normal">共 %1$s 免费空间(普通用户)</string>
+    <string name="free_space_title">免费空间</string>
+    <string name="user_space_title">用户: %1$s</string>
+    <string name="group_space_title">群组: %1$s</string>
+    <string name="host_space_title">主机: %1$s</string>
+    <string name="updated_timeago_title">%1$s更新</string>
+    <string name="visited_timeago_title">%1$s浏览</string>
+    <string name="login_timeago_message">%1$s登录.</string>
+    <string name="loading_title">装载中</string>
+    <string name="refreshing_title">更新中 ...</string>
+    
+    <string name="files_category_label">文件</string>
+    <string name="folders_category_label">文件夹</string>
+    <string name="folder_category_label">文件夹</string>
+    <string name="library_category_label">资料库</string>
+    <string name="search_category_label">搜索</string>
+    <string name="local_category_label">本地</string>
+    <string name="application_category_label">应用</string>
+    <string name="file_information_label">%1$s, 修改于%2$s.</string>
+    <string name="folder_information_label">包含 %1$s 个文件(%2$s), 修改于%3$s.</string>
+    <string name="folder_count_information_label">包含 %1$s 个文件(%2$s).</string>
+    <string name="folder_empty_information_label">无文件.</string>
+    <string name="modified_information_label">修改于%1$s.</string>
+    <string name="download_image_label">点击下载图片</string>
+    <string name="search_name_label">搜索 %1$s</string>
+    <string name="search_count_information_label">找到 %1$s 个文件.</string>
+    <string name="search_notfound_information_label">未找到文件.</string>
+    <string name="root_folder_information_label">根目录.</string>
+    
+    <string name="notify_message_title">消息</string>
+    <string name="notify_invite_title">请求</string>
+    <string name="notify_systemalert_title">警报</string>
+    <string name="notify_announcement_title">公告</string>
+    <string name="notify_task_title">任务</string>
+    <string name="notify_empty_message">都知道了！</string>
+    <string name="invite_be_friend_message">希望成为你的好友.</string>
+    <string name="invite_not_accepted_message">还未接受.</string>
+    
+    <plurals name="plurals_notify_moremessage_title">
+        <item quantity="one">还有一条消息.</item>
+        <item quantity="other">还有 %1$s 条消息.</item>
+    </plurals>
+    
+    <plurals name="plurals_notify_moreinvite_title">
+        <item quantity="one">还有一条请求.</item>
+        <item quantity="other">还有 %1$s 条请求.</item>
+    </plurals>
+    
+    <string name="report_message_error">"糟糕！出错了：%1$s"</string>
+    <string name="retry_again_message">"请求错误，请稍候刷新重试。"</string>
+    <string name="unsupported_operation">"处理失败，该操作不支持。"</string>
+    <string name="out_of_memory_error">"内存不足，请关闭应用重试。"</string>
+    <string name="response_parse_error">"网站返回数据格式错误，请稍候刷新重试。"</string>
+    <string name="mobile_traffic_notification">"已使用%2$s流量(从%1$s起)"</string>
+    <string name="google_services_framework_not_installed">"您的手机未安装Google服务框架，不支持添加Google帐号等操作。"</string>
+    <string name="ellipsize_end">"……"</string>
+    
+    <string name="album_delete_notempty_error">"相册内还有照片，不能删除。"</string>
+    <string name="album_create_unsupported">"该帐户不支持创建相册。"</string>
+    <string name="album_create_processing">"正在创建相册：%1$s"</string>
+    <string name="album_create_failed">"创建相册：%1$s 未成功"</string>
+    <string name="actionmode_selected_photo_title">"已选择 %1$s 张照片"</string>
+    <string name="actionmode_selected_album_title">"已选择 %1$s 个相册"</string>
+    
+    <string name="label_select_operation">选择操作</string>
+    <string name="label_action_share_information">分享信息</string>
+    <string name="label_action_copy_text">复制文本</string>
+    <string name="label_action_take_photo">拍摄照片</string>
+    <string name="label_action_pick_photo">选择照片</string>
+    <string name="label_action_pick_video">选择视频</string>
+    <string name="information_copied_message">文本已复制到剪贴板</string>
+    
+	<string name="intent_no_image_capture">未安装拍照应用</string>
+    <string name="intent_no_image_picker">未安装图片选择应用</string>
+    <string name="intent_no_image_croper">未安装图片裁剪应用</string>
+    <string name="intent_no_video_picker">未安装视频选择应用</string>
+    <string name="intent_no_audio_picker">未安装声音选择应用</string>
+    
+    <string name="create_album_title">创建相册</string>
+    <string name="label_album_name">相册名</string>
+    <string name="label_album_name_hint">输入相册名</string>
+    <string name="label_album_name_empty">相册名不能空</string>
+    <string name="label_album_location">地点</string>
+    <string name="label_album_location_hint">相片拍摄地</string>
+    <string name="label_album_keywords">关键词</string>
+    <string name="label_album_keywords_hint">用于检索，空格分隔</string>
+    <string name="label_album_summary">描述</string>
+    <string name="label_album_access">访问权限</string>
+    <string name="label_album_access_public">公开</string>
+    <string name="label_album_access_private">私人</string>
+    
+    <string name="upload_unknown_title">未命名</string>
+    <string name="upload_item_status_added">已加入队列</string>
+    <string name="upload_item_status_pending">正在等待上传</string>
+    <string name="upload_item_status_running">正在上传</string>
+    <string name="upload_item_status_finished">上传完毕</string>
+    <string name="upload_item_status_failed">上传失败</string>
+    <string name="upload_item_status_aborted">上传中断</string>
+    <string name="upload_notification_running">正在上传</string>
+    <string name="upload_notification_finished">上传完毕</string>
+    <string name="upload_notification_failed">上传失败</string>
+    <string name="upload_notification_percent"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+    <string name="upload_notification_filename_separator">", "</string>
+    <string name="upload_notification_filename_extras">" 还有 <xliff:g id="NUMBER">%d</xliff:g> 项"</string>
+    <string name="upload_cancel_title">取消上传</string>
+    <string name="upload_cancel_message">"确认取消上传 %1$s 吗？"</string>
+    <string name="upload_cancel_message_running">"文件 %1$s 正在上传中，确认取消吗？"</string>
+    <string name="upload_file_not_exists_message">"文件 %1$s 不存在或不可读."</string>
+    <string name="upload_information_label">%1$s, %2$s.</string>
+    <string name="upload_error_no_account">无帐号</string>
+    <string name="upload_error_no_uploader">无上传处理器</string>
+    <string name="upload_error_code">错误号 %1$s</string>
+    
+    <string name="download_cancel_title">取消下载</string>
+    <string name="download_cancel_message">"确认取消下载 %1$s 吗？"</string>
+    <string name="download_cancel_message_running">"文件 %1$s 正在下载中，确认取消吗？"</string>
+    
+    <string name="fetch_not_found">资源不存在</string>
+    <string name="fetch_forbidden">资源禁止访问</string>
+    <string name="fetch_bad_request">错误请求</string>
+    <string name="fetch_unauthorized">请求未被授权</string>
+    <string name="fetch_request_timeout">请求超时</string>
+    <string name="fetch_method_not_allowed">请求方法不允许</string>
+    <string name="fetch_unsupported_media_type">请求的媒体类型不支持</string>
+    <string name="fetch_internal_server_error">服务器内部错误</string>
+    <string name="fetch_bad_gateway">错误网关</string>
+    <string name="fetch_service_unavailable">服务不可用</string>
+    <string name="fetch_gateway_timeout">网关超时</string>
+    <string name="fetch_connect_timeout">连接超时</string>
+    <string name="fetch_http_error">"无法访问 %1$s 网站(错误%2$s)"</string>
+    
+    <string name="socket_action_connect">连接中</string>
+    <string name="socket_action_read">读取中</string>
+    <string name="socket_action_write">写入中</string>
+    <string name="socket_action_close">已关闭</string>
+    <string name="socket_network_3g_name">3G网络</string>
+    <string name="socket_network_wifi_name">Wifi网络</string>
+    <string name="socket_message_readbytes">已读</string>
+    <string name="socket_message_writebytes">已写</string>
+    <string name="socket_message_bytes">字节</string>
+    <string name="socket_network_unreachable">请检查3G网络或Wifi网络是否正常.</string>
+    <string name="socket_network_error">网络异常,请稍候重试.</string>
+    <string name="socket_connect_timeout">服务器连接超时,请稍候重试.</string>
+    <string name="socket_connect_error">无法连接到服务器.</string>
+    
+    <string name="error_user_not_found">用户不存在!</string>
+    <string name="error_group_not_found">群组不存在!</string>
+    <string name="error_file_not_found">文件不存在!</string>
+    <string name="error_channel_not_found">频道不存在!</string>
+    
+    <string name="filesize_bytes">%1$s 字节</string>
+    
+	<string name="timeago_prefixago"></string>
+	<string name="timeago_prefixfromnow"></string>
+	<string name="timeago_suffixago">之前</string>
+	<string name="timeago_suffixfromnow">之后</string>
+	<string name="timeago_seconds">小于一分钟</string>
+	<string name="timeago_minute">约一分钟</string>
+	<string name="timeago_hour">约一小时</string>
+	<string name="timeago_day">一天</string>
+	<string name="timeago_week">约一周</string>
+	<string name="timeago_month">约一个月</string>
+	<string name="timeago_year">约一年</string>
+	
+	<plurals name="plurals_timeago_minutes">
+        <item quantity="one">一分钟</item>
+        <item quantity="other">%1$s 分钟</item>
+    </plurals>
+	
+	<plurals name="plurals_timeago_hours">
+        <item quantity="one">一小时</item>
+        <item quantity="other">%1$s小时</item>
+    </plurals>
+	
+	<plurals name="plurals_timeago_days">
+        <item quantity="one">一天</item>
+        <item quantity="other">%1$s天</item>
+    </plurals>
+	
+	<plurals name="plurals_timeago_weeks">
+        <item quantity="one">一周</item>
+        <item quantity="other">%1$s周</item>
+    </plurals>
+	
+    <plurals name="plurals_timeago_months">
+        <item quantity="one">一个月</item>
+        <item quantity="other">%1$s个月</item>
+    </plurals>
+	
+    <plurals name="plurals_timeago_years">
+        <item quantity="one">一年</item>
+        <item quantity="other">%1$s年</item>
+    </plurals>
+	
+	<string name="timeago_number_0">零</string>
+	<string name="timeago_number_1">一</string>
+	<string name="timeago_number_2">两</string>
+	<string name="timeago_number_3">三</string>
+	<string name="timeago_number_4">四</string>
+	<string name="timeago_number_5">五</string>
+	<string name="timeago_number_6">六</string>
+	<string name="timeago_number_7">七</string>
+	<string name="timeago_number_8">八</string>
+	<string name="timeago_number_9">九</string>
+	<string name="timeago_number_10">十</string>
+    
+</resources>

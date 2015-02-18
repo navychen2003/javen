@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.javenstudio.cocoka.widget.SimpleRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+  	android:layout_height="match_parent" 
+	>
+      
+	<FrameLayout android:id="@+id/section_list_above_center" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone"
+		/>
+    
+	<FrameLayout android:id="@+id/section_list_above_header" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:background="@color/section_list_header_background"
+		android:visibility="gone"
+		>
+		
+		<LinearLayout android:id="@+id/section_above_category" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/section_listrow_space"
+		  	>
+		  	
+		    <TextView android:id="@+id/section_above_category_title" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="@dimen/section_above_category_margintop" 
+		    	android:layout_marginLeft="@dimen/section_above_category_marginleft" 
+		    	android:layout_marginBottom="@dimen/section_above_category_marginbottom" 
+		    	android:layout_marginRight="@dimen/section_above_category_marginright" 
+		    	android:textSize="@dimen/section_category_textsize" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/section_category_textcolor" 
+		    	android:textAllCaps="true"
+		    	android:singleLine="true" 
+		    	/>
+		    
+		</LinearLayout>
+	</FrameLayout>
+	
+	<FrameLayout android:id="@+id/section_list_above_footer" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:background="@color/section_list_footer_background"
+		android:visibility="gone"
+		>
+		
+		<LinearLayout android:id="@+id/section_above_shortcut" 
+			android:layout_width="match_parent" 
+			android:layout_height="@dimen/section_shortcut_height"
+			android:orientation="horizontal"
+		  	>
+		  	
+		</LinearLayout>
+	</FrameLayout>
+	
+</org.javenstudio.cocoka.widget.SimpleRelativeLayout>

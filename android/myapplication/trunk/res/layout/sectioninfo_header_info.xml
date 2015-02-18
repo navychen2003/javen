@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+    >
+    
+	<LinearLayout 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	  	>
+       
+	    <FrameLayout android:id="@+id/sectioninfo_header_top" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:background="@drawable/section_poster_background"
+	        >
+	        
+	        <ImageView android:id="@+id/sectioninfo_header_bigicon" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+	            />
+	        
+	        <ImageView android:id="@+id/sectioninfo_header_image" 
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:minHeight="@dimen/sectioninfo_header_image_minheight"
+				android:scaleType="centerCrop"
+	            />
+	        
+			<ImageView android:id="@+id/sectioninfo_header_overlay" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="right|bottom"
+				android:layout_margin="@dimen/sectioninfo_overlay_margin"
+				/>
+	        
+			<TextView android:id="@+id/sectioninfo_header_image_text" 
+		    	android:layout_width="wrap_content" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_gravity="center"
+		    	android:textSize="@dimen/sectioninfo_header_image_textsize" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/image_download_textcolor" 
+		    	android:singleLine="true" 
+		    	android:visibility="gone"
+		    	/>
+			
+			<ProgressBar android:id="@+id/sectioninfo_header_progressbar"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+			    android:visibility="gone"
+			    style="@style/ProgressBar.Medium"
+			    />
+	        
+	    </FrameLayout>
+	    
+		<LinearLayout android:id="@+id/sectioninfo_header_main" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:background="@color/sectioninfo_header_background"
+			android:orientation="vertical"
+		  	>
+        	
+		    <View
+		        android:layout_width="match_parent" 
+				android:layout_height="@dimen/sectioninfo_header_margintop"
+		        />
+		    
+			<LinearLayout android:id="@+id/sectioninfo_header_body" 
+			    android:layout_width="match_parent" 
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    >
+			    
+				<FrameLayout android:id="@+id/sectioninfo_header_icon" 
+					android:layout_width="@dimen/sectioninfo_header_iconlayout_width" 
+					android:layout_height="@dimen/sectioninfo_header_iconlayout_height"
+					android:layout_margin="@dimen/sectioninfo_header_icon_margin" 
+					android:background="@color/sectioninfo_header_icon_background"
+				  	>
+				  	
+					<ImageView android:id="@+id/sectioninfo_header_icon_image" 
+						android:layout_width="@dimen/sectioninfo_header_icon_width" 
+						android:layout_height="@dimen/sectioninfo_header_icon_height"
+						android:layout_gravity="center"
+						android:src="@drawable/ic_type_blank"
+				     	/>
+				    
+				</FrameLayout>
+			    
+				<LinearLayout android:id="@+id/sectioninfo_header_name" 
+					android:layout_width="0dp" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_gravity="left|center_vertical"
+					android:gravity="left|center_vertical"
+					android:orientation="vertical"
+				  	>
+				      
+				    <TextView android:id="@+id/sectioninfo_header_name_title" 
+				    	android:layout_width="match_parent" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_marginTop="@dimen/sectioninfo_header_title_margintop" 
+				    	android:layout_marginLeft="@dimen/sectioninfo_header_title_marginleft" 
+				    	android:layout_marginBottom="@dimen/sectioninfo_header_title_marginbottom" 
+				    	android:layout_marginRight="@dimen/sectioninfo_header_title_marginright" 
+				    	android:textSize="@dimen/sectioninfo_header_titlesize" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/sectioninfo_header_name_color" 
+				    	android:ellipsize="middle"
+				    	android:maxLines="2"
+				    	android:singleLine="false" 
+				    	/>
+				    
+				</LinearLayout>
+			
+			</LinearLayout>
+			
+		    <View
+		        android:layout_width="match_parent" 
+				android:layout_height="@dimen/sectioninfo_header_marginbottom"
+		        />
+			
+        </LinearLayout>
+    </LinearLayout>
+    
+</FrameLayout>

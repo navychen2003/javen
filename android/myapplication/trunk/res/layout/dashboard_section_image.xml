@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+  	android:layout_height="wrap_content" 
+	>
+      
+	<ImageView android:id="@+id/dashboard_section_image" 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|top"
+		android:layout_margin="@dimen/dashboardsection_image_margin"
+		android:minHeight="@dimen/dashboardsection_image_minheight"
+		android:scaleType="centerCrop"
+		/>
+    
+	<TextView android:id="@+id/dashboard_section_image_text" 
+    	android:layout_width="wrap_content" 
+    	android:layout_height="wrap_content" 
+    	android:layout_gravity="center"
+    	android:textSize="@dimen/dashboardsection_image_textsize" 
+    	android:textStyle="normal" 
+    	android:textColor="@color/image_download_textcolor" 
+    	android:singleLine="true" 
+    	android:visibility="gone"
+    	/>
+	
+	<ProgressBar android:id="@+id/dashboard_section_progressbar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:visibility="gone"
+	    style="@style/ProgressBar.Medium"
+	    />
+	
+</FrameLayout>

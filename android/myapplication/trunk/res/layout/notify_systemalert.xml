@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/systemalert_background"
+  	>
+  	
+    <LinearLayout android:id="@+id/notify_alert_header" 
+		android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:orientation="vertical"
+        >
+        
+	    <TextView android:id="@+id/notify_alert_title" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="@dimen/notify_title_margintop" 
+	    	android:layout_marginLeft="@dimen/notify_title_marginleft" 
+	    	android:layout_marginBottom="0dp" 
+	    	android:layout_marginRight="@dimen/notify_title_marginright" 
+	    	android:textSize="@dimen/notify_title_size" 
+	    	android:textStyle="bold" 
+	    	android:textColor="@color/systemalert_title_color" 
+	    	android:singleLine="true" 
+	    	/>
+    </LinearLayout>
+    
+    <LinearLayout android:id="@+id/notify_alert_body" 
+		android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:orientation="vertical"
+        >
+        
+	    <TextView android:id="@+id/notify_alert_subtitle" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="0dp" 
+	    	android:layout_marginLeft="@dimen/notify_title_marginleft" 
+	    	android:layout_marginBottom="@dimen/notify_title_margintop" 
+	    	android:layout_marginRight="@dimen/notify_title_marginright" 
+	    	android:textSize="@dimen/notify_subtitle_size" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/systemalert_subtitle_color" 
+	    	android:singleLine="false" 
+	    	android:maxLines="3"
+	    	/>
+        
+    </LinearLayout>
+    
+</LinearLayout>

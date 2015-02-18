@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/accountmenu_footer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/accountmenu_footer_height" 
+    android:orientation="horizontal"
+    >
+    
+	<LinearLayout android:id="@+id/accountmenu_footer_layout" 
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content" 
+	    android:layout_weight="1"
+	    android:layout_gravity="left|center_vertical"
+	    android:layout_marginLeft="@dimen/accountmenu_footer_item_marginleft"
+	    android:layout_marginRight="@dimen/accountmenu_footer_item_marginright"
+	    android:orientation="vertical"
+	    >
+	    
+		<TextView android:id="@+id/accountmenu_footer_title" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/accountmenu_footer_title_color"
+		    android:textSize="@dimen/accountmenu_footer_title_textsize"
+		    android:textStyle="normal"
+		    android:gravity="left|center_vertical"
+		    android:ellipsize="marquee" 
+		    android:singleLine="true" 
+			/>
+	    
+		<TextView android:id="@+id/accountmenu_footer_subtitle" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:textColor="@color/accountmenu_footer_subtitle_color"
+		    android:textSize="@dimen/accountmenu_footer_subtitle_textsize"
+		    android:textStyle="normal"
+		    android:gravity="left|top"
+		    android:singleLine="false" 
+		    android:visibility="gone"
+			/>
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/accountmenu_footer_height" 
+	    >
+	
+		<ImageView android:id="@+id/accountmenu_footer_icon" 
+		    android:layout_width="@dimen/accountmenu_footer_icon_width"
+			android:layout_height="@dimen/accountmenu_footer_icon_height"
+			android:layout_marginRight="@dimen/accountmenu_footer_item_marginright"
+			android:layout_gravity="left|center_vertical"
+			android:clickable="true"
+		    />
+	</LinearLayout>
+	
+</LinearLayout>

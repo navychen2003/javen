@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/list_item_selector"
+  	>
+  	
+    <LinearLayout 
+		android:layout_width="match_parent" 
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+	  	>
+       
+	    <TextView android:id="@+id/userspace_item_title" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginTop="@dimen/overviewspace_title_margintop" 
+	    	android:layout_marginLeft="@dimen/overviewspace_title_marginleft" 
+	    	android:layout_marginBottom="@dimen/overviewspace_title_marginbottom" 
+	    	android:layout_marginRight="@dimen/overviewspace_title_marginright" 
+	    	android:textSize="@dimen/userspace_title_size" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/userspace_title_color" 
+	    	android:singleLine="true" 
+	    	/>
+	    
+	    <TextView android:id="@+id/userspace_item_subtitle" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginLeft="@dimen/overviewspace_subtitle_marginleft" 
+	    	android:layout_marginBottom="@dimen/overviewspace_subtitle_marginbottom" 
+	    	android:layout_marginRight="@dimen/overviewspace_subtitle_marginright" 
+	    	android:textSize="@dimen/userspace_subtitle_size" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/userspace_subtitle_color" 
+	    	android:singleLine="false" 
+	    	/>
+	    
+	</LinearLayout>
+    
+</LinearLayout>

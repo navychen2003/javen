@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="@drawable/list_item_selector"
+  	>
+  	
+    <LinearLayout android:id="@+id/album_item_body" 
+		android:layout_width="match_parent" 
+    	android:layout_height="wrap_content" 
+    	android:orientation="horizontal"
+        >
+        
+		<FrameLayout 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="left|center_vertical"
+			android:padding="@dimen/thumb_margin_size"
+		  	>
+		  	
+	        <ImageView android:id="@+id/album_item_thumbnail" 
+				android:layout_width="@dimen/album_item_listthumb_width" 
+				android:layout_height="@dimen/album_item_listthumb_height"
+				android:layout_gravity="left|center_vertical"
+	            />
+		    
+	        <ImageView android:id="@+id/album_item_overlay" 
+				android:layout_width="@dimen/album_item_listthumb_width" 
+				android:layout_height="@dimen/album_item_listthumb_height"
+				android:layout_gravity="center"
+				android:visibility="gone"
+	            />
+	        
+	        <ImageView android:id="@+id/album_item_select" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="left|top"
+				android:layout_margin="6dp"
+				android:visibility="gone"
+	            />
+	        
+			<ProgressBar android:id="@+id/album_item_progress"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="6dp"
+			    android:layout_gravity="right|bottom"
+			    android:visibility="gone"
+			    style="?android:attr/progressBarStyleSmall"
+			    />
+	        
+        </FrameLayout>
+        
+		<LinearLayout 
+			android:layout_width="0dp" 
+			android:layout_height="@dimen/album_item_list_height"
+			android:layout_weight="1"
+			android:orientation="vertical"
+		  	>
+        
+		    <TextView android:id="@+id/album_item_title" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="2.0dp" 
+		    	android:layout_marginLeft="4.0dp" 
+		    	android:layout_marginBottom="2.0dp" 
+		    	android:layout_marginRight="4.0dp" 
+		    	android:textSize="@dimen/album_item_title_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="#ff000000" 
+		    	android:ellipsize="marquee" 
+		    	android:singleLine="true" 
+		    	/>
+		    
+		    <View 
+		        android:layout_width="match_parent" 
+		    	android:layout_height="0dp" 
+		    	android:layout_weight="1"
+		        />
+		    
+		    <LinearLayout 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="2.0dp" 
+		    	android:layout_marginLeft="4.0dp" 
+		    	android:layout_marginBottom="0.0dp" 
+		    	android:layout_marginRight="4.0dp" 
+		    	android:orientation="horizontal"
+		        >
+		    
+			    <TextView android:id="@+id/album_item_text" 
+			    	android:layout_width="0dp" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_weight="1"
+			    	android:layout_gravity="right|bottom"
+			    	android:gravity="right|center_vertical"
+			    	android:paddingRight="4.0dp"
+			    	android:textSize="@dimen/album_item_text_size" 
+			    	android:textStyle="normal" 
+			    	android:textColor="#ff444444" 
+			    	android:ellipsize="marquee" 
+			    	android:singleLine="true" 
+			    	/>
+			    
+		        <ImageView android:id="@+id/album_item_logo" 
+					android:layout_width="16dp" 
+					android:layout_height="16dp"
+					android:layout_gravity="right|center_vertical"
+					android:layout_marginBottom="1.0dp" 
+					android:visibility="gone"
+		            />
+		    </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

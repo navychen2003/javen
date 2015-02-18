@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+    >
+    
+	<LinearLayout 
+		android:layout_width="match_parent" 
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+	  	>
+       
+	    <FrameLayout 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+	        >
+	        
+	        <ImageView android:id="@+id/accountinfo_header_image" 
+				android:layout_width="match_parent" 
+				android:layout_height="@dimen/accountinfo_header_image_height"
+				android:scaleType="centerCrop"
+	            />
+	        
+			<ImageView android:id="@+id/accountinfo_header_overlay" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="right|bottom"
+				android:layout_margin="@dimen/accountinfo_overlay_margin"
+				/>
+	        
+	    </FrameLayout>
+	    
+		<LinearLayout android:id="@+id/accountinfo_header_main" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:background="@color/accountinfo_header_background"
+			android:orientation="vertical"
+		  	>
+        	
+		    <View
+		        android:layout_width="match_parent" 
+				android:layout_height="@dimen/accountinfo_header_margintop"
+		        />
+		    
+			<LinearLayout 
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+			  	>
+			    
+			    <TextView android:id="@+id/accountinfo_header_name" 
+			    	android:layout_width="wrap_content" 
+			    	android:layout_height="wrap_content" 
+			    	android:layout_gravity="center_horizontal|top"
+			    	android:gravity="center"
+			    	android:textSize="@dimen/accountinfo_header_titlesize" 
+			    	android:textStyle="normal" 
+			    	android:textColor="@color/accountinfo_header_name_color" 
+			    	android:ellipsize="marquee" 
+			    	android:singleLine="true" 
+			    	/>
+		    </LinearLayout>
+		    
+			<LinearLayout 
+				android:layout_width="match_parent" 
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/accountinfo_header_count_margintop"
+				android:orientation="horizontal"
+				android:visibility="gone"
+			  	>
+			    
+				<LinearLayout 
+					android:layout_width="0dp" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical"
+				  	>
+				  	
+				    <TextView android:id="@+id/accountinfo_header_photocount" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:textSize="@dimen/accountinfo_header_count_value_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_value_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	android:text="0"
+				    	/>
+				    
+				    <TextView 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:text="@string/label_user_photos"
+				    	android:textSize="@dimen/accountinfo_header_count_label_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_label_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	/>
+			    </LinearLayout>
+			    
+				<LinearLayout 
+					android:layout_width="0dp" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical"
+				  	>
+				  	
+				    <TextView android:id="@+id/accountinfo_header_likecount" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:textSize="@dimen/accountinfo_header_count_value_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_value_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	android:text="0"
+				    	/>
+				    
+				    <TextView 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:text="@string/label_user_likes"
+				    	android:textSize="@dimen/accountinfo_header_count_label_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_label_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	/>
+			    </LinearLayout>
+				
+				<LinearLayout 
+					android:layout_width="0dp" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical"
+				  	>
+				  	
+				    <TextView android:id="@+id/accountinfo_header_commentcount" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:textSize="@dimen/accountinfo_header_count_value_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_value_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	android:text="0"
+				    	/>
+				    
+				    <TextView 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:text="@string/label_user_comments"
+				    	android:textSize="@dimen/accountinfo_header_count_label_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_label_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	/>
+			    </LinearLayout>
+				
+				<LinearLayout 
+					android:layout_width="0dp" 
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:orientation="vertical"
+				  	>
+				  	
+				    <TextView android:id="@+id/accountinfo_header_followcount" 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:textSize="@dimen/accountinfo_header_count_value_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_value_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	android:text="0"
+				    	/>
+				    
+				    <TextView 
+				    	android:layout_width="wrap_content" 
+				    	android:layout_height="wrap_content" 
+				    	android:layout_gravity="center_horizontal|top"
+				    	android:gravity="center"
+				    	android:text="@string/label_user_follows"
+				    	android:textSize="@dimen/accountinfo_header_count_label_size" 
+				    	android:textStyle="normal" 
+				    	android:textColor="@color/accountinfo_header_count_label_color" 
+				    	android:ellipsize="marquee" 
+				    	android:singleLine="true" 
+				    	/>
+			    </LinearLayout>
+				
+			</LinearLayout>
+			
+		    <View
+		        android:layout_width="match_parent" 
+				android:layout_height="@dimen/accountinfo_header_marginbottom"
+		        />
+			
+        </LinearLayout>
+    </LinearLayout>
+    
+    <FrameLayout 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal|top"
+		android:layout_marginLeft="@dimen/accountinfo_avatar_margin"
+		android:layout_marginRight="@dimen/accountinfo_avatar_margin"
+		android:layout_marginTop="@dimen/accountinfo_avatar_margintop"
+		android:layout_marginBottom="@dimen/accountinfo_avatar_margin"
+        >
+        
+        <ImageView android:id="@+id/accountinfo_header_avatar" 
+			android:layout_width="@dimen/accountinfo_avatar_size" 
+			android:layout_height="@dimen/accountinfo_avatar_size"
+			android:layout_gravity="center"
+			android:padding="@dimen/accountinfo_avatar_padding"
+			android:scaleType="fitCenter"
+            />
+	    
+    </FrameLayout>
+</FrameLayout>

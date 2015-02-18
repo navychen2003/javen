@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<org.javenstudio.android.setting.SettingListItem 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="@dimen/setting_item_height"
+    android:orientation="horizontal"
+    >
+    
+    <ImageView android:id="@+id/setting_child_image" 
+        android:layout_width="@dimen/setting_icon_size" 
+        android:layout_height="@dimen/setting_icon_size" 
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/setting_icon_marginleft" 
+        />
+    
+    <TextView android:id="@+id/setting_child_title" 
+        android:layout_width="0dp" 
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="@dimen/setting_title_marginleft" 
+        android:layout_marginRight="@dimen/setting_title_marginright" 
+        android:textSize="@dimen/setting_title_size" 
+        android:textStyle="normal" 
+        android:textColor="@color/setting_title_color" 
+        android:ellipsize="marquee" 
+		android:singleLine="true" 
+        />
+    
+    <EditText android:id="@+id/setting_child_edittext" 
+        android:layout_width="@dimen/setting_edittext_width" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/setting_edittext_marginright" 
+        android:inputType="textCapSentences|textAutoCorrect|textShortMessage" 
+        android:imeOptions="actionDone"
+        android:background="@color/setting_edittext_background"
+        android:textSize="@dimen/setting_edittext_size" 
+        android:textStyle="normal" 
+        android:textColor="@color/setting_edittext_color" 
+        android:textColorHint="@color/setting_edittext_hint_color"
+        android:focusable="true"
+        android:capitalize="sentences" 
+        android:autoText="true" 
+        android:bufferType="spannable"
+        android:singleLine="true" 
+        />
+
+</org.javenstudio.android.setting.SettingListItem>

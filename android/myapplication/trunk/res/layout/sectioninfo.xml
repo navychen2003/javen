@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <org.javenstudio.cocoka.app.RefreshListView 
+        android:id="@+id/sectioninfo_listview" 
+    	android:layout_width="match_parent" 
+    	android:layout_height="match_parent" 
+    	android:layout_marginLeft="@dimen/sectioninfo_list_margin"
+    	android:layout_marginRight="@dimen/sectioninfo_list_margin"
+    	android:layout_marginBottom="@dimen/sectioninfo_list_margin"
+    	android:dividerHeight="@dimen/sectioninfo_listrow_space"
+    	android:cacheColorHint="#00000000" 
+    	android:listSelector="#00000000" 
+    	android:divider="#00000000"
+    	android:overScrollMode="always"
+    	android:fadingEdge="none"
+    	android:scrollbars="none"
+    	/>
+
+</FrameLayout>

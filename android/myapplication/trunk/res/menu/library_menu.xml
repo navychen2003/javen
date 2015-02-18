@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/library_action_search"
+        android:title="@string/label_action_search" 
+        android:icon="@drawable/ic_menu_search_holo_light"
+        android:actionViewClass="org.javenstudio.cocoka.app.SearchView"
+        android:showAsAction="always"
+        android:orderInCategory="200"
+        />
+    
+    <item
+        android:id="@+id/library_action_grid"
+        android:title="@string/label_action_view_grid" 
+        android:icon="@drawable/ic_menu_grid_holo_light"
+        android:showAsAction="always"
+        android:orderInCategory="300"
+        />
+    
+    <item
+        android:id="@+id/library_action_filterby"
+        android:title="@string/label_action_filterby" 
+        android:showAsAction="never"
+        android:orderInCategory="400"
+        />
+    
+    <item
+        android:id="@+id/library_action_sortby"
+        android:title="@string/label_action_sortby" 
+        android:showAsAction="never"
+        android:orderInCategory="500"
+        />
+    
+</menu>

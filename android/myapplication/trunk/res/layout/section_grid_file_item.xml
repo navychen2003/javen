@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:background="@color/section_grid_item_background"
+    android:orientation="vertical"
+    >
+    
+	<FrameLayout android:id="@+id/section_grid_item_poster" 
+		android:layout_width="match_parent" 
+		android:layout_height="@dimen/section_grid_item_poster_height"
+		android:layout_marginTop="@dimen/section_grid_item_poster_margin" 
+		android:layout_marginLeft="@dimen/section_grid_item_poster_margin" 
+		android:layout_marginRight="@dimen/section_grid_item_poster_margin" 
+		android:background="@drawable/section_poster_background"
+	  	>
+	  	
+		<ImageView android:id="@+id/section_list_item_poster_image" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:scaleType="centerCrop"
+			android:visibility="gone"
+	     	/>
+		
+	</FrameLayout>
+    
+	<LinearLayout android:id="@+id/section_grid_item_body" 
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	    
+		<FrameLayout android:id="@+id/section_grid_item_icon" 
+			android:layout_width="@dimen/section_grid_item_iconlayout_width" 
+			android:layout_height="@dimen/section_grid_item_iconlayout_height"
+			android:layout_margin="@dimen/section_grid_item_icon_margin" 
+			android:background="@color/section_grid_item_icon_background"
+		  	>
+		  	
+			<ImageView android:id="@+id/section_grid_item_file_icon" 
+				android:layout_width="@dimen/section_grid_item_icon_width" 
+				android:layout_height="@dimen/section_grid_item_icon_height"
+				android:layout_gravity="center"
+				android:src="@drawable/ic_type_blank"
+		     	/>
+		    
+		</FrameLayout>
+	    
+		<LinearLayout android:id="@+id/section_grid_item_text" 
+			android:layout_width="0dp" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="left|center_vertical"
+			android:gravity="left|center_vertical"
+			android:orientation="vertical"
+		  	>
+		      
+		    <TextView android:id="@+id/section_grid_item_title" 
+		    	android:layout_width="match_parent" 
+		    	android:layout_height="wrap_content" 
+		    	android:layout_marginTop="@dimen/section_grid_item_title_margintop" 
+		    	android:layout_marginLeft="@dimen/section_grid_item_title_marginleft" 
+		    	android:layout_marginBottom="@dimen/section_grid_item_title_marginbottom" 
+		    	android:layout_marginRight="@dimen/section_grid_item_title_marginright" 
+		    	android:textSize="@dimen/section_grid_item_title_size" 
+		    	android:textStyle="normal" 
+		    	android:textColor="@color/section_grid_item_title_color" 
+		    	android:ellipsize="middle"
+		    	android:singleLine="true" 
+		    	/>
+		    
+		</LinearLayout>
+	
+		<FrameLayout android:id="@+id/section_grid_item_action" 
+			android:layout_width="@dimen/section_grid_item_action_width" 
+			android:layout_height="@dimen/section_grid_item_action_height"
+			android:layout_margin="@dimen/section_grid_item_action_margin" 
+			android:layout_gravity="right|center_vertical"
+			android:orientation="vertical"
+		  	>
+		  	
+			<ImageView android:id="@+id/section_grid_item_action_image" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:src="@drawable/ic_information_small"
+		     	/>
+		    
+		</FrameLayout>
+		
+	</LinearLayout>
+	
+</LinearLayout>
