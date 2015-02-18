@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/servlet-api-3.0.jar" sourcepath="E:/develop/javax.servlet-3.0-sources.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Common"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Hornet"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Falcon"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Raptor"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Tools"/>
+	<classpathentry kind="lib" path="lib/tika-app-1.5.jar" sourcepath="E:/android/Java/tika/src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Mail"/>
+	<classpathentry kind="lib" path="lib/httpclient-4.3.4.jar" sourcepath="E:/develop/source/httpclient"/>
+	<classpathentry kind="lib" path="lib/httpcore-4.3.2.jar" sourcepath="E:/develop/source/httpcore"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
