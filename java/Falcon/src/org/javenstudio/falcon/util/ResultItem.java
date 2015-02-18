@@ -1,0 +1,311 @@
+package org.javenstudio.falcon.util;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
+
+/**
+ * A concrete representation of a document within a index.  Unlike a indexdb
+ * Document, a ResultDocument may have an Object value matching the type defined in
+ * schema.xml
+ * 
+ * For indexing documents, use the InputDocument that contains extra information
+ * for document and field boosting.
+ * 
+ * @since 1.3
+ */
+public class ResultItem implements Iterable<Map.Entry<String, Object>>, 
+		Map<String,Object>, Serializable {
+	private static final long serialVersionUID = 1L;
+	
+	private final Map<String,Object> mFields;
+  
+	public ResultItem() {
+		mFields = new LinkedHashMap<String,Object>();
+	}
+
+	/**
+	 * @return a list of field names defined in this document - 
+	 * this Collection is directly backed by this ResultItem.
+	 * @see #keySet
+	 */
+	public Collection<String> getFieldNames() {
+		return this.keySet();
+	}
+
+	///////////////////////////////////////////////////////////////////
+	// Add / Set / Remove Fields
+	///////////////////////////////////////////////////////////////////
+
+	/**
+	 * Remove all fields from the document
+	 */
+	public void clear() {
+		mFields.clear();
+	}
+  
+	/**
+	 * Remove all fields with the name
+	 */
+	public boolean removeFields(String name) {
+		return this.remove( name ) != null;
+	}
+
+	/**
+	 * Set a field with the given object.  If the object is an Array, it will 
+	 * set multiple fields with the included contents.  This will replace any existing 
+	 * field with the given name
+	 */
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public void setField(String name, Object value) {
+		if (value instanceof Object[]) {
+			value = new ArrayList(Arrays.asList((Object[])value));
+		} else if (value instanceof Collection) {
+			// nothing
+		} else if (value instanceof NamedList) {
+			// nothing
+		} else if (value instanceof Iterable) {
+			ArrayList<Object> lst = new ArrayList<Object>();
+			for (Object o : (Iterable)value) {
+				lst.add(o);
+			}
+			value = lst;
+		}
+		mFields.put(name, value);
+	}
+  
+	/**
+	 * This will add a field to the document.  If fields already exist with this
+	 * name it will append value to the collection. If the value is Collection,
+	 * each value will be added independently.
+	 */
+	@SuppressWarnings("unchecked")
+	public void addField(String name, Object value) { 
+		Object existing = mFields.get(name);
+		if (existing == null) {
+			if (value instanceof Collection) {
+				Collection<Object> c = new ArrayList<Object>( 3 );
+				for (Object o : (Collection<Object>)value) {
+					c.add(o);
+				}
+				setField(name, c);
+			} else {
+				setField(name, value);
+			}
+			return;
+		}
+    
+		Collection<Object> vals = null;
+		if (existing instanceof Collection) {
+			vals = (Collection<Object>)existing;
+		} else {
+			vals = new ArrayList<Object>(3);
+			vals.add(existing);
+		}
+    
+		// Add the values to the collection
+		if (value instanceof Iterable) {
+			for (Object o : (Iterable<Object>)value) {
+				vals.add(o);
+			}
+		} else if (value instanceof Object[]) {
+			for (Object o : (Object[])value) {
+				vals.add(o);
+			}
+		} else {
+			vals.add(value);
+		}
+		
+		mFields.put(name, vals);
+	}
+
+	///////////////////////////////////////////////////////////////////
+	// Get the field values
+	///////////////////////////////////////////////////////////////////
+
+	/**
+	 * returns the first value for a field
+	 */
+	public Object getFirstValue(String name) {
+		Object v = mFields.get(name);
+		if (v == null || !(v instanceof Collection)) 
+			return v;
+		
+		Collection<?> c = (Collection<?>)v;
+		if (c.size() > 0 ) 
+			return c.iterator().next();
+		
+		return null;
+	}
+  
+	/**
+	 * Get the value or collection of values for a given field.  
+	 */
+	public Object getFieldValue(String name) {
+		return mFields.get(name);
+	}
+
+	/**
+	 * Get a collection of values for a given field name
+	 */
+	@SuppressWarnings("unchecked")
+	public Collection<Object> getFieldValues(String name) {
+		Object v = mFields.get( name );
+		if (v instanceof Collection) 
+			return (Collection<Object>)v;
+		
+		if (v != null) {
+			ArrayList<Object> arr = new ArrayList<Object>(1);
+			arr.add(v);
+			return arr;
+		}
+		
+		return null;
+	}
+    
+	@Override
+	public String toString() {
+		return "ResultDocument{" + mFields + "}";
+	}
+
+	/**
+	 * Iterate of String->Object keys
+	 */
+	@Override
+	public Iterator<Entry<String, Object>> iterator() {
+		return mFields.entrySet().iterator();
+	}
+  
+	//-----------------------------------------------------------------------------------------
+	// JSTL Helpers
+	//-----------------------------------------------------------------------------------------
+  
+	/**
+	 * Expose a Map interface to the field value collection.
+	 */
+	public Map<String,Collection<Object>> getFieldValuesMap() {
+		return new Map<String,Collection<Object>>() {
+			/** Get the field Value */
+			@Override
+			public Collection<Object> get(Object key) { 
+				return getFieldValues( (String)key ); 
+			}
+      
+			// Easily Supported methods
+			public boolean containsKey(Object key) { return mFields.containsKey(key); }
+			public Set<String>  keySet()           { return mFields.keySet();  }
+			public int          size()             { return mFields.size();    }
+			public boolean      isEmpty()          { return mFields.isEmpty(); }
+
+			// Unsupported operations.  These are not necessary for JSTL
+			public void clear() { throw new UnsupportedOperationException(); }
+			public boolean containsValue(Object value) { throw new UnsupportedOperationException(); }
+			public Set<java.util.Map.Entry<String, Collection<Object>>> entrySet() { throw new UnsupportedOperationException(); }
+			public void putAll(Map<? extends String, ? extends Collection<Object>> t) { throw new UnsupportedOperationException(); }
+			public Collection<Collection<Object>> values() { throw new UnsupportedOperationException(); }
+			public Collection<Object> put(String key, Collection<Object> value) { throw new UnsupportedOperationException(); }
+			public Collection<Object> remove(Object key) { throw new UnsupportedOperationException(); }
+			
+			@Override
+			public String toString() {return mFields.toString();}
+		};
+	}
+
+	/**
+	 * Expose a Map interface to the fields.  This function is useful for JSTL
+	 */
+	public Map<String,Object> getFieldValueMap() {
+		return new Map<String,Object>() {
+			/** Get the field Value */
+			@Override
+			public Object get(Object key) { 
+				return getFirstValue( (String)key ); 
+			}
+      
+			// Easily Supported methods
+			public boolean containsKey(Object key) { return mFields.containsKey(key); }
+			public Set<String>  keySet()           { return mFields.keySet();  }
+			public int          size()             { return mFields.size();    }
+			public boolean      isEmpty()          { return mFields.isEmpty(); }
+
+			// Unsupported operations.  These are not necessary for JSTL
+			public void clear() { throw new UnsupportedOperationException(); }
+			public boolean containsValue(Object value) { throw new UnsupportedOperationException(); }
+			public Set<java.util.Map.Entry<String, Object>> entrySet() { throw new UnsupportedOperationException(); }
+			public void putAll(Map<? extends String, ? extends Object> t) { throw new UnsupportedOperationException(); }
+			public Collection<Object> values() { throw new UnsupportedOperationException(); }
+			public Collection<Object> put(String key, Object value) { throw new UnsupportedOperationException(); }
+			public Collection<Object> remove(Object key) { throw new UnsupportedOperationException(); }
+			
+			@Override
+			public String toString() {return mFields.toString();}
+		};
+	}
+
+	//---------------------------------------------------
+	// MAP interface
+	//---------------------------------------------------
+
+	@Override
+	public boolean containsKey(Object key) {
+		return mFields.containsKey(key);
+	}
+
+	@Override
+	public boolean containsValue(Object value) {
+		return mFields.containsValue(value);
+	}
+
+	@Override
+	public Set<Entry<String, Object>> entrySet() {
+		return mFields.entrySet();
+	}
+	
+	//TODO: Shouldn't the input parameter here be a String?  
+	// The mFields map requires a String.
+	@Override
+	public Object get(Object key) {
+		return mFields.get(key);
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return mFields.isEmpty();
+	}
+
+	@Override
+	public Set<String> keySet() {
+		return mFields.keySet();
+	}
+
+	@Override
+	public Object put(String key, Object value) {
+		return mFields.put(key, value);
+	}
+
+	@Override
+	public void putAll(Map<? extends String, ? extends Object> t) {
+		mFields.putAll(t);
+	}
+
+	@Override
+	public Object remove(Object key) {
+		return mFields.remove(key);
+	}
+
+	@Override
+	public int size() {
+		return mFields.size();
+	}
+
+	@Override
+	public Collection<Object> values() {
+		return mFields.values();
+	}
+	
+}
