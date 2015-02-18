@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_versionname">1.0.0</string>
+    <string name="app_name">Anybox</string>
+    <string name="setting_name">Settings</string>
+    <string name="tasks_name">Tasks</string>
+    <string name="plugin_anybox_name">Anybox</string>
+    <string name="setting_about_version">About Anybox</string>
+    <string name="setting_about_agreement">Service Agreement</string>
+    <string name="setting_about_privacy">Privacy Policy</string>
+    <string name="setting_about_terms">Terms of Use</string>
+    <string name="setting_about_law">Law Enforcement</string>
+    
+    <string name="home_title">Home</string>
+    <string name="register_title">Register</string>
+    <string name="upload_tasks_title">Upload</string>
+    <string name="download_tasks_title">Download</string>
+    <string name="storagespace_title">Storage Space</string>
+    <string name="overviewspace_title">Overview</string>
+    <string name="usedspace_title">Used</string>
+    <string name="notification_title">Notification</string>
+    <string name="select_host_title">Anybox Host</string>
+    <string name="select_host_searching_title">Searching Host ...</string>
+    
+    <string name="dashboard_title">Anybox</string>
+    <string name="dashboard_navigation_title">Home</string>
+    <string name="dashboard_empty_next_label">Next Tips</string>
+    <string name="dashboard_empty_upload_label">Upload</string>
+    <string name="dashboard_empty_title0">Welcome!</string>
+    <string name="dashboard_empty_subtitle0">You have about %1$s free space to store your private documents, photos or other files, and you can access them anywhere with smartphone or computer. Have a good day!</string>
+    <string name="dashboard_empty_title1">Share. Privately.</string>
+    <string name="dashboard_empty_subtitle1">Your stuff stored privately, you also can share them to your family or friends through message or share link.</string>
+    
+    <string name="library_title">Anybox</string>
+    <string name="library_navigation_title">Library</string>
+    <string name="library_empty_title">Empty</string>
+    <string name="library_empty_subtitle">No files yet, start adding now.</string>
+    <string name="library_empty_trash_subtitle">No files removed yet.</string>
+    <string name="library_empty_search_subtitle">No files found, try another keywords?</string>
+    
+    <string name="select_empty_title">Empty</string>
+    <string name="upload_empty_title">Empty</string>
+    <string name="upload_empty_subtitle">No files to upload yet.</string>
+    <string name="download_empty_title">Empty</string>
+    <string name="download_empty_subtitle">No files to download yet.</string>
+    
+    <string name="label_ptr_pull">pull to refresh</string>
+    <string name="label_ptr_release">release to refresh</string>
+    <string name="label_ptr_refreshing">loading ...</string>
+    <string name="label_about_version">version %1$s</string>
+    <string name="network_unavailable_message">Network unavailable, please check wireless and mobile.</string>
+    
+    <string name="label_login_google">Add account of Google+</string>
+    <string name="label_login_anybox">Sign Up with Email</string>
+    <string name="label_login_title">Your private cloud, access anywhere.</string>
+    <string name="label_login_hosttitle">www.anybox.org</string>
+    <string name="label_email_hint">Email</string>
+    <string name="label_username_hint">Username</string>
+    <string name="label_password_hint">Password</string>
+    <string name="label_username_or_email_hint">Username or Email</string>
+    <string name="login_explanation_signup">Sign up your account with a email address, we suggest your username is same as your email name.</string>
+    <string name="login_explanation_signin">Sign in to your account with the username or email of the account.</string>
+    <string name="login_explanation_selectaccount">Please select an account to sign in, or click the cross button to remove the account.</string>
+    <string name="login_email_missing_message">Type the email for this account.</string>
+    <string name="login_email_illegal_message">The email address is illegal.</string>
+    <string name="login_username_missing_message">Type the username for this account.</string>
+    <string name="login_username_illegal_message">The username can only contains lowercase letters and numbers.</string>
+    <string name="login_usernameemail_missing_message">Type the username or email for this account.</string>
+    <string name="login_password_missing_message">Type the password for this account.</string>
+    <string name="login_password_illegal_message">The password must be at least 6 characters.</string>
+    <string name="login_signingin_message">Signing in\u2026</string>
+    <string name="login_signingout_message">Signing out\u2026</string>
+    <string name="login_prompt_text">Already have an account?</string>
+    <string name="login_button_text">Log in</string>
+    <string name="login_resetpassword_label">Forgot password?</string>
+    <string name="login_selectaccount_label">Select existed account.</string>
+    <string name="login_selecthost_label">Select host.</string>
+    <string name="login_signin_label">Sign in existed account.</string>
+    <string name="login_signup_label">Sign up new account.</string>
+    
+    <string name="about_title">About</string>
+    <string name="about_message">"&lt;b>Anybox&lt;/b>
+        make it possible to backup locally and access your stuff anywhere.
+        (&lt;a href=http://www.anybox.org>http://www.anybox.org&lt;/a>)"</string>
+	
+    <string name="share_information">"From anybox.org"</string>
+    <string name="url_agreement">http://www.anybox.org/agreement.html</string>
+    <string name="url_privacy">http://www.anybox.org/privacy.html</string>
+    <string name="url_terms">http://www.anybox.org/terms.html</string>
+    <string name="url_law">http://www.anybox.org/law.html</string>
+    
+</resources>

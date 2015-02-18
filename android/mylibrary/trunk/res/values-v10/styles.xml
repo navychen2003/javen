@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="android:Theme" />
+    <style name="AppTheme.Light" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/AppActionBar.Light</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Light</item>
+        <item name="actionDropDownStyle">@style/AppDropDown.Light</item>
+        <item name="android:actionDropDownStyle">@style/AppDropDown.Light</item>
+        <item name="actionBarTabStyle">@style/AppActionTab.Light</item>
+        <item name="android:actionBarTabStyle">@style/AppActionTab.Light</item>
+        <item name="actionBarTabBarStyle">@style/AppActionTabBar.Light</item>
+        <item name="android:actionBarTabBarStyle">@style/AppActionTabBar.Light</item>
+        <item name="actionBarTabTextStyle">@style/AppActionTabText.Light</item>
+        <item name="android:actionBarTabTextStyle">@style/AppActionTabText.Light</item>
+		<item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light</item>
+		<item name="actionButtonStyle">@style/AppActionButton.Light</item>
+		<item name="android:actionButtonStyle">@style/AppActionButton.Light</item>
+        <item name="actionBarItemBackground">@drawable/item_background_holo_light</item>
+        <item name="android:actionBarItemBackground">@drawable/item_background_holo_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Light</item>
+        <item name="android:actionModeStyle">@style/AppActionMode.Light</item>
+        <item name="actionModeCloseButtonStyle">@style/AppActionCloseMode.Light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/AppActionCloseMode.Light</item>
+        <item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+        <item name="searchViewTextField">@drawable/textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/textfield_searchview_right_holo_light</item>
+    </style>
+    <style name="AppTheme.Dark" parent="Theme.Sherlock">
+    	<item name="actionBarStyle">@style/AppActionBar.Dark</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Dark</item>
+        <item name="actionDropDownStyle">@style/AppDropDown.Dark</item>
+        <item name="android:actionDropDownStyle">@style/AppDropDown.Dark</item>
+        <item name="actionBarTabStyle">@style/AppActionTab.Dark</item>
+        <item name="android:actionBarTabStyle">@style/AppActionTab.Dark</item>
+        <item name="actionBarTabBarStyle">@style/AppActionTabBar.Dark</item>
+        <item name="android:actionBarTabBarStyle">@style/AppActionTabBar.Dark</item>
+        <item name="actionBarTabTextStyle">@style/AppActionTabText.Dark</item>
+        <item name="android:actionBarTabTextStyle">@style/AppActionTabText.Dark</item>
+		<item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Dark</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Dark</item>
+		<item name="actionButtonStyle">@style/AppActionButton.Dark</item>
+		<item name="android:actionButtonStyle">@style/AppActionButton.Dark</item>
+        <item name="actionBarItemBackground">@drawable/item_background_holo_dark</item>
+        <item name="android:actionBarItemBackground">@drawable/item_background_holo_dark</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Dark</item>
+        <item name="android:actionModeStyle">@style/AppActionMode.Dark</item>
+        <item name="actionModeCloseButtonStyle">@style/AppActionCloseMode.Dark</item>
+        <item name="android:actionModeCloseButtonStyle">@style/AppActionCloseMode.Dark</item>
+        <item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+        <item name="searchViewTextField">@drawable/textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/textfield_searchview_right_holo_light</item>
+    </style>
+    
+    <style name="AppActionBar" />
+    <style name="AppActionBar.Light" parent="style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="android:background">@color/actionbar_background_light</item>
+        <item name="android:backgroundStacked">@color/actionbar_background_light</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_light</item>
+    </style>
+    <style name="AppActionBar.Dark" parent="style/Widget.Sherlock.ActionBar.Solid">
+        <item name="android:background">@color/actionbar_background_dark</item>
+        <item name="android:backgroundStacked">@color/actionbar_background_dark</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_dark</item>
+    </style>
+    
+    <style name="AppActionMode" />
+    <style name="AppActionMode.Light" parent="style/Widget.Sherlock.Light.ActionMode">
+        <item name="android:background">@color/actionbar_background_light</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_light</item>
+    </style>
+    <style name="AppActionMode.Dark" parent="style/Widget.Sherlock.ActionMode">
+        <item name="android:background">@color/actionbar_background_dark</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_dark</item>
+    </style>
+    
+    <style name="AppActionCloseMode" />
+    <style name="AppActionCloseMode.Light" parent="android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_holo_light</item>
+    </style>
+    <style name="AppActionCloseMode.Dark" parent="android:style/Widget.Holo.ActionButton.CloseMode">
+    </style>
+    
+    <style name="AppDropDown" />
+    <style name="AppDropDown.Light" parent="style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_ab_holo_light</item>
+    </style>
+    <style name="AppDropDown.Dark" parent="style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_ab_holo_dark</item>
+    </style>
+    
+    <style name="AppActionButton" />
+    <style name="AppActionButton.Light" parent="style/Widget.Sherlock.Light.ActionButton">
+        <item name="android:background">@drawable/item_background_holo_light</item>
+    </style>
+    <style name="AppActionButton.Dark" parent="style/Widget.Sherlock.ActionButton">
+        <item name="android:background">@drawable/item_background_holo_dark</item>
+    </style>
+    
+    <style name="AppOverflowButtonStyle" />
+	<style name="AppOverflowButtonStyle.Light" parent="style/Widget.Sherlock.Light.ActionButton.Overflow">
+		<item name="android:background">@drawable/item_background_holo_light</item>
+	</style>
+	<style name="AppOverflowButtonStyle.Dark" parent="style/Widget.Sherlock.ActionButton.Overflow">
+		<item name="android:background">@drawable/item_background_holo_dark</item>
+	</style>
+    
+    <style name="AppActionTab" />
+    <style name="AppActionTab.Light" parent="style/Widget.Sherlock.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_holo</item>
+    </style>
+    <style name="AppActionTab.Dark" parent="style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_holo</item>
+    </style>
+    
+    <style name="AppActionTabBar" />
+    <style name="AppActionTabBar.Light" parent="style/Widget.Sherlock.Light.ActionBar.TabBar">
+    </style>
+    <style name="AppActionTabBar.Dark" parent="style/Widget.Sherlock.ActionBar.TabBar">
+    </style>
+    
+    <style name="AppActionTabText" />
+    <style name="AppActionTabText.Light" parent="style/Widget.Sherlock.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tabtitle_light</item>
+        <item name="android:textSize">@dimen/actionbar_tabtitle_size</item>
+    </style>
+    <style name="AppActionTabText.Dark" parent="style/Widget.Sherlock.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tabtitle_light</item>
+        <item name="android:textSize">@dimen/actionbar_tabtitle_size</item>
+    </style>
+    
+</resources>

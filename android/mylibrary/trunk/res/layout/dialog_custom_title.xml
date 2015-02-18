@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="match_parent" 
+	android:layout_height="wrap_content"
+	android:background="@color/actionbar_background_light"
+	android:orientation="horizontal"
+	android:id="@+id/dialog_title_layout" 
+  	>
+  	
+	<LinearLayout android:id="@+id/dialog_icon_container" 
+		android:layout_width="wrap_content" 
+		android:layout_height="@dimen/dialog_title_height"
+		android:paddingLeft="@dimen/dialog_icon_paddingleft"
+		android:paddingRight="@dimen/dialog_icon_paddingright"
+		android:minWidth="@dimen/dialog_icon_minwidth"
+		android:background="@drawable/list_selector_holo_light"
+		android:orientation="horizontal"
+	  	>
+	    
+	    <ImageView android:id="@+id/dialog_indicator" 
+	        android:layout_width="@dimen/dialog_indicator_width"
+	        android:layout_height="@dimen/dialog_indicator_height"
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_marginLeft="@dimen/dialog_indicator_marginleft"
+	        android:src="@drawable/ic_ab_back_holo_dark"
+	        android:visibility="gone"
+	        />
+	    
+	    <ImageView android:id="@+id/dialog_icon" 
+	        android:layout_width="@dimen/dialog_icon_width"
+	        android:layout_height="@dimen/dialog_icon_height"
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_marginLeft="@dimen/dialog_icon_marginleft"
+	        android:src="@drawable/ic_error_white"
+	        android:visibility="gone"
+	        />
+	    
+	</LinearLayout>
+
+	<LinearLayout android:id="@+id/dialog_title_container" 
+		android:layout_width="0dp" 
+		android:layout_weight="1"
+		android:layout_height="@dimen/dialog_title_height"
+		android:paddingLeft="@dimen/dialog_title_paddingleft"
+		android:paddingRight="@dimen/dialog_title_paddingright"
+		android:background="@drawable/list_selector_holo_light"
+		android:orientation="horizontal"
+	  	>
+	    
+	    <TextView android:id="@+id/dialog_title" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="wrap_content" 
+	    	android:layout_gravity="left|center_vertical"
+	    	android:layout_marginLeft="@dimen/dialog_title_marginleft"
+	    	android:textSize="@dimen/dialog_title_size" 
+	    	android:textStyle="normal" 
+	    	android:textColor="@color/dialog_title_color" 
+	    	android:singleLine="true" 
+	    	/>
+		    
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/dialog_action_container" 
+		android:layout_width="wrap_content" 
+		android:layout_height="@dimen/dialog_title_height"
+		android:paddingLeft="@dimen/dialog_action_paddingleft"
+		android:paddingRight="@dimen/dialog_action_paddingright"
+		android:background="@drawable/list_selector_holo_light"
+		android:orientation="horizontal"
+	  	>
+	    
+	    <ImageView android:id="@+id/dialog_refresh" 
+	        android:layout_width="@dimen/dialog_actionicon_width"
+	        android:layout_height="@dimen/dialog_actionicon_height"
+	        android:layout_gravity="left|center_vertical"
+	        android:layout_marginLeft="@dimen/dialog_action_marginleft"
+	        android:src="@drawable/ic_menu_refresh_holo_dark"
+	        android:visibility="gone"
+	        />
+	    
+		<ProgressBar android:id="@+id/dialog_progressbar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="@dimen/dialog_action_marginleft"
+		    android:layout_gravity="left|center_vertical"
+	        android:visibility="gone"
+		    style="@style/ProgressBar.Small"
+		    />
+	    
+	</LinearLayout>
+	
+</LinearLayout>

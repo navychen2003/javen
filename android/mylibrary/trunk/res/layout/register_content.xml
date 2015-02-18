@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    >
+	    
+		<org.javenstudio.cocoka.widget.SimpleLinearLayout
+		    android:id="@+id/login_logo" 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal|top"
+		    android:orientation="vertical"
+		    >
+		    
+		    <View 
+			    android:layout_width="wrap_content"
+			    android:layout_height="@dimen/login_logo_top_height"
+		        />
+		    
+	        <ImageView android:id="@+id/login_image_logo" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal|top"
+				android:src="@drawable/anybox_logo"
+	            />
+		    
+	        <TextView android:id="@+id/login_text_hosttitle" 
+	            android:layout_gravity="center_horizontal|top"
+	            android:layout_marginTop="@dimen/login_host_margintop"
+	            android:text="@string/label_login_hosttitle" 
+	            style="@style/LoginHostTitle" 
+	            />
+	        
+	        <TextView android:id="@+id/login_text_title" 
+	            android:layout_gravity="center_horizontal|top"
+	            android:layout_marginTop="@dimen/login_title_margintop"
+	            android:text="@string/label_login_title" 
+	            style="@style/LoginTitle" 
+	            />
+	        
+	    </org.javenstudio.cocoka.widget.SimpleLinearLayout>
+		
+		<org.javenstudio.cocoka.widget.SimpleLinearLayout 
+		    android:id="@+id/login_button" 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:layout_gravity="center_horizontal|top"
+		    android:orientation="vertical"
+		    >
+		    
+		    <View 
+			    android:layout_width="wrap_content"
+			    android:layout_height="@dimen/login_button_top_height"
+		        />
+		    
+		    <Button android:id="@+id/login_button_google" 
+		        android:background="@drawable/login_button_red" 
+		        android:text="@string/label_login_google" 
+		        android:drawableLeft="@drawable/button_login_google" 
+		        android:drawablePadding="@dimen/login_button_drawable_padding"
+		        android:visibility="gone"
+		        style="@style/LoginButton" 
+		        />
+		    
+		    <Button android:id="@+id/login_button_anybox" 
+		        android:background="@drawable/login_button_purple" 
+		        android:text="@string/label_login_anybox" 
+		        android:drawableLeft="@drawable/button_login_anybox" 
+		        android:drawablePadding="@dimen/login_button_drawable_padding"
+		        android:visibility="invisible"
+		        style="@style/LoginButton" 
+		        />
+		    
+			<LinearLayout android:id="@+id/login_prompt" 
+			    android:layout_width="wrap_content" 
+			    android:layout_height="wrap_content" 
+			    android:layout_marginRight="@dimen/login_propmt_right_margin" 
+			    android:layout_marginTop="@dimen/login_button_vertical_margin"
+			    android:layout_gravity="right" 
+			    android:orientation="horizontal" 
+			    android:visibility="invisible"
+			    >
+		        
+		   		<TextView android:id="@+id/login_prompt_message" 
+		   		    android:layout_width="wrap_content" 
+		   		    android:layout_height="wrap_content" 
+		   		    android:layout_marginRight="@dimen/login_button_horizontal_margin" 
+		   		    android:textColor="@color/white50" 
+		   		    android:text="@string/login_prompt_text" 
+		   		    />
+		   		
+		     	<Button android:id="@+id/login_prompt_button" 
+		     	    android:background="@drawable/login_button" 
+		     	    android:text="@string/login_button_text" 
+		     	    style="@style/LoginPromptButton" 
+		     	    />
+		     	
+			</LinearLayout>
+		    
+	    </org.javenstudio.cocoka.widget.SimpleLinearLayout>
+		
+	</LinearLayout>
+	
+	<org.javenstudio.cocoka.widget.SimpleLinearLayout 
+	    android:id="@+id/login_input" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center_horizontal|top"
+	    android:background="@drawable/bg_register_background"
+	    android:orientation="vertical"
+	    android:visibility="invisible"
+	    >
+	    
+	    <View 
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/login_input_top_height"
+	        />
+	    
+        <TextView android:id="@+id/login_explanation" 
+            android:layout_gravity="center_horizontal" 
+            android:layout_marginTop="@dimen/login_field_padding" 
+            style="@style/LoginExplanation" 
+            />
+        
+        <EditText android:id="@+id/login_email_field" 
+            android:layout_width="@dimen/login_email_width" 
+            android:layout_gravity="center_horizontal" 
+            android:hint="@string/label_email_hint" 
+            android:inputType="textEmailAddress" 
+            android:imeOptions="actionNext" 
+            style="@style/LoginInput" 
+            />
+        
+        <EditText android:id="@+id/login_username_field" 
+            android:layout_width="@dimen/login_email_width" 
+            android:layout_gravity="center_horizontal" 
+            android:hint="@string/label_username_hint" 
+            android:inputType="textEmailAddress" 
+            android:imeOptions="actionNext" 
+            style="@style/LoginInput" 
+            />
+        
+        <RelativeLayout 
+            android:layout_width="@dimen/login_email_width" 
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" 
+            >
+            
+            <EditText android:id="@+id/login_password_field" 
+                android:layout_width="@dimen/login_pass_width" 
+                android:hint="@string/label_password_hint" 
+                android:inputType="textPassword" 
+                android:imeOptions="actionGo" 
+                style="@style/LoginInput" 
+                />
+            
+            <ImageButton android:id="@+id/login_submit_button" 
+                android:layout_toRightOf="@id/login_password_field" 
+                android:background="@drawable/submit_button_selector" 
+                style="@style/LoginSubmitButton" 
+                />
+            
+        </RelativeLayout>
+	    
+        <View 
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        
+        <View 
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_action_margintop"
+            />
+        
+        <LinearLayout android:id="@+id/login_resetpassword" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="left|top"
+		    android:layout_marginTop="@dimen/login_resetpassword_margintop" 
+	    	android:layout_marginLeft="@dimen/login_action_marginleft"
+		    android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+		    	android:layout_marginTop="@dimen/login_action_icon_margintop"
+		    	android:layout_marginRight="@dimen/login_action_icon_marginright"
+		    	android:layout_marginBottom="@dimen/login_action_icon_marginbottom"
+                android:src="@drawable/ic_help_lightgrey_12"
+                />
+            
+	        <TextView android:id="@+id/login_resetpassword_text" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+	            android:textColor="@color/login_action_text_color"
+	            android:text="@string/login_resetpassword_label"
+	            style="@style/LoginAction" 
+	            />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/login_selectaccount" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="left|top"
+		    android:layout_marginTop="@dimen/login_selectaccount_margintop" 
+	    	android:layout_marginLeft="@dimen/login_action_marginleft"
+		    android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+		    	android:layout_marginTop="@dimen/login_action_icon_margintop"
+		    	android:layout_marginRight="@dimen/login_action_icon_marginright"
+		    	android:layout_marginBottom="@dimen/login_action_icon_marginbottom"
+                android:src="@drawable/ic_help_lightgrey_12"
+                />
+            
+	        <TextView android:id="@+id/login_selectaccount_text" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+	            android:textColor="@color/login_action_text_color"
+	            android:text="@string/login_selectaccount_label"
+	            style="@style/LoginAction" 
+	            />
+        </LinearLayout>
+        
+        <LinearLayout android:id="@+id/login_selecthost" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="left|top"
+		    android:layout_marginTop="@dimen/login_selecthost_margintop" 
+	    	android:layout_marginLeft="@dimen/login_action_marginleft"
+		    android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+		    	android:layout_marginTop="@dimen/login_action_icon_margintop"
+		    	android:layout_marginRight="@dimen/login_action_icon_marginright"
+		    	android:layout_marginBottom="@dimen/login_action_icon_marginbottom"
+                android:src="@drawable/ic_help_lightgrey_12"
+                />
+            
+	        <TextView android:id="@+id/login_selecthost_text" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+	            android:textColor="@color/login_hosttitle_color"
+	            android:text="@string/login_selecthost_label"
+	            style="@style/LoginAction" 
+	            />
+        </LinearLayout>
+        
+	    <View 
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/login_input_bottom_height"
+	        />
+        
+    </org.javenstudio.cocoka.widget.SimpleLinearLayout>
+	
+	<org.javenstudio.cocoka.widget.SimpleLinearLayout 
+	    android:id="@+id/login_account" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center_horizontal|top"
+	    android:background="@drawable/bg_register_background"
+	    android:orientation="vertical"
+	    android:visibility="gone"
+	    >
+	    
+	    <View 
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/login_account_top_height"
+	        />
+	    
+        <TextView android:id="@+id/login_account_title" 
+            android:layout_gravity="center_horizontal" 
+            style="@style/LoginExplanation" 
+            />
+	    
+	    <ListView android:id="@+id/login_account_list" 
+	    	android:layout_width="match_parent" 
+	    	android:layout_height="0dp" 
+	    	android:layout_weight="1"
+	    	android:layout_marginLeft="@dimen/login_accountlist_marginleft"
+	    	android:layout_marginRight="@dimen/login_accountlist_marginright"
+	    	android:layout_marginTop="@dimen/login_accountlist_margintop"
+	    	android:layout_marginBottom="@dimen/login_accountlist_marginbottom"
+	    	android:dividerHeight="@dimen/login_accountlist_divider_height"
+	    	android:cacheColorHint="#00000000" 
+	    	android:listSelector="#00000000" 
+	    	android:divider="#00000000"
+	    	android:overScrollMode="always"
+	    	android:fadingEdge="none"
+	    	/>
+	    
+        <View 
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/login_action_margintop"
+            />
+	    
+		<LinearLayout android:id="@+id/login_account_signup" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="left|top"
+		    android:layout_marginTop="@dimen/login_signup_margintop" 
+	    	android:layout_marginLeft="@dimen/login_action_marginleft"
+		    android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+		    	android:layout_marginTop="@dimen/login_action_icon_margintop"
+		    	android:layout_marginRight="@dimen/login_action_icon_marginright"
+		    	android:layout_marginBottom="@dimen/login_action_icon_marginbottom"
+                android:src="@drawable/ic_help_lightgrey_12"
+                />
+            
+	        <TextView android:id="@+id/login_account_signup_text" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+	            android:textColor="@color/login_action_text_color"
+	            android:text="@string/login_signup_label"
+	            style="@style/LoginAction" 
+	            />
+        </LinearLayout>
+        
+		<LinearLayout android:id="@+id/login_account_signin" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="left|top"
+		    android:layout_marginTop="@dimen/login_signin_margintop" 
+	    	android:layout_marginLeft="@dimen/login_action_marginleft"
+		    android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+		    	android:layout_marginTop="@dimen/login_action_icon_margintop"
+		    	android:layout_marginRight="@dimen/login_action_icon_marginright"
+		    	android:layout_marginBottom="@dimen/login_action_icon_marginbottom"
+                android:src="@drawable/ic_help_lightgrey_12"
+                />
+            
+	        <TextView android:id="@+id/login_account_signin_text" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+	            android:textColor="@color/login_action_text_color"
+	            android:text="@string/login_signin_label"
+	            style="@style/LoginAction" 
+	            />
+        </LinearLayout>
+        
+		<LinearLayout android:id="@+id/login_account_selecthost" 
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="left|top"
+		    android:layout_marginTop="@dimen/login_selecthost_margintop" 
+	    	android:layout_marginLeft="@dimen/login_action_marginleft"
+		    android:orientation="horizontal"
+            >
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+		    	android:layout_marginTop="@dimen/login_action_icon_margintop"
+		    	android:layout_marginRight="@dimen/login_action_icon_marginright"
+		    	android:layout_marginBottom="@dimen/login_action_icon_marginbottom"
+                android:src="@drawable/ic_help_lightgrey_12"
+                />
+            
+	        <TextView android:id="@+id/login_account_selecthost_text" 
+	            android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_gravity="left|center_vertical"
+		    	android:gravity="left|center_vertical"
+	            android:textColor="@color/login_hosttitle_color"
+	            android:text="@string/login_selecthost_label"
+	            style="@style/LoginAction" 
+	            />
+        </LinearLayout>
+	    
+	    <View 
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/login_account_bottom_height"
+	        />
+	    
+	</org.javenstudio.cocoka.widget.SimpleLinearLayout>
+	
+</FrameLayout>

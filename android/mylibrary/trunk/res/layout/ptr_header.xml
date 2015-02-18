@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <FrameLayout android:id="@+id/ptr_header_inner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/ptr_paddingbottom"
+        android:paddingLeft="@dimen/ptr_paddingleft"
+        android:paddingRight="@dimen/ptr_paddingright"
+        android:paddingTop="@dimen/ptr_paddingtop" 
+        >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical" 
+            >
+
+            <org.anybox.android.library.PtrImageView 
+                android:id="@+id/ptr_header_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" 
+                />
+
+            <ProgressBar android:id="@+id/ptr_header_progress"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" 
+                />
+            
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            >
+
+            <TextView android:id="@+id/ptr_header_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ptr_title_size"
+                android:textStyle="normal" 
+                android:textColor="@color/ptr_title_color"
+                android:singleLine="true"
+                android:shadowColor="#ffffffff"
+		    	android:shadowRadius="1"
+		    	android:shadowDx="1"
+		    	android:shadowDy="1"
+                />
+
+            <TextView android:id="@+id/ptr_header_sub_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/ptr_subtitle_size"
+                android:textStyle="normal" 
+                android:textColor="@color/ptr_subtitle_color"
+                android:singleLine="true"
+                android:visibility="gone" 
+                />
+            
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</merge>

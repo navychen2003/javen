@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme" />
+    <style name="AppTheme.Light" parent="android:Theme.Holo.Light">
+        <item name="actionBarStyle">@style/AppActionBar.Light</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Light</item>
+        <item name="actionDropDownStyle">@style/AppDropDown.Light</item>
+        <item name="android:actionDropDownStyle">@style/AppDropDown.Light</item>
+        <item name="actionBarTabStyle">@style/AppActionTab.Light</item>
+        <item name="android:actionBarTabStyle">@style/AppActionTab.Light</item>
+        <item name="actionBarTabBarStyle">@style/AppActionTabBar.Light</item>
+        <item name="android:actionBarTabBarStyle">@style/AppActionTabBar.Light</item>
+        <item name="actionBarTabTextStyle">@style/AppActionTabText.Light</item>
+        <item name="android:actionBarTabTextStyle">@style/AppActionTabText.Light</item>
+		<item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light</item>
+		<item name="actionButtonStyle">@style/AppActionButton.Light</item>
+		<item name="android:actionButtonStyle">@style/AppActionButton.Light</item>
+        <item name="actionBarItemBackground">@drawable/item_background_holo_light</item>
+        <item name="android:actionBarItemBackground">@drawable/item_background_holo_light</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Light</item>
+        <item name="android:actionModeStyle">@style/AppActionMode.Light</item>
+        <item name="actionModeCloseButtonStyle">@style/AppActionCloseMode.Light</item>
+        <item name="android:actionModeCloseButtonStyle">@style/AppActionCloseMode.Light</item>
+        <item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+        <item name="searchViewTextField">@drawable/textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/textfield_searchview_right_holo_light</item>
+    </style>
+    <style name="AppTheme.Dark" parent="android:Theme.Holo">
+    	<item name="actionBarStyle">@style/AppActionBar.Dark</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Dark</item>
+        <item name="actionDropDownStyle">@style/AppDropDown.Dark</item>
+        <item name="android:actionDropDownStyle">@style/AppDropDown.Dark</item>
+        <item name="actionBarTabStyle">@style/AppActionTab.Dark</item>
+        <item name="android:actionBarTabStyle">@style/AppActionTab.Dark</item>
+        <item name="actionBarTabBarStyle">@style/AppActionTabBar.Dark</item>
+        <item name="android:actionBarTabBarStyle">@style/AppActionTabBar.Dark</item>
+        <item name="actionBarTabTextStyle">@style/AppActionTabText.Dark</item>
+        <item name="android:actionBarTabTextStyle">@style/AppActionTabText.Dark</item>
+		<item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Dark</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Dark</item>
+		<item name="actionButtonStyle">@style/AppActionButton.Dark</item>
+		<item name="android:actionButtonStyle">@style/AppActionButton.Dark</item>
+        <item name="actionBarItemBackground">@drawable/item_background_holo_dark</item>
+        <item name="android:actionBarItemBackground">@drawable/item_background_holo_dark</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Dark</item>
+        <item name="android:actionModeStyle">@style/AppActionMode.Dark</item>
+        <item name="actionModeCloseButtonStyle">@style/AppActionCloseMode.Dark</item>
+        <item name="android:actionModeCloseButtonStyle">@style/AppActionCloseMode.Dark</item>
+        <item name="android:editTextBackground">@drawable/edit_text_holo_light</item>
+        <item name="searchViewTextField">@drawable/textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/textfield_searchview_right_holo_light</item>
+    </style>
+    
+	<style name="AppTheme.Light.Translucent">
+	    <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+    
+    <style name="AppTheme.Light.Main">
+    	<item name="actionBarStyle">@style/AppActionBar.Light.Main</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Light.Main</item>
+        <item name="actionBarTabStyle">@style/AppActionTab.Light.Main</item>
+        <item name="android:actionBarTabStyle">@style/AppActionTab.Light.Main</item>
+        <item name="actionBarTabTextStyle">@style/AppActionTabText.Light.Main</item>
+        <item name="android:actionBarTabTextStyle">@style/AppActionTabText.Light.Main</item>
+        <item name="actionModeCloseDrawable">@drawable/ic_cab_done_holo_dark</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_cab_done_holo_dark</item>
+      	<item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light.Main</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light.Main</item>
+        <item name="android:windowBackground">@color/main_background_light</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowShowWallpaper">true</item>
+    </style>
+	
+    <style name="AppTheme.Light.App">
+        <item name="actionBarTabStyle">@style/AppActionTab.Light.App</item>
+        <item name="android:actionBarTabStyle">@style/AppActionTab.Light.App</item>
+        <item name="actionBarTabTextStyle">@style/AppActionTabText.Light.App</item>
+        <item name="android:actionBarTabTextStyle">@style/AppActionTabText.Light.App</item>
+      	<item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light.App</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light.App</item>
+    </style>
+    
+    <style name="AppTheme.Light.Register">
+        <item name="android:actionBarStyle">@style/AppActionBar.Light.Register</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    
+    <style name="AppTheme.Light.Photo">
+        <item name="textAppearanceLargePopupMenu">@style/AppTextAppearancePopupMenuLarge.Photo</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/AppTextAppearancePopupMenuLarge.Photo</item>
+        <item name="textAppearanceSmallPopupMenu">@style/AppTextAppearancePopupMenuSmall.Photo</item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/AppTextAppearancePopupMenuSmall.Photo</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_dark</item>
+        <item name="android:dividerVertical">@drawable/abs__list_divider_holo_dark</item>
+        <item name="android:dividerHorizontal">@drawable/abs__list_divider_holo_dark</item>
+        <item name="android:listDivider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="listPopupWindowStyle">@android:style/Widget.Holo.ListPopupWindow</item>
+        <item name="android:listPopupWindowStyle">@android:style/Widget.Holo.ListPopupWindow</item>
+        <item name="popupMenuStyle">@android:style/Widget.Holo.PopupMenu</item>
+        <item name="android:popupMenuStyle">@android:style/Widget.Holo.PopupMenu</item>
+        <item name="actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light.Photo</item>
+		<item name="android:actionOverflowButtonStyle">@style/AppOverflowButtonStyle.Light.Photo</item>
+        <item name="android:actionBarStyle">@style/AppActionBar.Light.Photo</item>
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+    
+    <style name="AppActionBar" />
+    <style name="AppActionBar.Light" parent="android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@color/actionbar_background_light</item>
+        <item name="android:backgroundStacked">@color/actionbar_background_light</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_light</item>
+    </style>
+    <style name="AppActionBar.Dark" parent="android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@color/actionbar_background_dark</item>
+        <item name="android:backgroundStacked">@color/actionbar_background_dark</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_dark</item>
+    </style>
+    
+    <style name="AppActionBar.Light.Main">
+        <item name="homeAsUpIndicator">@drawable/ic_ab_menu_holo_light</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_ab_menu_holo_light</item>
+    </style>
+    
+    <style name="AppActionBar.Light.Register">
+        <item name="android:background">@color/register_actionbar_background</item>
+        <item name="android:backgroundStacked">@color/register_actionbar_background</item>
+        <item name="android:backgroundSplit">@color/register_actionbar_background</item>
+    </style>
+    
+    <style name="AppActionBar.Light.Photo">
+        <item name="android:background">@color/actionbar_background_dark</item>
+    </style>
+    
+    <style name="AppActionMode" />
+    <style name="AppActionMode.Light" parent="android:style/Widget.Holo.Light.ActionMode">
+        <item name="android:background">@color/actionbar_background_light</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_light</item>
+    </style>
+    <style name="AppActionMode.Dark" parent="android:style/Widget.Holo.ActionMode">
+        <item name="android:background">@color/actionbar_background_dark</item>
+        <item name="android:backgroundSplit">@color/actionbar_background_dark</item>
+    </style>
+    
+    <style name="AppActionCloseMode" />
+    <style name="AppActionCloseMode.Light" parent="android:style/Widget.Holo.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_holo_light</item>
+    </style>
+    <style name="AppActionCloseMode.Dark" parent="android:style/Widget.Holo.ActionButton.CloseMode">
+    </style>
+    
+    <style name="AppDropDown" />
+    <style name="AppDropDown.Light" parent="android:style/Widget.Holo.Light.Spinner">
+        <item name="android:background">@drawable/spinner_ab_holo_light</item>
+    </style>
+    <style name="AppDropDown.Dark" parent="android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_ab_holo_dark</item>
+    </style>
+    
+    <style name="AppActionButton" />
+    <style name="AppActionButton.Light" parent="android:style/Widget.Holo.Light.ActionButton">
+        <item name="android:background">@drawable/item_background_holo_light</item>
+    </style>
+    <style name="AppActionButton.Dark" parent="android:style/Widget.Holo.ActionButton">
+        <item name="android:background">@drawable/item_background_holo_dark</item>
+    </style>
+    
+    <style name="AppOverflowButtonStyle" />
+	<style name="AppOverflowButtonStyle.Light" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+		<item name="android:background">@drawable/item_background_holo_light</item>
+	</style>
+	<style name="AppOverflowButtonStyle.Dark" parent="android:style/Widget.Holo.ActionButton.Overflow">
+		<item name="android:background">@drawable/item_background_holo_dark</item>
+	</style>
+	
+    <style name="AppOverflowButtonStyle.Light.Main">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_holo_light</item>
+    </style>
+	
+    <style name="AppOverflowButtonStyle.Light.App">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_holo_light</item>
+    </style>
+    
+    <style name="AppOverflowButtonStyle.Light.Photo">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_holo_light</item>
+    </style>
+    
+    <style name="AppActionTab" />
+    <style name="AppActionTab.Light" parent="android:style/Widget.Holo.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_holo</item>
+    </style>
+    <style name="AppActionTab.Dark" parent="android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_holo</item>
+    </style>
+    
+	<style name="AppActionTab.Light.Main">
+        <item name="android:background">@drawable/tab_indicator_holo_solid</item>
+    </style>
+    
+	<style name="AppActionTab.Light.App">
+        <item name="android:background">@drawable/tab_indicator_holo_solid</item>
+    </style>
+	
+    <style name="AppActionTabBar" />
+    <style name="AppActionTabBar.Light" parent="android:style/Widget.Holo.Light.ActionBar.TabBar">
+    </style>
+    <style name="AppActionTabBar.Dark" parent="android:style/Widget.Holo.ActionBar.TabBar">
+    </style>
+    
+    <style name="AppActionTabText" />
+    <style name="AppActionTabText.Light" parent="android:style/Widget.Holo.Light.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tabtitle_light</item>
+        <item name="android:textSize">@dimen/actionbar_tabtitle_size</item>
+    </style>
+    <style name="AppActionTabText.Dark" parent="android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/actionbar_tabtitle_dark</item>
+        <item name="android:textSize">@dimen/actionbar_tabtitle_size</item>
+    </style>
+    
+    <style name="AppActionTabText.Light.Main">
+        <item name="android:textColor">@color/actionbar_tabtitle_light</item>
+    </style>
+    
+    <style name="AppActionTabText.Light.App">
+        <item name="android:textColor">@color/actionbar_tabtitle_light</item>
+    </style>
+    
+    <style name="AppTextAppearancePopupMenuLarge" />
+    <style name="AppTextAppearancePopupMenuLarge.Photo" parent="android:style/TextAppearance.Holo.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/abs__primary_text_holo_dark</item>
+    </style>
+    
+    <style name="AppTextAppearancePopupMenuSmall" />
+    <style name="AppTextAppearancePopupMenuSmall.Photo" parent="android:style/TextAppearance.Holo.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/abs__primary_text_holo_dark</item>
+    </style>
+    
+    <style name="AppDialogAlert" />
+    <style name="AppDialogAlert.Light" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+    </style>
+    
+    <style name="AppAnimation" />
+    <style name="AppAnimation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+    
+    <style name="LoginButton">
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:paddingLeft">@dimen/login_button_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/login_button_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/login_button_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/login_button_vertical_padding</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/login_button_height</item>
+        <item name="android:layout_marginLeft">@dimen/login_button_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/login_button_vertical_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_button_horizontal_margin</item>
+    </style>
+    
+    <style name="LoginPromptButton">
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/login_prompt_button_height</item>
+    </style>
+    
+    <style name="LoginSubmitButton">
+        <item name="android:background">@drawable/submit_button_selector</item>
+        <item name="android:layout_width">@dimen/login_submit_buttom_size</item>
+        <item name="android:layout_height">@dimen/login_submit_buttom_size</item>
+        <item name="android:src">@drawable/navigation_accept</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    
+    <style name="LoginInput">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">@dimen/login_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/login_field_left_margin</item>
+        <item name="android:layout_marginTop">@dimen/login_field_padding</item>
+        <item name="android:lines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    
+    <style name="LoginExplanation">
+        <item name="android:textSize">@dimen/login_explanation_size</item>
+        <item name="android:textColor">@color/white75</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">@dimen/login_explanation_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="LoginAction">
+        <item name="android:textSize">@dimen/login_action_size</item>
+        <item name="android:textColor">@color/white75</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">@dimen/login_action_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="LoginTitle">
+        <item name="android:textSize">@dimen/login_title_size</item>
+        <item name="android:textColor">@color/white75</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+    </style>
+    
+    <style name="LoginHostTitle">
+        <item name="android:textSize">@dimen/login_hosttitle_size</item>
+        <item name="android:textColor">@color/login_hosttitle_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/white</item>
+        <item name="android:shadowRadius">0</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+    </style>
+    
+</resources>

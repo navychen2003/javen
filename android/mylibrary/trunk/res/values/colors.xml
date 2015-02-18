@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="actionbar_title_light">#ffffffff</color>
+    <color name="actionbar_title_dark">#ffffffff</color>
+    <color name="actionbar_title_photoshow">#ff9e33e5</color>
+    <color name="actionbar_tabtitle_light">#ff9e33e5</color>
+    <color name="actionbar_tabtitle_dark">#ff9e33e5</color>
+    <color name="actionbar_background_light">#ff9e33e5</color>
+    <color name="actionbar_background_dark">#22888888</color>
+    <color name="actionbar_stackedbackground_dark">#ffffffff</color>
+    
+    <color name="content_background_light">#ffe0e0e0</color>
+    <color name="content_background_dark">#cc000000</color>
+    <color name="main_background_light">#00000000</color>
+    <color name="register_actionbar_background">#ff000000</color>
+    <color name="register_header_background">#22000000</color>
+    <color name="register_content_background">#77000000</color>
+    
+    <color name="accountinfo_header_name_color">#ff9e33e5</color>
+    <color name="accountmenu_title_pressed_color">#ff9e33e5</color>
+    <color name="secondmenu_above_title_color">#ff777777</color>
+    <color name="overviewspace_percent_color">#ff9e33e5</color>
+    <color name="setting_pressed_background">#889e33e5</color>
+    <color name="action_pressed_background">#889e33e5</color>
+    <color name="dashboard_action_background">#eeffffff</color>
+    <color name="dashboard_title_pressed_color">#889e33e5</color>
+    <color name="dashboard_empty_title_color">#ffffffff</color>
+    <color name="dashboard_empty_subtitle_color">#ddffffff</color>
+    <color name="dashboard_empty_next_color">#ddffffff</color>
+    <color name="dashboard_empty_next_color_pressed">#ff0b89de</color>
+    <color name="dashboard_empty_action_color">#ff0b89de</color>
+    <color name="dashboard_empty_action_color_pressed">#ffffffff</color>
+    <color name="section_empty_title_color">#ffffffff</color>
+    <color name="section_empty_subtitle_color">#dddddddd</color>
+    <color name="select_empty_title_color">#dd999999</color>
+    <color name="select_empty_subtitle_color">#ddcccccc</color>
+    <color name="task_empty_title_color">#dd999999</color>
+    <color name="task_empty_subtitle_color">#99999999</color>
+    
+    <color name="item_selected_background_color">#889e33e5</color>
+    <color name="image_background_color">#55ae66cf</color>
+    <color name="setting_action_normal_color">#88ffffff</color>
+    <color name="setting_single_normal_color">#ffffffff</color>
+    
+    <color name="blue_background_color">#ff0b89de</color>
+    <color name="blue_card_background_color">#ddffffff</color>
+    <color name="blue_header_main_background_color">#ddffffff</color>
+    <color name="blue_footer_background_color">#cc0b89de</color>
+    <color name="blue_item_background_color">#ddb5dffb</color>
+    <color name="blue_item_background_selected_color">#889e33e5</color>
+    <color name="blue_actionmode_background_color">#dd0b89de</color>
+    <color name="blue_actionmode_title_color">#ffffffff</color>
+    
+    <color name="yellow_background_color">#fff29b76</color>
+    <color name="yellow_card_background_color">#ddffffff</color>
+    <color name="yellow_header_main_background_color">#ddffffff</color>
+    <color name="yellow_footer_background_color">#ccf29b76</color>
+    <color name="yellow_item_background_color">#ddf9d0bf</color>
+    <color name="yellow_item_background_selected_color">#889e33e5</color>
+    <color name="yellow_actionmode_background_color">#ddf29b76</color>
+    <color name="yellow_actionmode_title_color">#ffffffff</color>
+    <color name="yellow_menu_background_color">#fffeac3c</color>
+    
+    <color name="login_hosttitle_normal_color">#ddfeac3c</color>
+    <color name="login_hosttitle_pressed_color">#889e33e5</color>
+    <color name="login_accountitem_title_color">#ffffffff</color>
+    <color name="login_accountitem_subtitle_color">#88eeeeee</color>
+    <color name="login_action_text_pressed_color">#ff9e33e5</color>
+    <color name="login_action_text_normal_color">#bfffffff</color>
+    <color name="login_action_text_disabled_color">#bfaaaaaa</color>
+    <color name="login_submit_pressed_background">#889e33e5</color>
+    
+    <color name="progress_front">#ff9e33e5</color>
+    <color name="progress_back">#dddddddd</color>
+    <color name="overscroll_filter">#ffae66cf</color>
+    <color name="ptr_title_color">#ff777777</color>
+    <color name="ptr_title_color_white">#ffffffff</color>
+    <color name="ptr_subtitle_color">#ff999999</color>
+    <color name="ptr_subtitle_color_white">#ffeeeeee</color>
+    <color name="dialog_title_color">#ffffffff</color>
+    <color name="dialog_message_link_color">#ff9e33e5</color>
+    
+    <color name="transparent">#00000000</color>
+    <color name="cyan">#ff1aaec8</color>
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="white30">#4cffffff</color>
+    <color name="white40">#66ffffff</color>
+    <color name="white50">#88ffffff</color>
+    <color name="white75">#bfffffff</color>
+    <color name="white80">#cdffffff</color>
+    <color name="white90">#eeffffff</color>
+    
+</resources>

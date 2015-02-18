@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:drawable="@drawable/ani_goat_0" android:duration="100" />
+	<item android:drawable="@drawable/ani_goat_1" android:duration="100" />
+	<item android:drawable="@drawable/ani_goat_2" android:duration="100" />
+	<item android:drawable="@drawable/ani_goat_3" android:duration="100" />
+	<item android:drawable="@drawable/ani_goat_4" android:duration="100" />
+	<item android:drawable="@drawable/ani_goat_5" android:duration="100" />
+</animation-list>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Anybox</string>
+    <string name="setting_name">设置</string>
+    <string name="tasks_name">任务</string>
+    <string name="plugin_anybox_name">Anybox</string>
+    <string name="setting_about_version">关于 Anybox</string>
+    <string name="setting_about_agreement">服务协议</string>
+    <string name="setting_about_privacy">隐私条款</string>
+    <string name="setting_about_terms">服务条款</string>
+    <string name="setting_about_law">法律条款</string>
+    
+    <string name="home_title">首页</string>
+    <string name="register_title">添加帐号</string>
+    <string name="upload_tasks_title">上传任务</string>
+    <string name="download_tasks_title">下载任务</string>
+    <string name="storagespace_title">存储空间</string>
+    <string name="overviewspace_title">概况</string>
+    <string name="usedspace_title">已使用</string>
+    <string name="notification_title">通知</string>
+    <string name="select_host_title">Anybox 主机</string>
+    <string name="select_host_searching_title">正在搜索主机 ...</string>
+    
+    <string name="dashboard_title">Anybox</string>
+    <string name="dashboard_navigation_title">首页</string>
+    <string name="dashboard_empty_next_label">下一条</string>
+    <string name="dashboard_empty_upload_label">上传</string>
+    <string name="dashboard_empty_title0">欢迎!</string>
+    <string name="dashboard_empty_subtitle0">您现在已有大约 %1$s 的免费空间可以存储您的文档、照片或其它文件，您可以使用智能手机或电脑在任何地方访问它们。</string>
+    <string name="dashboard_empty_title1">分享. 私密.</string>
+    <string name="dashboard_empty_subtitle1">您的文件存储是私密性的，不过您也可以将它们分享给您的亲朋好友，通过消息或者分享链接等。</string>
+    
+    <string name="library_title">Anybox</string>
+    <string name="library_navigation_title">资料库</string>
+    <string name="library_empty_title">空</string>
+    <string name="library_empty_subtitle">该文件夹还没有文件，现在就添加文件？</string>
+    <string name="library_empty_trash_subtitle">还没有文件被删除。</string>
+    <string name="library_empty_search_subtitle">未查询到相关文件，试试其它关键词？</string>
+    
+    <string name="select_empty_title">空</string>
+    <string name="upload_empty_title">空</string>
+    <string name="upload_empty_subtitle">还没有要上传的文件.</string>
+    <string name="download_empty_title">空</string>
+    <string name="download_empty_subtitle">还没有要下载的文件.</string>
+    
+    <string name="label_ptr_pull">下拉刷新</string>
+    <string name="label_ptr_release">放开刷新</string>
+    <string name="label_ptr_refreshing">装载中</string>
+    <string name="label_about_version">版本 %1$s</string>
+    <string name="network_unavailable_message">无网络连接，请检查无线和网络设置。</string>
+    
+    <string name="label_login_google">添加  Google+ 帐号</string>
+    <string name="label_login_anybox">使用邮件地址注册</string>
+    <string name="label_login_title">您的私有云, 存储本地, 任意访问.</string>
+    <string name="label_login_hosttitle">www.anybox.org</string>
+    <string name="label_email_hint">Email 地址</string>
+    <string name="label_username_hint">用户名</string>
+    <string name="label_password_hint">密码</string>
+    <string name="label_username_or_email_hint">用户名或 Email 地址</string>
+    <string name="login_explanation_signup">请输入邮件地址注册您的帐号，建议用户名与邮件地址的名字一致。</string>
+    <string name="login_explanation_signin">登录您的帐户，可以使用帐户的用户名或者绑定的邮件地址。</string>
+    <string name="login_explanation_selectaccount">请选择下面的帐号登录，或者点击右边的叉按钮删除。</string>
+    <string name="login_email_missing_message">请输入该帐号绑定的邮件地址。</string>
+    <string name="login_email_illegal_message">输入的邮件地址不合法。</string>
+    <string name="login_username_missing_message">请输入登录用户名。</string>
+    <string name="login_username_illegal_message">用户名只能包含小写字母和数字。</string>
+    <string name="login_usernameemail_missing_message">请输入登录用户名或邮件地址。</string>
+    <string name="login_password_missing_message">请输入该帐号密码。</string>
+    <string name="login_password_illegal_message">密码必须至少6个字符。</string>
+    <string name="login_signingin_message">登录中\u2026</string>
+    <string name="login_signingout_message">退出中\u2026</string>
+    <string name="login_prompt_text">已有帐号？</string>
+    <string name="login_button_text">登录</string>
+    <string name="login_resetpassword_label">忘记了密码？</string>
+    <string name="login_selectaccount_label">选择已存在的帐号.</string>
+    <string name="login_selecthost_label">选择主机.</string>
+    <string name="login_signin_label">登录已有帐号.</string>
+    <string name="login_signup_label">注册新帐号.</string>
+    
+    <string name="about_title">关于</string>
+    <string name="about_message">"&lt;b>Anybox&lt;/b>
+                     可以方便管理您的资料， 无论何时何地，存储本地，自由访问。
+        &lt;a href=http://www.anybox.org>http://www.anybox.org&lt;/a>"</string>
+    
+    <string name="share_information">"分享自anybox.org"</string>
+    
+</resources>
