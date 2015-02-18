@@ -1,0 +1,97 @@
+package org.javenstudio.raptor.paxos.proto;
+
+import java.io.DataInput;
+import java.io.DataOutput;
+import java.io.IOException;
+import java.util.List; 
+import java.util.ArrayList; 
+
+import org.javenstudio.raptor.io.UTF8;
+import org.javenstudio.raptor.io.WritableComparable;
+import org.javenstudio.raptor.util.StringUtils; 
+import org.javenstudio.raptor.paxos.data.ACL; 
+
+
+@SuppressWarnings("deprecation")
+public class SetACLRequest implements WritableComparable<SetACLRequest> {
+
+  private String path = null; 
+  private List<ACL> acl = null; 
+  private int version = 0; 
+
+  public SetACLRequest() {} 
+
+  public SetACLRequest(String path, List<ACL> acl, int version) {
+    this.path = path; 
+    this.acl = acl; 
+    this.version = version; 
+  }
+
+  public String getPath() { return path; }
+  public void setPath(String val) { this.path = val; }
+
+  public List<ACL> getAcl() { return acl; } 
+  public void setAcl(List<ACL> val) { this.acl = val; }
+
+
+  public int getVersion() { return version; }
+  public void setVersion(int val) { this.version = val; }
+
+  public boolean equals(Object to) {
+    if (this == to) 
+      return true;
+    if (!(to instanceof SetACLRequest)) 
+      return false;
+    SetACLRequest other = (SetACLRequest)to; 
+    return StringUtils.stringEquals(path, other.path) &&
+           StringUtils.objectEquals(acl, other.acl) && 
+           version == other.version; 
+  }
+
+  public int compareTo(SetACLRequest that) throws ClassCastException {
+    throw new UnsupportedOperationException("comparing SetACLRequest is unimplemented");
+  }
+
+  public int hashCode() {
+    int result = 17;
+    int ret = 0;
+    ret = path != null ? path.hashCode() : 0;
+    result = 37*result + ret;
+    ret = acl != null ? acl.hashCode() : 0;
+    result = 37*result + ret;
+    ret = (int)version;
+    result = 37*result + ret;
+    return result;
+  }
+
+  /////////////////////////////////////////////////
+  // Writable
+  /////////////////////////////////////////////////
+  /** {@inheritDoc} */
+  public void write(DataOutput out) throws IOException {
+    UTF8.writeString(out, path);
+    out.writeInt(acl != null ? acl.size() : 0);
+    if (acl != null) {
+      for (ACL id: acl) id.write(out);
+    }
+    out.writeInt(version); 
+  }
+
+  /** {@inheritDoc} */
+  public void readFields(DataInput in) throws IOException {
+    path = UTF8.readString(in);
+    int size = in.readInt();
+    if (size > 0) {
+      acl = new ArrayList<ACL>();
+      for (int i=0; i < size; i++) acl.add(ACL.read(in));
+    } else
+      acl = null;
+    version = in.readInt(); 
+  }
+
+  public static SetACLRequest read(DataInput in) throws IOException {
+    SetACLRequest result = new SetACLRequest();
+    result.readFields(in);
+    return result;
+  }
+}
