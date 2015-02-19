@@ -1,0 +1,57 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal modal-large media-info-modal fade in" id="fileinfo-container">
+<div class="modal-header">
+	<button type="button" class="close" id="fileinfo-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon user" id="fileinfo-icon"></i> <span id="fileinfo-title">User Information</span></h3>
+</div>
+<div class="modal-body minimal-scrollbar" id="fileinfo-details">
+	<div class="details-controls" id="fileinfo-controls">
+	    <a id="fileinfo-poster-link">
+	        <img id="fileinfo-poster" class="poster large-poster photo-poster" style="max-width: 256px;max-height: 256px;" src="">
+	    </a>
+		<div id="fileinfo-play-button" class="play-btn-container hide">
+			<a id="fileinfo-play-link" class="play-btn btn btn-medium btn-primary" data-focus="keyboard"><i class="glyphicon play"></i> <span id="fileinfo-play-text">Play</span></a>
+		</div>
+	</div>
+	<div class="movie-metadata details-metadata" style="position: initial;padding-bottom: 0px;" id="fileinfo-metadata">
+		<div class="metadata-right" id="fileinfo-rating">
+			<h1 class="movie-year" id="fileinfo-metadata-year">2013</h1>
+			<div class="movie-content-rating metadata hide"><img class="media-flag" /></div>
+			<div class="movie-rating metadata"><span class="rating"><i class="glyphicon star"></i><i class="glyphicon star"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i></span></div>
+		</div>
+		<h1><span class="movie-title" id="fileinfo-metadata-title" style="word-wrap: break-word;"></span><button class="movie-unavailable-btn unavailable-btn btn btn-small btn-danger hide">Unavailable</button></h1>
+		<div class="movie-genre metadata hide"><span class="metadata-label" id="fileinfo-metadata-title2"></span></div>
+		<div class="metadata metadata-duration">
+			<span class="movie-duration" id="fileinfo-metadata-name"></span>
+			<div class="unwatched-icon unwatched-partial-icon" id="fileinfo-metadata-nameicon"></div>
+			<div class="unwatched-icon unwatched-full-icon hide"></div>
+		</div>
+		<h2 class="movie-tagline tagline" id="fileinfo-metadata-subtitle"></h2>
+		<div class="movie-owner metadata metadata-top hide" id="fileinfo-metadata-owner-item"><span class="metadata-label" id="fileinfo-metadata-owner-name">Owner</span><a id="fileinfo-metadata-owner"></a></div>
+		<div class="movie-director metadata metadata-top hide" id="fileinfo-metadata-director-item"><span class="metadata-label" id="fileinfo-metadata-director-name">Director</span><a id="fileinfo-metadata-director"></a></div>
+		<div class="movie-writer metadata hide" id="fileinfo-metadata-writer-item"><span class="metadata-label" id="fileinfo-metadata-writer-name">Writer</span><a id="fileinfo-metadata-writer"></a></div>
+		<div class="movie-cast metadata hide" id="fileinfo-metadata-cast-item"><span class="metadata-label" id="fileinfo-metadata-cast-name">Cast</span><a id="fileinfo-metadata-cast"></a></div>
+		<div class="movie-audio metadata metadata-top hide" id="fileinfo-metadata-tags-item" style="margin-top: 0px;"><span class="metadata-label" id="fileinfo-metadata-tags-name">Tags</span><span class="dropdown" id="fileinfo-metadata-tags"></span></div>
+		<div class="movie-subtitles metadata hide"><span class="metadata-label"></span></div>
+		<div class="movie-summary summary" id="fileinfo-metadata-summary" style="word-wrap: break-word;"></div>
+		<div class="media-flags"><img class="movie-studio studio" src=""></div>
+	</div>
+    <div class="fanart-container hide">
+        <div class="fanart" style="/*background-image: url(blob:);*/" id="fileinfo-background-image"></div>
+        <div class="fanart-overlay" style="z-index: -1;"></div>
+    </div>
+</div>
+<div class="modal-footer">
+	<div class="pull-left">
+		<a class="standard-options hide" id="fileinfo-details-show">Show Details</a>
+		<a class="advanced-options hide" id="fileinfo-details-hide">Hide Details</a>
+	</div>
+	<div class="pull-right">
+	    <button type="button" class="btn btn-primary yes-btn" id="fileinfo-property" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn btn-primary yes-btn" id="fileinfo-edit" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn btn-primary yes-btn" id="fileinfo-share" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn btn-primary yes-btn" id="fileinfo-ok" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn no-btn" id="fileinfo-no" data-focus="keyboard">No</button>
+	</div>
+</div>
+</div>

@@ -1,0 +1,70 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal modal-large media-info-modal fade in" id="compose-container">
+<div class="modal-header">
+	<button type="button" class="close" id="compose-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon pencil" id="compose-icon"></i> <span id="compose-title">Compose</span></h3>
+</div>
+<div class="modal-body minimal-scrollbar" id="compose-details">
+	<form class="edit-metadata-form" id="compose-form">
+	    <input type="hidden" name="action" id="compose-action-input" value="draft">
+	    <input type="hidden" name="draftid" id="compose-draftid-input" value="">
+	    <input type="hidden" name="replyid" id="compose-replyid-input" value="">
+	    <input type="hidden" name="streamid" id="compose-streamid-input" value="">
+	    <input type="hidden" name="type" id="compose-type-input" value="">
+	    <input type="hidden" name="folder" id="compose-folder-input" value="">
+	    <input type="hidden" name="attachments" id="compose-attachments-input" value="">
+		<fieldset>
+		<div class="row-fluid">
+			<div class="span12" style="width: 640px;">
+				<div class="control-group">
+					<div class="lockable-input">
+						<div class="select2-container select2-container-multi span12 lockable-field input-select2" id="compose-to-autogen">
+						    <ul class="select2-choices" id="compose-to-list"></ul>
+						</div>
+						<input id="compose-to-input" class="span12 lockable-field input-select2" type="hidden" name="to" value="" data-name="to" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12" style="width: 640px;">
+				<div class="control-group">
+					<div class="lockable-input">
+						<input id="compose-subject-input" class="input-dark span12 lockable-field" type="text" name="subject" value="" placeholder="Subject">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12" style="width: 640px;">
+				<div class="control-group">
+					<div class="lockable-input">
+						<textarea id="compose-body-input" class="input-dark span12 lockable-field" name="body" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		</fieldset>
+	</form>
+	<div class="select-artwork-options hide" id="compose-attachments" style="max-width: 500px;">
+		<div class="artwork-options-container" id="compose-attachment-list">
+			<span><a class="artwork-option" data-rating-key="" data-focus="keyboard">
+				<img class="poster poster-poster" src="">
+			</a></span>
+		</div>
+	</div>
+	<div id="compose-selectlist-drop">
+    </div>
+</div>
+<div class="modal-footer">
+	<div class="pull-left" id="compose-options">
+		<a class="standard-options hide" id="compose-details-show">Show Details</a>
+		<a class="advanced-options hide" id="compose-details-hide">Hide Details</a>
+	</div>
+	<div class="pull-right" id="compose-actions">
+	    <button type="button" class="btn btn-primary yes-btn" id="compose-send" data-focus="keyboard">Send</button>
+	    <button type="button" class="btn btn-primary yes-btn btn-danger hide" id="compose-delete" data-focus="keyboard">Delete</button>
+	    <button type="button" class="btn no-btn" id="compose-no" data-focus="keyboard">No</button>
+	</div>
+</div>
+</div>

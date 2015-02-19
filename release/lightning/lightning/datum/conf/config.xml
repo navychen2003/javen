@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config>
+  
+  <!-- Data Directory
+
+       Used to specify an alternate directory to hold all index data
+       other than the default ./data under the home.  If
+       replication is in use, this should match the replication
+       configuration.
+    -->
+  <dataDir>${lightning.data.dir:}</dataDir>
+
+  <requestDispatcher>
+    <!-- Request Parsing
+
+         These settings indicate how Requests may be parsed, and
+         what restrictions may be placed on the ContentStreams from
+         those requests
+
+         enableRemoteStreaming - enables use of the stream.file
+         and stream.url parameters for specifying remote streams.
+
+         multipartUploadLimitInKB - specifies the max size (in KiB) of
+         Multipart File Uploads that will allow in a Request.
+         
+         formdataUploadLimitInKB - specifies the max size (in KiB) of
+         form data (application/x-www-form-urlencoded) sent via
+         POST. You can use POST to pass request parameters not
+         fitting into the URL.
+         
+         *** WARNING ***
+         The settings below authorize to fetch remote files, You
+         should make sure your system has some authentication before
+         using enableRemoteStreaming="true"
+
+      --> 
+    <requestParsers enableRemoteStreaming="true" 
+                    multipartUploadLimitInKB="2048000"
+                    formdataUploadLimitInKB="2048" />
+
+  </requestDispatcher>
+    
+</config>

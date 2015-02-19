@@ -1,0 +1,74 @@
+<div class="modal-backdrop fade in"></div>
+<div class="edit-section-modal modal fade in">
+<div class="modal-header">
+	<button type="button" class="close" id="addlibrary-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon database-plus" id="addlibrary-icon"></i> <span id="addlibrary-title">Add library</span></h3>
+</div>
+<form class="modal-form add-section-form">
+	<div class="modal-body minimal-scrollbar">
+		<div class="add-section-type" id="addlibrary-types">
+			<h4 id="addlibrary-select">Select library type</h4>
+				<a class="section-type" data-key="files" id="addlibrary-file">
+					<i class="javen-icon-folders-medium"></i>
+					<span class="section-type-label" id="addlibrary-file-label">File</span>
+				</a>
+				<a class="section-type" data-key="artists" id="addlibrary-music">
+					<i class="javen-icon-music-medium"></i>
+					<span class="section-type-label" id="addlibrary-music-label">Music</span>
+				</a>
+				<a class="section-type" data-key="videos" id="addlibrary-video">
+					<i class="javen-icon-videos-medium"></i>
+					<span class="section-type-label" id="addlibrary-video-label">Video</span>
+				</a>
+				<a class="section-type" data-key="photos" id="addlibrary-photo">
+					<i class="javen-icon-photos-medium"></i>
+					<span class="section-type-label" id="addlibrary-photo-label">Photo</span>
+				</a>
+				<a class="section-type hide" data-key="computers" id="addlibrary-computer">
+					<i class="javen-icon-show-medium"></i>
+					<span class="section-type-label" id="addlibrary-computer-label">Computer</span>
+				</a>
+		</div>
+		<div class="add-section-details hide" id="addlibrary-details">
+			<div class="row-fluid">
+				<div class="name-group control-group" id="addlibrary-name-group">
+					<span class="help-inline hide" id="addlibrary-required-name">A library name is required.</span>
+					<label id="addlibrary-name-label">Name</label>
+					<input type="text" name="name" class="span12" id="addlibrary-name-input" value="">
+				</div>
+			</div>
+			<div class="row-fluid" id="addlibrary-folder-group">
+				<div class="folder-group control-group">
+					<label id="addlibrary-addfolder-title">Add folders where your {1} is located</label>
+					<p class="help-block" id="addlibrary-folder-help"></p>
+					<div class="folders" id="addlibrary-folder-list"></div>
+					<p class="pull-center">
+						<button type="button" class="add-folder-btn btn" id="addlibrary-addfolder" data-focus="keyboard">
+						    <i class="glyphicon folder-plus"></i>
+						    <span id="addlibrary-addfolder-label">Add Folder</span>
+						</button>
+					</p>
+					<p class="folder-help hide" id="addlibrary-required-folder">At least one folder is required.</p>
+				</div>
+			</div>
+			<div class="row-fluid advanced-options hide" id="addlibrary-advanced">
+				<div class="control-group">
+					<label id="addlibrary-store-title">Store system</label>
+					<select name="store" class="span6" id="addlibrary-store-input">
+					</select>
+					<p class="folder-help hide" id="addlibrary-store-help"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer hide" id="addlibrary-footer">
+		<div class="pull-left">
+			<a class="standard-options" id="addlibrary-advanced-show">Show Advanced Options</a>
+			<a class="advanced-options hide" id="addlibrary-advanced-hide">Hide Advanced Settings</a>
+		</div>
+		<button type="button" class="btn btn-primary btn-danger hide" id="addlibrary-delete" data-focus="keyboard">Delete</button>
+		<button type="button" class="btn btn-primary" id="addlibrary-save" data-focus="keyboard">Save</button>
+		<button type="button" class="btn cancel-btn" id="addlibrary-cancel" data-focus="keyboard">Cancel</button>
+	</div>
+</form>
+</div>

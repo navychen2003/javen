@@ -1,0 +1,2 @@
+app.welcome.image.url=/img/poster.jpg
+app.welcome.title.en=Try it for free! 5 GBs for life!

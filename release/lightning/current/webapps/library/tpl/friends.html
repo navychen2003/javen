@@ -1,0 +1,52 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions">
+		<li><span class="subnav-action-label" id="friend-action-title"></span></li>
+		<li>
+			<input id="friend-add-username" type="text" class="input-dark" style="height: 28px;font-size: 12px;margin-top: 8px;" placeholder="username or email">
+			<button type="button" id="friend-add-submit" class="btn btn-small btn-primary" rel="tooltip" title="Add Friend"><i class="glyphicon user-add"></i> <span id="friend-add-submit-text" style="font-size: 12px;vertical-align: top;">Send Invite</span></button>
+		</li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon parents"></i></li>
+		<li><a class="gray active" id="friend-list-friends">Friends</a></li>
+		<li><a class="gray " id="friend-list-groups">Groups</a></li>
+		<li><a class="gray " id="friend-list-find">Find</a></li>
+	</ul>
+</div>
+<div id="requests-container" class="well hide">
+	<div class="well-header">
+		<h3 id="friend-invite-title"> <span class="well-header-count"></span></h3>
+	</div>
+	<div class="row-fluid">
+	<span id="received-requests-container" class="requests-column span6">
+        <ul class="well-list friend-list" id="friend-invitelist">
+        </ul>
+	</span>
+	<span id="sent-requests-container" class="requests-column span6">
+        <ul class="well-list friend-list" id="friend-requestlist">
+        </ul>
+	</span>
+	</div>
+</div>
+<div id="friends-container" class="well">
+	<div class="well-header">
+		<ul class="well-header-actions">
+			<li></li>
+		</ul>
+		<h3 id="friend-list-title"> <span class="well-header-count"></span></h3>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="friend-empty">No friends :(</div>
+	<ul class="well-list friend-list" id="friend-list">
+	</ul>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

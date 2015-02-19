@@ -1,0 +1,38 @@
+﻿<div class="modal fade in">
+<div class="modal-header">
+	<button type="button" class="close" id="artwork-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3 id="artwork-title">Select Artwork</h3>
+</div>
+<div class="modal-body minimal-scrollbar">
+	<div class="upload-artwork-container" id="artwork-container">
+		<div class="upload-prompt" id="artwork-prompt">
+			<a id="artwork-upload">choose an image</a>
+			<span id="artwork-drapdrop">drag and drop</span>
+			<a id="artwork-enterurl" class="upload-url">enter a url</a>
+		</div>
+		<div class="upload-progress hide" id="artwork-uploading-text">
+			Uploading artwork...
+		</div>
+		<div class="upload-error hide" id="artwork-error">
+			<span id="artwork-error-text">There was an error uploading this artwork.</span>
+			<a class="upload-back" id="artwork-tryagain">Try again</a>.
+		</div>
+		<form class="url-form hide" id="artwork-urlform">
+			<input type="text" name="url" id="artwork-url-input" class="input-dark url-input" placeholder="Enter a url to upload an image from the web">
+		</form>
+	</div>
+	<div class="select-artwork-options">
+		<div class="artwork-options-container" id="artwork-options">
+			<span><a class="artwork-option" data-rating-key="" data-focus="keyboard">
+				<img class="poster poster-poster" src="">
+			</a></span>
+		</div>
+		<h4 class="select-artwork-loading hide" id="artwork-loading-text">
+			Searching for artwork...
+		</h4>
+		<h4 class="no-matches hide" id="artwork-notfound-text">
+		    No artwork found
+		</h4>
+	</div>
+</div>
+</div>

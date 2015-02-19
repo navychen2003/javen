@@ -1,0 +1,48 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions">
+		<li><span class="subnav-action-label" id="find-action-title"></span></li>
+		<li>
+			<input id="find-search-name" type="text" class="input-dark" style="height: 28px;font-size: 12px;margin-top: 8px;" placeholder="username or groupname">
+			<button type="button" id="find-search-submit" class="btn btn-small btn-primary" rel="tooltip" title="Find"><i class="glyphicon search"></i> <span id="find-search-submit-text" style="font-size: 12px;vertical-align: top;">Find</span></button>
+		</li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon user"></i></li>
+		<li><a class="gray " id="find-list-friends">Friends</a></li>
+		<li><a class="gray " id="find-list-groups">Groups</a></li>
+		<li><a class="gray active" id="find-list-find">Find</a></li>
+	</ul>
+</div>
+<div id="users-container" class="well hide">
+	<div class="well-header">
+		<ul class="well-header-actions">
+			<li></li>
+		</ul>
+		<h3 id="find-userlist-title"> <span class="well-header-count"></span></h3>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="find-empty">No users :(</div>
+	<ul class="well-list friend-list" id="find-userlist">
+	</ul>
+</div>
+<div id="groups-container" class="well">
+	<div class="well-header">
+		<ul class="well-header-actions">
+			<li></li>
+		</ul>
+		<h3 id="find-grouplist-title"> <span class="well-header-count"></span></h3>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="find-empty">No users :(</div>
+	<ul class="well-list friend-list" id="find-grouplist">
+	</ul>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

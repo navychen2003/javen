@@ -1,0 +1,78 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal modal-large media-info-modal fade in" id="publish-container">
+<div class="modal-header">
+	<button type="button" class="close" id="publish-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon pencil" id="publish-icon"></i> <span id="publish-title">Publish</span></h3>
+</div>
+<div class="modal-body minimal-scrollbar" id="publish-details">
+	<form class="edit-metadata-form" id="publish-form">
+	    <input type="hidden" name="action" id="publish-action-input" value="draft">
+	    <input type="hidden" name="username" id="publish-username-input" value="">
+	    <input type="hidden" name="publishid" id="publish-publishid-input" value="">
+	    <input type="hidden" name="replyid" id="publish-replyid-input" value="">
+	    <input type="hidden" name="streamid" id="publish-streamid-input" value="">
+	    <input type="hidden" name="type" id="publish-type-input" value="">
+	    <input type="hidden" name="channelfrom" id="publish-channelfrom-input" value="">
+	    <input type="hidden" name="attachments" id="publish-attachments-input" value="">
+		<fieldset>
+		<div class="row-fluid">
+			<div class="span9">
+				<div class="control-group">
+					<div class="lockable-input">
+						<input id="publish-subject-input" class="input-dark span8 lockable-field" style="width: 100%;" type="text" name="subject" value="" placeholder="Subject">
+					</div>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="control-group">
+					<div class="lockable-input">
+						<input id="publish-channel-input" class="input-dark span4 lockable-field" style="width: 100%;" type="text" name="channel" value="" placeholder="Channel">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12" style="width: 640px;">
+				<div class="control-group">
+					<div class="lockable-input">
+						<div class="select2-container select2-container-multi span12 lockable-field input-select2" id="publish-tags-autogen">
+						    <ul class="select2-choices" id="publish-tags-list"></ul>
+						</div>
+						<input id="publish-tags-input" class="span12 lockable-field input-select2" type="hidden" name="tags" value="" data-name="tags" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12" style="width: 640px;">
+				<div class="control-group">
+					<div class="lockable-input">
+						<textarea id="publish-body-input" class="input-dark span12 lockable-field" name="body" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		</fieldset>
+	</form>
+	<div class="select-artwork-options hide" id="publish-attachments" style="max-width: 500px;">
+		<div class="artwork-options-container" id="publish-attachment-list">
+			<span><a class="artwork-option" data-rating-key="" data-focus="keyboard">
+				<img class="poster poster-poster" src="">
+			</a></span>
+		</div>
+	</div>
+	<div id="publish-selectlist-drop">
+    </div>
+</div>
+<div class="modal-footer">
+	<div class="pull-left" id="publish-options">
+		<a class="standard-options hide" id="publish-details-show">Show Details</a>
+		<a class="advanced-options hide" id="publish-details-hide">Hide Details</a>
+	</div>
+	<div class="pull-right" id="publish-actions">
+	    <button type="button" class="btn btn-primary yes-btn" id="publish-submit" data-focus="keyboard">Submit</button>
+	    <button type="button" class="btn btn-primary yes-btn btn-danger hide" id="publish-delete" data-focus="keyboard">Delete</button>
+	    <button type="button" class="btn no-btn" id="publish-no" data-focus="keyboard">No</button>
+	</div>
+</div>
+</div>

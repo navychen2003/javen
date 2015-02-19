@@ -1,0 +1,82 @@
+<div class="scroll-container minimal-scrollbar" id="announcement-scroll">
+<div class="container-fluid">
+<div class="details">
+<div class="actionbar">
+	<ul class="iconbar">
+	    <li id="action-edit-item"><a id="action-edit-link" class="iconbar-glyphicon-btn edit-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Edit"><i class="glyphicon pencil"></i></a></li>
+	</ul>
+</div>
+<div class="details-row row-fluid">
+	<div class="details-controls">
+	    <img id="announcement-poster" class="poster large-poster photo-poster" style="max-width: 256px;max-height: 256px;" src="">
+	    <a id="announcement-change-poster" class="btn change-poster-btn"><i class="glyphicon pencil"></i> <span id="announcement-change-poster-text">Change Poster</span></a>
+	</div>
+	<form class="edit-metadata-form" id="announcement-form">
+		<fieldset>
+		<div class="row-fluid" id="announcement-title-row">
+			<div class="span9">
+				<div class="control-group" id="announcement-title-group">
+					<label id="announcement-title-text">Title</label>
+					<a id="announcement-title-lock" data-field="title" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="announcement-title-input" class="input-dark span12 lockable-field" type="text" name="title" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="control-group" id="announcement-lang-group">
+					<label id="announcement-lang-text">Language</label>
+					<a id="announcement-lang-lock" data-field="lang" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="announcement-lang-input" class="input-dark span12 lockable-field" type="text" name="lang" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="announcement-link-row">
+			<div class="span12">
+				<div class="control-group" id="announcement-link-group">
+					<label id="announcement-link-text">Link</label>
+					<a id="announcement-link-lock" data-field="link" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="announcement-link-input" class="input-dark span12 lockable-field" type="text" name="link" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="announcement-body-row">
+			<div class="span12">
+				<div class="control-group" id="announcement-body-group">
+					<label id="announcement-body-text">Body</label>
+					<a id="announcement-body-lock" data-field="body" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<textarea id="announcement-body-input" class="input-dark span12 lockable-field" name="body" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-actions">
+			<button id="announcement-submit-button" type="submit" class="btn btn-medium btn-primary">Save</button>
+			<button id="announcement-cancel-button" type="button" class="btn btn-medium cancel-btn">Cancel</button>
+		</div>
+		</fieldset>
+	</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>
+
+<div class="fanart-container">
+    <div class="fanart" style="/*background-image: url(blob:);*/" id="background-image"></div>
+    <div class="fanart-overlay"></div>
+</div>
+
+<div id="selectlist-drop">
+</div>

@@ -1,0 +1,32 @@
+<div class="photo-popover">
+	<a class="close-btn gray" id="dismiss-button" data-focus="keyboard"><i class="glyphicon remove-2"></i></a>
+	<div class="spinner-container" style=""></div>
+	<div class="photo-controls">
+		<a class="previous-btn gray" id="prev-button" data-focus="keyboard">
+			<i class="glyphicon chevron-left"></i>
+		</a>
+		<a class="next-btn gray" id="next-button" data-focus="keyboard">
+			<i class="glyphicon chevron-right"></i>
+		</a>
+	</div>
+	<div class="photo-container slide" id="slidephoto" style="left: 0px;"></div>
+	<div class="photo-container" style="left: 0px;">
+	<div class="photo-details-container">
+	<div class="photo-details">
+	<img id="currentphoto-image" src="" style="max-width: 991px; max-height: 500px;">
+		<div class="photo-loading-overlay"></div>
+		<div class="card-overlay">
+			<div class="card-menu">
+				<button class="play-btn card-menu-btn " id="slideplay-button"><i class="glyphicon play"></i></button>
+				<button class="pause-btn card-menu-btn hide" id="slidepause-button"><i class="glyphicon pause"></i></button>
+				<button class="remote-play-btn card-menu-btn hide"><i class="glyphicon display"></i></button>
+				<button class="edit-btn card-menu-btn" id="photoedit-button"><i class="glyphicon pencil"></i></button>
+				<button class="sync-btn card-menu-btn" id="photoshare-button"><i class="glyphicon share-alt"></i></button>
+				<button class="info-btn card-menu-btn" id="photoinfo-button"><i class="glyphicon circle-info"></i></button>
+			</div>
+			<span id="currentphoto-name" style="word-wrap: break-word;line-height: 0.1em;"></span> <span class="card-count" id="currentphoto-index">0 / 1</span>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>

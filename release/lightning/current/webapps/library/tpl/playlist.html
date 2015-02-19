@@ -1,0 +1,71 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container-fluid">
+<div class="details">
+<div class="actionbar">
+	<ul class="iconbar">
+	    <li id="action-edit-item" class="hide"><a id="action-edit-link" class="iconbar-glyphicon-btn edit-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Edit"><i class="glyphicon pencil"></i></a></li>
+	    <li id="action-shuffle-item"><a id="action-shuffle-link" class="iconbar-glyphicon-btn shuffle-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Shuffle"><i class="glyphicon random"></i></a></li>
+	</ul>
+</div>
+<div class="details-row row-fluid hide" id="albums-details">
+	<div class="details-controls" style="margin-bottom: 20px;">
+		<a class="change-poster-btn">
+		<div class="poster-container">
+			<div class="poster-card">
+			<div class="poster-face front">
+				<img class="poster album-poster placeholder" src="css/purple/images/posters/music.png">
+				<div class="hover-overlay card-overlay hide"><i class="hover-menu-btn glyphicon pencil"></i></div>
+			</div>
+			</div>
+		</div>
+		</a>
+	</div>
+	<div class="details-metadata">
+		<h1 class="artist-title">Untitled</h1>
+		<div class="artist-genre metadata metadata-top hide"></div>
+		<div class="artist-summary summary hide"></div>
+	</div>
+</div>
+<div id="albums-container" class="well">
+<ul class="album-list" id="albums-tracklist">
+	<li>
+		<div class="album-art">
+			<a class="album-link">
+				<img class="poster media-tile-list-poster placeholder" src="css/purple/images/posters/music.png">
+			</a>
+			<div class="album-title hide"></div>
+			<div class="album-year hide"></div>
+		</div>
+		<ul class="list media-list media-compact-list track-list rounded-list">
+			<li>
+				<a data-focus="keyboard">
+				<span class="number track-number">1</span>
+				<span class="title track-title">In a World Like This</span>
+				<button class="remote-play-btn hover-btn hide" tabindex="-1"><i class="glyphicon display"></i></button>
+				<button class="edit-btn hover-btn " tabindex="-1"><i class="glyphicon pencil"></i></button>
+				<button class="sync-btn hover-btn hide" tabindex="-1"><i class="glyphicon download"></i></button>
+				<button class="info-btn hover-btn " tabindex="-1"><i class="glyphicon circle-info"></i></button>
+				</a>
+			</li>
+		</ul>
+	</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>
+
+<div class="fanart-container">
+    <div class="fanart" style="/*background-image: url(blob:);*/" id="background-image"></div>
+    <div class="fanart-overlay"></div>
+</div>
+
+<div id="selectlist-drop">
+</div>

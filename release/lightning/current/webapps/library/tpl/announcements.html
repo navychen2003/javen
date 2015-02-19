@@ -1,0 +1,47 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions" style="margin-top: 8px;">
+		<li><span class="subnav-action-label source-title" id="announcement-source"></span></li>
+		<li>
+			<button type="button" id="announcement-add-submit" class="btn btn-small btn-primary" rel="tooltip" title="Add Announcement"><i class="glyphicon circle-plus"></i> <span id="announcement-add-submit-text" style="font-size: 12px;vertical-align: top;">Add Announcement</span></button>
+		</li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon bullhorn"></i></li>
+		<li id="setting-subnav"><a class="gray" id="setting-title">Setting</a></li>
+		<li id="cluster-subnav" class="hide"><a class="gray" id="cluster-title">Host</a></li>
+		<li id="announcement-subnav" class="hide"><a class="gray active" id="announcement-title">Announcement</a></li>
+		<li id="publish-subnav" class="hide"><a class="gray" id="publish-title">Publish</a></li>
+	</ul>
+</div>
+<div class="settings-container well">
+	<div class="minimal-well-header">
+		<ul class="well-header-actions hide">
+			<li class="well-header-pagination">
+				<span class="page" id="announcement-page"></span> / <span class="pages" id="announcement-pages"></span>
+			</li>
+			<li>
+				<div class="btn-group btn-group-inverse">
+					<button type="button" class="previous-btn btn btn-inverse btn-icon disabled" id="announcement-prev"><i class="glyphicon chevron-left"></i></button>
+					<button type="button" class="next-btn btn btn-inverse btn-icon" id="announcement-next"><i class="glyphicon chevron-right"></i></button>
+				</div>
+			</li>
+		</ul>
+		<ul class="subnav-list well-header-list" id="announcement-folder-list">
+			<li><a class="settings-filter active"></a></li>
+		</ul>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="announcement-empty">No announcements :(</div>
+	<ul class="well-list announcement-list" id="announcement-list">
+	</ul>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

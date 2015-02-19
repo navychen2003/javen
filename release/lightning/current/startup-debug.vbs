@@ -1,0 +1,1 @@
+createobject("wscript.shell").run "startup.bat -debug",0

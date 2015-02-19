@@ -1,0 +1,170 @@
+<div class="scroll-container minimal-scrollbar" id="details-scroll">
+<div class="container-fluid">
+<div class="details">
+<div class="actionbar">
+	<ul class="iconbar">
+		<li id="action-edit-item" ><a id="action-edit-link" class="iconbar-glyphicon-btn edit-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Edit"><i class="glyphicon pencil"></i></a></li>
+		<li id="action-download-item"><a id="action-download-link" class="iconbar-glyphicon-btn download-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Download"><i class="glyphicon download-alt"></i></a></li>
+		<li id="action-share-item"><a id="action-share-link" class="iconbar-glyphicon-btn share-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Share"><i class="glyphicon share-alt"></i></a></li>
+		<li id="action-info-item"><a id="action-info-link" class="iconbar-glyphicon-btn info-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Info"><i class="glyphicon circle-info"></i></a></li>
+	</ul>
+</div>
+<div class="details-row row-fluid">
+	<div class="details-controls hide" id="details-controls">
+	    <a id="details-poster-link"><img id="details-poster" class="poster large-poster photo-poster" style="max-width: 256px;max-height: 256px;" src="" /></a>
+		<div id="details-play-button" class="play-btn-container hide">
+			<a id="details-play-link" class="play-btn btn btn-medium btn-primary" data-focus="keyboard"><i class="glyphicon play"></i> <span id="details-play-text">Play</span></a>
+		</div>
+	    <a id="details-change-poster" class="btn change-poster-btn"><i class="glyphicon pencil"></i> <span id="details-change-poster-text">Change Poster</span></a>
+	    <a id="details-change-background" class="btn change-background-btn"><i class="glyphicon pencil"></i> <span id="details-change-background-text">Change Background</span></a>
+	</div>
+	<div class="movie-metadata details-metadata hide" id="details-metadata">
+		<div class="metadata-right" id="details-rating">
+			<h1 class="movie-year" id="details-metadata-year">2013</h1>
+			<div class="movie-content-rating metadata hide"><img class="media-flag" /></div>
+			<div class="movie-rating metadata"><span class="rating"><i class="glyphicon star"></i><i class="glyphicon star"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i></span></div>
+		</div>
+		<h1><span class="movie-title" id="details-metadata-title" style="word-wrap: break-word;"></span><button class="movie-unavailable-btn unavailable-btn btn btn-small btn-danger hide">Unavailable</button></h1>
+		<div class="movie-genre metadata"><span class="metadata-label" id="details-metadata-title2"></span></div>
+		<div class="metadata metadata-duration">
+			<span class="movie-duration" id="details-metadata-name"></span>
+			<div class="unwatched-icon unwatched-partial-icon" id="details-metadata-nameicon"></div>
+			<div class="unwatched-icon unwatched-full-icon hide"></div>
+		</div>
+		<h2 class="movie-tagline tagline" id="details-metadata-subtitle"></h2>
+		<div class="movie-owner metadata metadata-top"><span class="metadata-label" id="details-metadata-owner-name">Owner</span><a id="details-metadata-owner"></a></div>
+		<div class="movie-director metadata metadata-top"><span class="metadata-label" id="details-metadata-director-name">Director</span><a id="details-metadata-director"></a></div>
+		<div class="movie-writer metadata hide"><span class="metadata-label" id="details-metadata-writer-name">Writer</span><a id="details-metadata-writer"></a></div>
+		<div class="movie-cast metadata"><span class="metadata-label" id="details-metadata-cast-name">Cast</span><a id="details-metadata-cast"></a></div>
+		<div class="movie-audio metadata metadata-top"><span class="metadata-label" id="details-metadata-tags-name">Tags</span><span class="dropdown" id="details-metadata-tags"></span></div>
+		<div class="movie-subtitles metadata hide"><span class="metadata-label"></span></div>
+		<div class="movie-summary summary" id="details-metadata-summary"></div>
+		<div class="media-flags"><img class="movie-studio studio" src=""></div>
+	</div>
+	<form class="edit-metadata-form hide" id="details-form">
+		<fieldset>
+		<div class="row-fluid">
+			<div class="span9">
+				<div class="control-group" id="details-name-group">
+					<label id="details-name-text">Name</label>
+					<a id="details-name-lock" data-field="name" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-name-input" class="input-dark span12 lockable-field" type="text" name="name" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span3">
+				<div class="control-group" id="details-extension-group">
+					<label id="details-extension-text">Extension</label>
+					<a id="details-extension-lock" data-field="extension" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-extension-input" class="input-dark span12 lockable-field" type="text" name="extension" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span5">
+				<div class="control-group" id="details-author-group">
+					<label id="details-author-text">Author</label>
+					<a id="details-author-lock" data-field="meta_author" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-author-input" class="input-dark span12 lockable-field" type="text" name="meta_author" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span5">
+				<div class="control-group" id="details-album-group">
+					<label id="details-album-text">Album</label>
+					<a id="details-album-lock" data-field="meta_album" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-album-input" class="input-dark span12 lockable-field" type="text" name="meta_album" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span2">
+				<div class="control-group" id="details-year-group">
+					<label id="details-year-text">Year</label>
+					<a id="details-year-lock" data-field="meta_year" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-year-input" class="input-dark span12 lockable-field" type="text" name="meta_year" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span5">
+				<div class="control-group" id="details-title-group">
+					<label id="details-title-text">Title</label>
+					<a id="details-title-lock" data-field="meta_title" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-title-input" class="input-dark span12 lockable-field" type="text" name="meta_title" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span7">
+				<div class="control-group" id="details-subtitle-group">
+					<label id="details-subtitle-text">Sub Title</label>
+					<a id="details-subtitle-lock" data-field="meta_subtitle" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="details-subtitle-input" class="input-dark span12 lockable-field" type="text" name="meta_subtitle" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="details-tags-row">
+			<div class="span12">
+				<div class="control-group" id="details-tags-group">
+					<label id="details-tags-text">Tags</label>
+					<a id="details-tags-lock" data-field="meta_tags" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<div class="select2-container select2-container-multi span12 lockable-field input-select2" id="details-tags-autogen">
+							<ul class="select2-choices" id="details-tags-list"></ul>
+						</div>
+						<input id="details-tags-input" class="input-dark span12 lockable-field" type="hidden" name="meta_tags" value="" data-name="meta_tags" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12">
+				<div class="control-group" id="details-summary-group">
+					<label id="details-summary-text">Summary</label>
+					<a id="details-summary-lock" data-field="meta_summary" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<textarea id="details-summary-input" class="input-dark span12 lockable-field" name="meta_summary" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-actions">
+			<button id="details-submit-button" type="submit" class="btn btn-medium btn-primary">Save</button>
+			<button id="details-cancel-button" type="button" class="btn btn-medium cancel-btn">Cancel</button>
+		</div>
+		</fieldset>
+	</form>
+	<div id="player-container" class="video-player-container hide" style="height: 528px;">
+		<div id="player-wrapper" style="position: relative; display: block; width: 100%; height: 100%;">
+		</div>
+	</div>
+	<div id="player-details" class="video-details hide" style="margin-left: 0px;">
+	</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>
+
+<div class="fanart-container">
+    <div class="fanart" style="/*background-image: url(blob:);*/" id="background-image"></div>
+    <div class="fanart-overlay"></div>
+</div>
+
+<div id="selectlist-drop">
+</div>

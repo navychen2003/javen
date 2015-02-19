@@ -1,0 +1,1 @@
+createobject("wscript.shell").run "run.bat jfm",0

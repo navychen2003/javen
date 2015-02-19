@@ -1,0 +1,27 @@
+<div class="modal-backdrop fade in"></div>
+<div class="add-folder-modal modal fade in">
+<div class="modal-header">
+	<button type="button" class="close" id="selectfolder-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon folder-open" id="selectfolder-icon"></i> <span id="selectfolder-title">Select folder</span></h3>
+</div>
+<form class="modal-form add-section-form">
+	<div class="modal-body minimal-scrollbar">
+		<div class="row-fluid">
+			<div class="control-group">
+			    <input type="hidden" name="pathid" id="selectfolder-pathid" value="">
+				<input type="text" name="path" class="span12" id="selectfolder-path" value="" readonly>
+				<div class="home-folders-container span5">
+				<ul class="list rounded-list media-list media-compact-list browse-directory-list" id="selectfolder-drivers">
+				</ul></div>
+				<div class="browse-folders-container span7">
+				<ul class="list rounded-list media-list media-compact-list browse-directory-list" id="selectfolder-folders">
+				</ul></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-primary" id="selectfolder-submit" data-focus="keyboard">Add</button>
+		<button type="button" class="btn cancel-btn" id="selectfolder-cancel" data-focus="keyboard">Cancel</button>
+	</div>
+</form>
+</div>

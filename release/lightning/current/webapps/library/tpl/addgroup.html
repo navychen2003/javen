@@ -1,0 +1,44 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal modal-small confirm-modal fade in" id="newgroup-container">
+<div class="modal-header">
+	<button type="button" class="close" id="newgroup-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon circle-exclamation-mark" id="newgroup-icon"></i> <span id="newgroup-title">Message</span></h3>
+</div>
+<div class="modal-body minimal-scrollbar" id="newgroup-text">
+    <div class="add-section-details" id="newgroup-details">
+        <div class="row-fluid">
+            <div class="name-group control-group" id="newgroup-name-group">
+		        <span class="help-inline hide" id="newgroup-required-name"></span>
+		   	    <label id="newgroup-name-label"></label>
+		   	    <input type="text" name="name" class="span12" id="newgroup-name-input" value="">
+		    </div>
+	    </div>
+		<div class="row-fluid">
+			<div class="name-group control-group" id="newgroup-nickname-group">
+				<span class="help-inline hide" id="newgroup-required-nickname"></span>
+				<label id="newgroup-nickname-label"></label>
+				<input type="text" name="nickname" class="span12" id="newgroup-nickname-input" value="">
+			</div>
+		</div>
+		<div class="row-fluid" id="newgroup-category-row">
+			<div class="control-group">
+				<label id="newgroup-category-label"></label>
+				<select name="category" class="span6" id="newgroup-category-input">
+				</select>
+				<p class="folder-help hide"></p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal-footer">
+	<div class="pull-left" id="newgroup-options">
+		<a class="standard-options hide" id="newgroup-details-show">Show Details</a>
+		<a class="advanced-options hide" id="newgroup-details-hide">Hide Details</a>
+	</div>
+	<div class="pull-right" id="newgroup-actions">
+	    <button type="button" class="btn btn-primary yes-btn hide" id="newgroup-ok2" data-focus="keyboard">Yes</button>
+		<button type="button" class="btn btn-primary yes-btn" id="newgroup-ok" data-focus="keyboard">Yes</button>
+		<button type="button" class="btn no-btn" id="newgroup-no" data-focus="keyboard">No</button>
+	</div>
+</div>
+</div>

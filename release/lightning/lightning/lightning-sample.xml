@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lightning>
+  <settings requestcache="false" responsetrace="true">
+    <localizations settingDir="${jetty.home:}/webapps/library/localizations" />
+    <store localDir="data/local" cloudDir="/user" storeUri="" />
+    <cloud nodeMode="host" joinAddress="" attachUsers="" />
+    <cluster clusterId="" clusterDomain="" mailDomain="" clusterSecret="" />
+    <host hostKey="" hostHash="" hostAddress="" hostDomain="" hostName="" httpPort="${jetty.port:}" httpsPort="${https.port:}" />
+    <administrator user="administrator" />
+  </settings>
+  <cores defaultCoreName="index">
+    <core name="gallery" instanceDir="gallery" class="org.anybox.gallery.GalleryCore$Initializer" />
+    <indexcore name="index" instanceDir="index" />
+    <datumcore name="datum" instanceDir="datum" />
+    <usercore name="user" instanceDir="user" />
+  </cores>
+  <services>
+    <namenode name="namenode" enable="false" />
+    <datanode name="datanode1" enable="false" />
+    <datanode name="datanode2" enable="false" />
+    <bigdb name="bigdb" enable="false" />
+    <finder name="finder" enable="true" />
+  </services>
+</lightning>

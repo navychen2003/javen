@@ -1,0 +1,53 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions">
+		<li><span class="subnav-action-label" id="group-action-title"></span></li>
+		<li>
+			<input id="group-add-groupname" type="text" class="input-dark" style="height: 28px;font-size: 12px;margin-top: 8px;" placeholder="groupname">
+			<button type="button" id="group-add-submit" class="btn btn-small btn-primary" rel="tooltip" title="Join Group"><i class="glyphicon user-add"></i> <span id="group-add-submit-text" style="font-size: 12px;vertical-align: top;">Join Group</span></button>
+			<button type="button" id="group-new-submit" class="btn btn-small btn-primary" rel="tooltip" title="New Group"><i class="glyphicon group"></i> <span id="group-new-submit-text" style="font-size: 12px;vertical-align: top;">New Group</span></button>
+		</li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon group"></i></li>
+		<li><a class="gray " id="group-list-friends">Friends</a></li>
+		<li><a class="gray active" id="group-list-groups">Groups</a></li>
+		<li><a class="gray " id="group-list-find">Find</a></li>
+	</ul>
+</div>
+<div id="requests-container" class="well hide">
+	<div class="well-header">
+		<h3 id="group-invite-title"> <span class="well-header-count"></span></h3>
+	</div>
+	<div class="row-fluid">
+	<span id="received-requests-container" class="requests-column span6">
+        <ul class="well-list friend-list" id="group-invitelist">
+        </ul>
+	</span>
+	<span id="sent-requests-container" class="requests-column span6">
+        <ul class="well-list friend-list" id="group-requestlist">
+        </ul>
+	</span>
+	</div>
+</div>
+<div id="groups-container" class="well">
+	<div class="well-header">
+		<ul class="well-header-actions">
+			<li></li>
+		</ul>
+		<h3 id="group-list-title"> <span class="well-header-count"></span></h3>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="group-empty">No groups :(</div>
+	<ul class="well-list friend-list" id="group-list">
+	</ul>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

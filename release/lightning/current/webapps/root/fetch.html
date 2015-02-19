@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <form method="post" action="/lightning/datum/fetch">
+        <input type="hidden" id="authtoken" name="token" value="" />
+        <input type="text" name="url" size="100" />
+        <input type="submit" value="Fetch" />
+    </form>
+    <script type="text/javascript">
+    <!--
+        function get_cookie(c_name) {
+          if (document.cookie.length > 0) {
+            var c_start = document.cookie.indexOf(c_name + "=");
+              if (c_start != -1) { 
+                c_start = c_start + c_name.length + 1;
+                var c_end = document.cookie.indexOf(";",c_start);
+                if (c_end == -1) 
+                  c_end = document.cookie.length;
+                return unescape(document.cookie.substring(c_start, c_end));
+              } 
+          }
+          return "";
+        }
+        
+        function get_token() {
+          var hostkey = get_cookie( 'lightning.host.key' );
+          var userkey = get_cookie( 'lightning.user.key' );
+          var token = get_cookie( 'lightning.user.token' );
+  
+          if (hostkey == null) hostkey = '';
+          if (userkey == null) userkey = '';
+          if (token == null) token = '';
+  
+          return hostkey + userkey + token;
+        }
+        
+        document.getElementById('authtoken').value = get_token();
+    -->
+    </script>
+</body>
+</html>

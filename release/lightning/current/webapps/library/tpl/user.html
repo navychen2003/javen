@@ -1,0 +1,172 @@
+<div class="scroll-container minimal-scrollbar" id="user-scroll">
+<div class="container-fluid">
+<div class="details">
+<div class="actionbar">
+	<ul class="iconbar">
+	    <li id="action-edit-item" class="hide"><a id="action-edit-link" class="iconbar-glyphicon-btn edit-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Edit"><i class="glyphicon pencil"></i></a></li>
+	    <li id="action-publish-item" class="hide"><a id="action-publish-link" class="iconbar-glyphicon-btn publish-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Publish"><i class="glyphicon globe"></i></a></li>
+		<li id="action-send-item" class="hide"><a id="action-send-link" class="iconbar-glyphicon-btn send-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Send Message"><i class="glyphicon chat"></i></a></li>
+		<li id="action-chat-item" class="hide"><a id="action-chat-link" class="iconbar-glyphicon-btn chat-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Conversation"><i class="glyphicon conversation"></i></a></li>
+		<li id="action-member-item" class="hide"><a id="action-member-link" class="iconbar-glyphicon-btn member-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Members"><i class="glyphicon user"></i></a></li>
+		<li id="action-library-item" class="hide"><a id="action-library-link" class="iconbar-glyphicon-btn library-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Library"><i class="glyphicon cloud"></i></a></li>
+		<li id="action-info-item"><a id="action-info-link" class="iconbar-glyphicon-btn info-icon-btn" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Info"><i class="glyphicon circle-info"></i></a></li>
+	</ul>
+</div>
+<div class="details-row row-fluid">
+	<div class="details-controls">
+	    <a id="user-avatar-link"><img id="user-avatar" class="poster large-poster photo-poster" style="max-width: 256px;max-height: 256px;" src="" /></a>
+	    <a id="user-change-avatar" class="btn change-poster-btn hide"><i class="glyphicon pencil"></i> <span id="user-change-avatar-text">Change Avatar</span></a>
+	    <a id="user-change-background" class="btn change-background-btn hide"><i class="glyphicon pencil"></i> <span id="user-change-background-text">Change Background</span></a>
+	</div>
+	<div class="movie-metadata details-metadata" id="user-metadata">
+		<div class="metadata-right">
+			<h1 class="movie-year" id="user-metadata-year">2013</h1>
+			<div class="movie-content-rating metadata hide"><img class="media-flag" /></div>
+			<div class="movie-rating metadata"><span class="rating"><i class="glyphicon star"></i><i class="glyphicon star"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i></span></div>
+		</div>
+		<h1><span class="movie-title" id="user-metadata-title"></span><button class="movie-unavailable-btn unavailable-btn btn btn-small btn-danger hide">Unavailable</button></h1>
+		<div class="movie-genre metadata"><span class="metadata-label" id="user-metadata-title2"></span></div>
+		<div class="metadata metadata-duration">
+			<span class="movie-duration" id="user-metadata-name"></span>
+			<div class="unwatched-icon unwatched-partial-icon" id="user-metadata-nameicon"></div>
+			<div class="unwatched-icon unwatched-full-icon hide"></div>
+		</div>
+		<h2 class="movie-tagline tagline" id="user-metadata-subtitle"></h2>
+		<div class="movie-director metadata metadata-top"><span class="metadata-label" id="user-metadata-region-name">Region</span><a id="user-metadata-region"></a></div>
+		<div class="movie-writer metadata"><span class="metadata-label hide" id="user-metadata-birthday-name">Birthday</span><a id="user-metadata-birthday"></a></div>
+		<div class="movie-cast metadata"><span class="metadata-label hide" id="user-metadata-timezone-name">Timezone</span><a id="user-metadata-timezone"></a></div>
+		<div class="movie-audio metadata metadata-top"><span class="metadata-label" id="user-metadata-tags-name">Tags</span><span class="dropdown" id="user-metadata-tags"></span></div>
+		<div class="movie-subtitles metadata hide"><span class="metadata-label"></span></div>
+		<div class="movie-summary summary" id="user-metadata-summary"></div>
+		<div class="media-flags"><img class="movie-studio studio" src=""></div>
+	</div>
+	<form class="edit-metadata-form hide" id="user-form">
+		<fieldset>
+		<div class="row-fluid" id="user-name-row">
+			<div class="span4">
+				<div class="control-group" id="user-nickname-group">
+					<label id="user-nickname-text">Nick Name</label>
+					<a id="user-nickname-lock" data-field="nickname" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-nickname-input" class="input-dark span12 lockable-field" type="text" name="nickname" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="control-group" id="user-firstname-group">
+					<label id="user-firstname-text">First Name</label>
+					<a id="user-firstname-lock" data-field="firstname" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-firstname-input" class="input-dark span12 lockable-field" type="text" name="firstname" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="control-group" id="user-lastname-group">
+					<label id="user-lastname-text">Last Name</label>
+					<a id="user-lastname-lock" data-field="lastname" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-lastname-input" class="input-dark span12 lockable-field" type="text" name="lastname" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="user-sex-row">
+			<div class="span2">
+				<div class="control-group" id="user-sex-group">
+					<label id="user-sex-text">Sex</label>
+					<a id="user-sex-lock" data-field="sex" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-sex-input" class="input-dark span12 lockable-field" type="text" name="sex" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span4">
+				<div class="control-group" id="user-birthday-group">
+					<label id="user-birthday-text">Birthday</label>
+					<a id="user-birthday-lock" data-field="birthday" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-birthday-input" class="input-dark span12 lockable-field" type="text" name="birthday" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span6">
+				<div class="control-group" id="user-timezone-group">
+					<label id="user-timezone-text">Timezone</label>
+					<a id="user-timezone-lock" data-field="timezone" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-timezone-input" class="input-dark span12 lockable-field" type="text" name="timezone" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="user-region-row">
+			<div class="span4">
+				<div class="control-group" id="user-region-group">
+					<label id="user-region-text">Region</label>
+					<a id="user-region-lock" data-field="region" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-region-input" class="input-dark span12 lockable-field" type="text" name="region" value="">
+					</div>
+				</div>
+			</div>
+			<div class="span8">
+				<div class="control-group" id="user-brief-group">
+					<label id="user-brief-text">Title</label>
+					<a id="user-brief-lock" data-field="brief" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<input id="user-brief-input" class="input-dark span12 lockable-field" type="text" name="brief" value="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="user-tags-row">
+			<div class="span12">
+				<div class="control-group" id="user-tags-group">
+					<label id="user-tags-text">Tags</label>
+					<a id="user-tags-lock" data-field="tags" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<div class="select2-container select2-container-multi span12 lockable-field input-select2" id="user-tags-autogen">
+							<ul class="select2-choices" id="user-tags-list"></ul>
+						</div>
+						<input id="user-tags-input" class="input-dark span12 lockable-field" type="hidden" name="tags" value="" data-name="tags" style="display: none;">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" id="user-intro-row">
+			<div class="span12">
+				<div class="control-group" id="user-intro-group">
+					<label id="user-intro-text">Self-Introduction</label>
+					<a id="user-intro-lock" data-field="intro" class="badge lock-btn "><i class="glyphicon lock"></i></a>
+					<div class="lockable-input">
+						<textarea id="user-intro-input" class="input-dark span12 lockable-field" name="intro" rows="8"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-actions">
+			<button id="user-submit-button" type="submit" class="btn btn-medium btn-primary">Save</button>
+			<button id="user-cancel-button" type="button" class="btn btn-medium cancel-btn">Cancel</button>
+		</div>
+		</fieldset>
+	</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>
+
+<div class="fanart-container">
+    <div class="fanart" style="/*background-image: url(blob:);*/" id="background-image"></div>
+    <div class="fanart-overlay"></div>
+</div>
+
+<div id="selectlist-drop">
+</div>

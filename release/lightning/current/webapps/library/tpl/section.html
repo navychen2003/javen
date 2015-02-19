@@ -1,0 +1,145 @@
+<div class="container-fluid" id="section-container">
+<div class="sidebar-container" id="sidebar-container">
+<div class="actionbar">
+	<ul class="iconbar">
+		<li class="options-action " id="actionbar-options">
+			<a class="iconbar-glyphicon-btn options-icon-btn" id="action-options" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Options">
+				<i class="glyphicon show-lines"></i>
+			</a>
+		</li>
+		<li class="newfolder-action hide" id="actionbar-newfolder">
+			<a class="iconbar-glyphicon-btn newfolder-icon-btn" id="action-newfolder" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="New folder">
+				<i class="glyphicon folder-new"></i>
+			</a>
+		</li>
+		<li class="upload-action hide" id="actionbar-upload">
+			<a class="iconbar-glyphicon-btn upload-icon-btn" id="action-upload" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Upload">
+				<i class="glyphicon cloud-upload"></i>
+			</a>
+		</li>
+		<li class="import-action hide" id="actionbar-import">
+			<a class="iconbar-glyphicon-btn import-icon-btn" id="action-import" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Import">
+				<i class="glyphicon circle-arrow-right"></i>
+			</a>
+		</li>
+	</ul>
+</div>
+
+<div class="sidebar minimal-scrollbar hide" id="action-sidebar">
+<div class="list-types-container">
+	<div class="btn-group" data-toggle="buttons-radio">
+		<button type="button" class="media-tile-list-btn btn btn-icon selected active" id="action-tilelist" data-focus="keyboard" rel="tooltip" title="Tiles">
+			<i class="glyphicon show-big-thumbnails"></i>
+		</button>
+		<button type="button" class="media-list-btn btn btn-icon " id="action-detaillist" data-focus="keyboard" rel="tooltip" title="Details">
+			<i class="glyphicon list"></i>
+		</button>
+		<button type="button" class="media-compact-list-btn btn btn-icon " id="action-compactlist" data-focus="keyboard" rel="tooltip" title="List">
+			<i class="glyphicon justify"></i>
+		</button>
+	</div>
+	<button type="button" class="folder-btn btn btn-icon selected active" data-focus="keyboard" id="action-byfolder" rel="tooltip" data-original-title="By Folder">
+		<i class="glyphicon folder-open"></i>
+	</button>
+</div>
+
+<h2 class="sidebar-header media-header" id="group-title"></h2>
+<ul class="sidebar-list" id="group-list">
+</ul>
+
+<div class="sidebar-all-container" id="filter-container">
+</div>
+</div>
+</div>
+
+<div class="folder-section-row">
+	<div class="section-list-scroll-container"></div>
+</div>
+
+<div class="section-container">
+<div class="section-list-container well">
+	<div class="section-well-header well-header well-header-dropdown">
+	<ul class="well-header-actions">
+		<li class="hide" id="share-list-item">
+			<div class="btn-group btn-group-inverse" id="share-group">
+				<button type="button" class="share-section-btn btn btn-inverse btn-icon " id="share-button" rel="tooltip" title="Share Items">
+				    <span class="button-title" id="share-button-name">Empty</span>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="empty-list-item">
+			<div class="btn-group btn-group-inverse" id="empty-group">
+				<button type="button" class="empty-section-btn btn btn-inverse btn-icon " id="empty-button" rel="tooltip" title="Empty Folder">
+				    <span class="button-title" id="empty-button-name">Empty</span>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="delete-list-item">
+			<div class="btn-group btn-group-inverse" id="delete-group">
+				<button type="button" class="delete-section-btn btn btn-inverse btn-icon " id="delete-button" rel="tooltip" title="Delete Items">
+				    <span class="button-title" id="delete-button-name">Delete</span>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="move-list-item">
+			<div class="btn-group btn-group-inverse" id="move-group">
+				<button type="button" class="move-section-btn btn btn-inverse btn-icon " id="move-button" rel="tooltip" title="Move Items">
+				    <span class="button-title" id="move-button-name">Move</span>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="copy-list-item">
+			<div class="btn-group btn-group-inverse" id="copy-group">
+				<button type="button" class="copy-section-btn btn btn-inverse btn-icon " id="copy-button" rel="tooltip" title="Copy Items">
+				    <span class="button-title" id="copy-button-name">Copy</span>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="selall-list-item">
+			<div class="btn-group btn-group-inverse" id="selall-group">
+				<button type="button" class="selall-section-btn btn btn-inverse btn-icon " id="selall-button" rel="tooltip" title="Select All">
+				    <span class="button-title" id="selall-button-name">Select All</span>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="select-list-item">
+			<div class="btn-group btn-group-inverse" id="select-group">
+				<button type="button" class="select-section-btn btn btn-inverse btn-icon " id="select-button" rel="tooltip" title="Select Items">
+				    <i class="glyphicon check" id="select-button-icon"></i>
+				</button>
+			</div>
+		</li>
+		<li class="hide" id="edit-list-item">
+			<div class="btn-group btn-group-inverse" id="edit-group">
+				<button type="button" class="select-section-btn btn btn-inverse btn-icon " id="edit-button" rel="tooltip" title="Edit">
+				    <i class="glyphicon pencil"></i>
+				</button>
+			</div>
+		</li>
+		<li>
+			<div class="btn-group btn-group-inverse" id="refresh-group">
+				<button type="button" class="refresh-section-btn btn btn-inverse btn-icon " id="refresh-button" rel="tooltip" title="Refresh">
+				    <i class="glyphicon repeat"></i>
+				</button>
+			</div>
+		</li>
+	</ul>
+	<h3><span class="section-list-title"></span> <span class="well-header-count"></span></h3>
+	</div>
+	
+	<div class="section-list-scroll-container minimal-scrollbar" id="section-scroll">
+	<ul class="tile-list media-tile-list" id="section-list">
+	</ul></div>
+
+	<div class="well-header-shadow hidden"></div>
+	<div class="section-loading-overlay hidden"><div class="spinner-container"></div></div>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

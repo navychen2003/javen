@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title id="content-title"></title>
+
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+	<link rel="stylesheet" id="theme-main-css" href="css/empty/javen.css">
+	<link rel="stylesheet" id="theme-ui-css" href="css/ui-empty/jquery-ui.css">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<script type="text/javascript">
+    
+	var app_config = {};
+    
+	app_config.root_path = '/lightning/datum';
+	app_config.index_path = '/lightning/index';
+	app_config.user_path = '/lightning/user';
+    
+	</script>
+	
+</head>
+
+<body>
+	<div id="javen" class="application">
+	    <div id="content-popover"></div>
+	    <div id="music-player" class="music-player"></div>
+	    
+        <div class="navbar navbar-fixed-top" id="content-header">
+        </div>
+        	
+        <div class="content-container" id="content-body">
+        </div>
+		
+		<div id="content-dialog"></div>
+		<div id="content-popover-top"></div>
+		
+		<div class="alert loading hide" id="content-loading">
+		    <img src="img/progress.gif">
+		</div>
+	</div>
+	
+	<script src="js/require.js" data-main="js/main"></script>
+</body>
+
+</html>

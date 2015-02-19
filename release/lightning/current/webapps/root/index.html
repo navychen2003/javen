@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+    <title>Anybox - Official Site</title>
+    <meta http-equiv="Refresh" content="2;url=/startup.html" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+</head>
+<body>
+<img src="img/indicator.gif" alt="Loading..." />
+<script type="text/javascript">
+(function($) {
+  $(function() {
+    var queryString = window.location.search.substring(1); 
+    var queryPairs = queryString.split("&"); 
+    var queryParams = {};
+    for (var i = 0; i < queryPairs.length; i++) {
+      var nameVal = queryPairs[i].split("=");
+      queryParams[nameVal[0]] = decodeURIComponent(nameVal[1]);
+    }
+    
+    var lang = queryParams['lang'];
+    if (lang == null || lang.length == 0)
+      lang = $.cookie( 'lightning.login.lang' );
+    if (lang == null || lang.length == 0)
+      lang = navigator.language ? navigator.language : navigator.userLanguage;
+    
+    if (lang == null || lang.length == 0)
+      lang = 'en';
+    
+    window.location.href = '/startup.html?lang=' + lang;
+  });
+})($);
+</script>
+</body>
+</html>

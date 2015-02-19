@@ -1,0 +1,48 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions" style="margin-top: 8px;">
+		<li><span class="subnav-action-label source-title" id="publications-source"></span></li>
+		<li>
+			<button type="button" id="publications-compose-submit" class="btn btn-small btn-primary" rel="tooltip" title="Compose"><i class="glyphicon pencil"></i> <span id="publications-compose-submit-text" style="font-size: 12px;vertical-align: top;">Compose</span></button>
+		</li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon cardio" id="publications-icon"></i></li>
+		<li id="publications-post-nav"><a class="gray active" id="publications-post-title"></a></li>
+		<li id="publications-subscribe-nav"><a class="gray " id="publications-subscribe-title"></a></li>
+		<li id="publications-comment-nav"><a class="gray " id="publications-comment-title"></a></li>
+		<li id="publications-featured-nav" class="hide"><a class="gray " id="publications-featured-title"></a></li>
+		<li id="publications-app-nav" class="hide"><a class="gray " id="publications-app-title"></a></li>
+	</ul>
+</div>
+<div id="publications-container" class="well">
+	<div class="minimal-well-header">
+		<ul class="well-header-actions">
+			<li class="well-header-pagination">
+				<span class="page" id="publications-page"></span> / <span class="pages" id="publications-pages"></span>
+			</li>
+			<li>
+				<div class="btn-group btn-group-inverse">
+					<button type="button" class="previous-btn btn btn-inverse btn-icon disabled" id="publications-prev"><i class="glyphicon chevron-left"></i></button>
+					<button type="button" class="next-btn btn btn-inverse btn-icon" id="publications-next"><i class="glyphicon chevron-right"></i></button>
+				</div>
+			</li>
+		</ul>
+		<ul class="subnav-list well-header-list" id="publications-channel-list">
+			<li><a class="settings-filter active"></a></li>
+		</ul>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="publications-empty">No publications :(</div>
+	<ul class="list server-event-list" id="publications-list">
+	</ul>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

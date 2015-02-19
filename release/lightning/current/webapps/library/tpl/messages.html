@@ -1,0 +1,46 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions" style="margin-top: 8px;">
+		<li><span class="subnav-action-label source-title" id="messages-source"></span></li>
+		<li>
+			<button type="button" id="messages-compose-submit" class="btn btn-small btn-primary" rel="tooltip" title="Compose"><i class="glyphicon pencil"></i> <span id="messages-compose-submit-text" style="font-size: 12px;vertical-align: top;">Compose</span></button>
+		</li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon cardio" id="messages-icon"></i></li>
+		<li id="messages-message-nav"><a class="gray active" id="messages-message-title"></a></li>
+		<li id="messages-conversation-nav" class="hide"><a class="gray " id="messages-conversation-title"></a></li>
+		<li id="messages-notification-nav"><a class="gray " id="messages-notification-title"></a></li>
+	</ul>
+</div>
+<div id="messages-container" class="well">
+	<div class="minimal-well-header">
+		<ul class="well-header-actions">
+			<li class="well-header-pagination">
+				<span class="page" id="messages-page"></span> / <span class="pages" id="messages-pages"></span>
+			</li>
+			<li>
+				<div class="btn-group btn-group-inverse">
+					<button type="button" class="previous-btn btn btn-inverse btn-icon disabled" id="messages-prev"><i class="glyphicon chevron-left"></i></button>
+					<button type="button" class="next-btn btn btn-inverse btn-icon" id="messages-next"><i class="glyphicon chevron-right"></i></button>
+				</div>
+			</li>
+		</ul>
+		<ul class="subnav-list well-header-list" id="messages-folder-list">
+			<li><a class="settings-filter active"></a></li>
+		</ul>
+	</div>
+	<div class="friends-empty-message empty-message hide" id="messages-empty">No messages :(</div>
+	<ul class="list server-event-list" id="messages-list">
+	</ul>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

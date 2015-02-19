@@ -1,0 +1,55 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal modal-large media-info-modal fade in" id="messageinfo-container">
+<div class="modal-header">
+	<button type="button" class="close" id="messageinfo-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<button type="button" class="close hide" id="messageinfo-next" data-dismiss="modal" style="margin-right: 8px;"><i class="glyphicon right-arrow"></i></button>
+    <button type="button" class="close hide" id="messageinfo-prev" data-dismiss="modal" style="margin-right: 8px;"><i class="glyphicon left-arrow"></i></button>
+	<h3><i class="glyphicon message-plus" id="messageinfo-icon"></i> <span id="messageinfo-title">Message</span></h3>
+</div>
+<div class="modal-body minimal-scrollbar" id="messageinfo-details">
+<div class="details-row row-fluid" style="padding-left: 10px;padding-right: 0px;">
+	<div class="details-controls" style="margin-top: 10px;margin-right: 20px;">
+		<div class="poster-container">
+		    <a id="messageinfo-from-link">
+    		<div class="poster-card" style="width: 96px;height: 96px;">
+    		<div class="poster-face front" style="width: 96px;">
+    			<img class="poster large-poster artist-poster" id="messageinfo-from-avatar" src="">
+    		</div>
+    		</div>
+    		<span id="messageinfo-from-name"></span>
+    		</a>
+		</div>
+	</div>
+	<div class="details-metadata">
+		<h2 class="artist-title" id="messageinfo-subject" style="word-wrap: break-word;"></h2>
+		<div class="artist-genre metadata metadata-top" style="margin-top: 10px;margin-bottom: 0px;font-size: 14px;" id="messageinfo-to-list">
+			<span class="metadata-label">To</span>
+			<a >address</a>, <a >address</a>
+		</div>
+		<div class="artist-genre metadata" style="margin-top: 0px;font-size: 14px;" id="messageinfo-time-list">
+	    </div>
+		<div class="artist-summary summary" id="messageinfo-body" style="word-wrap: break-word;"></div>
+    	<div class="select-artwork-options hide" id="messageinfo-attachments" style="margin-top: 30px;margin-left: 3px;">
+    		<div class="artwork-options-container" id="messageinfo-attachment-list">
+    			<span><a class="artwork-option" data-rating-key="" data-focus="keyboard">
+    				<img class="poster poster-poster" src="">
+    			</a></span>
+    		</div>
+    	</div>
+	</div>
+</div>
+</div>
+<div class="modal-footer">
+	<div class="pull-left" id="messageinfo-options">
+		<a class="standard-options hide" id="messageinfo-details-show">Show Details</a>
+		<a class="advanced-options hide" id="messageinfo-details-hide">Hide Details</a>
+	</div>
+	<div class="pull-right" id="messageinfo-actions">
+	    <button type="button" class="btn btn-primary yes-btn hide" id="messageinfo-forward" data-focus="keyboard">Forward</button>
+	    <button type="button" class="btn btn-primary yes-btn hide" id="messageinfo-replyall" data-focus="keyboard">Reply All</button>
+	    <button type="button" class="btn btn-primary yes-btn hide" id="messageinfo-reply" data-focus="keyboard">Reply</button>
+	    <button type="button" class="btn btn-primary yes-btn btn-danger" id="messageinfo-delete" data-focus="keyboard">Delete</button>
+	    <button type="button" class="btn no-btn" id="messageinfo-no" data-focus="keyboard">No</button>
+	</div>
+</div>
+</div>

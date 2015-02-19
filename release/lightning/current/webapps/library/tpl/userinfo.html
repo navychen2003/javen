@@ -1,0 +1,53 @@
+<div class="modal-backdrop fade in"></div>
+<div class="modal modal-large media-info-modal fade in" id="userinfo-container">
+<div class="modal-header">
+	<button type="button" class="close" id="userinfo-close" data-dismiss="modal"><i class="glyphicon remove-2"></i></button>
+	<h3><i class="glyphicon user" id="userinfo-icon"></i> <span id="userinfo-title">User Information</span></h3>
+</div>
+<div class="modal-body minimal-scrollbar" id="userinfo-details">
+	<div class="details-controls">
+	    <a id="userinfo-avatar-link">
+	        <img id="userinfo-avatar" class="poster large-poster photo-poster" style="max-width: 256px;max-height: 256px;" src="">
+	    </a>
+	</div>
+	<div class="movie-metadata details-metadata" style="position: initial;padding-bottom: 0px;" id="userinfo-metadata">
+		<div class="metadata-right" id="userinfo-rating">
+			<h1 class="movie-year" id="userinfo-metadata-year">2013</h1>
+			<div class="movie-content-rating metadata hide"><img class="media-flag" /></div>
+			<div class="movie-rating metadata"><span class="rating"><i class="glyphicon star"></i><i class="glyphicon star"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i><i class="glyphicon dislikes"></i></span></div>
+		</div>
+		<h1><span class="movie-title" id="userinfo-metadata-title"></span><button class="movie-unavailable-btn unavailable-btn btn btn-small btn-danger hide">Unavailable</button></h1>
+		<div class="movie-genre metadata hide"><span class="metadata-label" id="userinfo-metadata-title2"></span></div>
+		<div class="metadata metadata-duration">
+			<span class="movie-duration" id="userinfo-metadata-name"></span>
+			<div class="unwatched-icon unwatched-partial-icon" id="userinfo-metadata-nameicon"></div>
+			<div class="unwatched-icon unwatched-full-icon hide"></div>
+		</div>
+		<h2 class="movie-tagline tagline" id="userinfo-metadata-subtitle"></h2>
+		<div class="movie-director metadata metadata-top hide" id="userinfo-metadata-region-item"><span class="metadata-label" id="userinfo-metadata-region-name">Region</span><a id="userinfo-metadata-region"></a></div>
+		<div class="movie-writer metadata hide" id="userinfo-metadata-birthday-item"><span class="metadata-label" id="userinfo-metadata-birthday-name">Birthday</span><a id="userinfo-metadata-birthday"></a></div>
+		<div class="movie-cast metadata hide" id="userinfo-metadata-timezone-item"><span class="metadata-label" id="userinfo-metadata-timezone-name">Timezone</span><a id="userinfo-metadata-timezone"></a></div>
+		<div class="movie-audio metadata metadata-top hide" id="userinfo-metadata-tags-item" style="margin-top: 0px;"><span class="metadata-label" id="userinfo-metadata-tags-name">Tags</span><span class="dropdown" id="userinfo-metadata-tags"></span></div>
+		<div class="movie-subtitles metadata hide"><span class="metadata-label"></span></div>
+		<div class="movie-summary summary" id="userinfo-metadata-summary" style="word-wrap: break-word;"></div>
+		<div class="media-flags"><img class="movie-studio studio" src=""></div>
+	</div>
+    <div class="fanart-container hide">
+        <div class="fanart" style="/*background-image: url(blob:);*/" id="userinfo-background-image"></div>
+        <div class="fanart-overlay" style="z-index: -1;"></div>
+    </div>
+</div>
+<div class="modal-footer">
+	<div class="pull-left">
+		<a class="standard-options hide" id="userinfo-details-show">Show Details</a>
+		<a class="advanced-options hide" id="userinfo-details-hide">Hide Details</a>
+	</div>
+	<div class="pull-right">
+	    <button type="button" class="btn btn-primary yes-btn btn-danger" id="userinfo-lock" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn btn-primary yes-btn" id="userinfo-send" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn btn-primary yes-btn" id="userinfo-invite" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn btn-primary yes-btn" id="userinfo-ok" data-focus="keyboard">Yes</button>
+	    <button type="button" class="btn no-btn" id="userinfo-no" data-focus="keyboard">No</button>
+	</div>
+</div>
+</div>

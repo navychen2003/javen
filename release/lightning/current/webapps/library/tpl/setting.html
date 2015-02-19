@@ -1,0 +1,56 @@
+<div class="scroll-container minimal-scrollbar">
+<div class="container">
+<div class="subnav-container">
+	<ul class="subnav-actions">
+		<li><span class="subnav-action-label source-title" id="setting-source"></span></li>
+	</ul>
+	<ul class="subnav-list">
+		<li><i class="subnav-icon glyphicon cogwheel"></i></li>
+		<li id="setting-subnav"><a class="gray active" id="setting-title">Setting</a></li>
+		<li id="cluster-subnav" class="hide"><a class="gray" id="cluster-title">Host</a></li>
+		<li id="announcement-subnav" class="hide"><a class="gray" id="announcement-title">Announcement</a></li>
+		<li id="publish-subnav" class="hide"><a class="gray" id="publish-title">Publish</a></li>
+	</ul>
+</div>
+<div class="settings-container well">
+	<div class="well-header">
+		<div class="standard-toggle pull-right">
+			<label class="control-label">
+			<span id="setting-version"></span>
+			<a class="download-updates-btn hide">
+				<i class="glyphicon circle-arrow-down"></i> Download Updates
+			</a>
+			</label>
+		</div>
+		<a class="standard-toggle pull-right hide">Show Advanced Options</a>
+		<a class="advanced-toggle pull-right hide">Hide Advanced Settings</a>
+		<ul class="subnav-list well-header-list" id="settings-list">
+		</ul>
+	</div>
+	<div id="active-settings" class="">
+	    <div class="friends-empty-message empty-message hide" id="setting-empty">No settings :(</div>
+		<ul class="preferences-nav nav nav-list" id="groups-list">
+		</ul>
+		<form class="preferences-form" id="setting-form">
+		<fieldset>
+		<input type="hidden" name="category" id="input_category" value="">
+		<input type="hidden" name="group" id="input_group" value="">
+		<div id="active-group" class="preferences-group active">
+		</div>
+		<div class="main-actions form-actions hide" id="setting-actions">
+			<button type="submit" class="btn btn-medium btn-primary" id="save-button">Save</button>
+			<button type="reset" class="btn btn-medium cancel-btn" id="cancel-button">Cancel</button>
+		</div>
+		</fieldset>
+		</form>
+	</div>
+</div>
+</div>
+</div>
+
+<div class="statusbar" id="statusbar">
+	<a class="activity-btn gray" tabindex="-1" rel="tooltip" data-tooltip-position="fixed" id="statusbar-link">
+	    <i class="glyphicon cardio" id="statusbar-icon"></i>
+	    <span class="status" id="statusbar-message"></span>
+	</a>
+</div>

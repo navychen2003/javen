@@ -1,0 +1,76 @@
+<div id="content-navbar">
+
+	<ul class="breadcrumbbar nav">
+		<li class="back-icon hide" id="back-button">
+			<a class="navbar-glyphicon-btn back-icon-btn" id="back-link" href="#/~dashboard" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Back">
+				<i class="glyphicon left-arrow"></i>
+			</a>
+		</li>
+		<li id="home-button">
+			<a class="navbar-glyphicon-btn home-icon-btn active" id="home-link" href="#/~dashboard" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Home">
+				<i class="glyphicon home"></i>
+			</a>
+		</li>
+		<li id="section-divider" class="divider hide"></li>
+		<li id="section-breadcrumb" class="breadcrumb-item hide" style="width: auto;">
+		<li id="mediapath-divider" class="divider hide"></li>
+		<li id="mediapath-breadcrumb" class="media-breadcrumb breadcrumb-item hide"></li>
+		<li id="media-divider" class="divider hide"></li>
+		<li id="media-breadcrumb" class="media-breadcrumb breadcrumb-item hide"></li>
+	</ul>
+	
+	<ul class="nav iconbar">
+		<li class="hide" id="iconbar-task">
+            <div class="breadcrumb-content dropdown">
+                <a class="breadcrumb-btn split-left" id="task-link" data-focus="keyboard">
+                    <div class="breadcrumb-spinner-container spinner-container active">
+                        <i class="javen-icon-section-mini javen-icon-active-mini" id="task-icon"></i>
+                    </div>
+                    <span id="task-title">Task</span>
+                    <i class="glyphicon-caret"></i>
+                </a>
+            </div>
+		</li>
+		<li>
+			<span class="search-container">
+				<form class="search-form" id="search-form">
+					<input type="text" class="input-dark input-search input-focusable" id="search-input" placeholder="Search " autocomplete="off" spellcheck="false" name="q" value="" data-focus="keyboard">
+					<i class="glyphicon search"></i>
+					<a class="clear-search-btn gray hide" href="#"><i class="glyphicon circle-remove"></i></a>
+				</form>
+			</span>
+		</li>
+		<li>
+			<a class="navbar-glyphicon-btn musiclist-icon-btn hide" id="musiclist-link" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Music">
+				<i class="glyphicon music"></i>
+			</a>
+		</li>
+		<li>
+			<a class="navbar-glyphicon-btn musiclist-icon-btn" id="library-link" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Library">
+				<i class="glyphicon cloud"></i>
+			</a>
+		</li>
+		<li>
+			<a class="navbar-glyphicon-btn settings-icon-btn" id="settings-link" href="#/~settings" rel="tooltip" data-tooltip-position="fixed" data-focus="keyboard" title="Setting">
+				<i class="glyphicon cogwheel"></i>
+			</a>
+		</li>
+		<li class="server-dropdown-container dropdown">
+			<a class="dropdown-toggle navbar-glyphicon-btn server-icon-btn" data-focus="keyboard" rel="tooltip" data-toggle="dropdown" data-tooltip-position="fixed" title="Servers">
+				<i class="glyphicon hdd"></i><i class="glyphicon-caret"></i>
+			</a>
+			<ul class="dropdown-menu dropdown-menu-large pull-right">
+				<li><a data-focus="keyboard"><span id="server-dropdown-computer">Computer</span><i class="glyphicon ok-2"></i></a></li>
+			</ul>
+		</li>
+		<li class="dropdown" id="account-dropdown">
+			<a class="dropdown-toggle navbar-glyphicon-btn account-icon-btn" id="account-link" data-focus="keyboard" rel="tooltip" data-toggle="dropdown" data-tooltip-position="fixed" title="Account">
+				<i class="glyphicon user"></i><i class="glyphicon-caret"></i>
+			</a>
+			<ul class="dropdown-menu dropdown-menu-large pull-right" id="account-dropdown-list">
+				<li><a class="signin-btn" data-focus="keyboard"><i class="glyphicon user"></i><span id="account-dropdown-signin">Sign In</span></a></li>
+			</ul>
+		</li>
+	</ul>
+
+</div>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<configuration>
+<category name="datanode">
+
+<property>
+  <name>dfs.datanode.address</name>
+  <value>0.0.0.0:10012</value>
+</property>
+
+<property>
+  <name>dfs.datanode.ipc.address</name>
+  <value>0.0.0.0:10022</value>
+</property>
+
+<property>
+  <name>dfs.data.dir</name>
+  <value>${raptor.data.dir}/dfs/data2</value>
+</property>
+
+</category>
+</configuration>
