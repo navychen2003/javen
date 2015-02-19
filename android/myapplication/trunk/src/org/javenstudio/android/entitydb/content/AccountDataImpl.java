@@ -58,6 +58,10 @@ final class AccountDataImpl extends AbstractContentImpl
 	public String getFullName() {
 		HostData host = ContentHelper.getInstance().getHost(getHostId());
 		if (host != null) {
+			String maildomain = host.getMailDomain();
+			if (maildomain != null && maildomain.length() > 0)
+				return getUserName() + "@" + maildomain;
+			
 			String domain = host.getClusterDomain();
 			if (domain != null && domain.length() > 0)
 				return getUserName() + "@" + domain;

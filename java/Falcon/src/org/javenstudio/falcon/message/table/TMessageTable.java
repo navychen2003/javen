@@ -58,7 +58,7 @@ public final class TMessageTable {
 					DBConstants.ALL_VERSIONS, 
 					Compression.Algorithm.NONE.getName(), 
 					false, false, 8 * 1024,
-					DBConstants.WEEK_IN_SECONDS, 
+					DBConstants.FOREVER, 
 					StoreFile.BloomType.NONE.toString(),
 					DBConstants.REPLICATION_SCOPE_LOCAL
 				),
@@ -66,7 +66,7 @@ public final class TMessageTable {
 					DBConstants.ALL_VERSIONS, 
 					Compression.Algorithm.NONE.getName(), 
 					false, false, 8 * 1024,
-					DBConstants.WEEK_IN_SECONDS, 
+					DBConstants.FOREVER, 
 					StoreFile.BloomType.NONE.toString(),
 					DBConstants.REPLICATION_SCOPE_LOCAL
 				),
@@ -74,7 +74,7 @@ public final class TMessageTable {
 					DBConstants.ALL_VERSIONS, 
 					Compression.Algorithm.NONE.getName(), 
 					false, false, 8 * 1024,
-					DBConstants.WEEK_IN_SECONDS, 
+					DBConstants.FOREVER, 
 					StoreFile.BloomType.NONE.toString(),
 					DBConstants.REPLICATION_SCOPE_LOCAL
 				)
