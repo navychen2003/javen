@@ -2,6 +2,7 @@ package org.javenstudio.falcon.user;
 
 import org.javenstudio.falcon.ErrorException;
 import org.javenstudio.falcon.datum.IDatumCore;
+import org.javenstudio.falcon.setting.cluster.IClusterManager;
 import org.javenstudio.falcon.setting.cluster.IHostNode;
 import org.javenstudio.falcon.user.device.IDeviceStore;
 import org.javenstudio.falcon.user.global.IAnnouncementStore;
@@ -25,6 +26,7 @@ public interface IUserStore extends IDeviceStore, IContactStore,
 	public IDatumCore getDatumCore() throws ErrorException;
 	
 	public IHostNode getHostNode();
+	public IClusterManager getClusterManager();
 	public String[] loadManagers() throws ErrorException;
 	
 	public Path getAuthStorePath(String dirname, String name, 

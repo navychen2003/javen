@@ -17,6 +17,7 @@ import org.javenstudio.common.util.Logger;
 import org.javenstudio.falcon.ErrorException;
 import org.javenstudio.falcon.datum.IDatumCore;
 import org.javenstudio.falcon.datum.StoreInfo;
+import org.javenstudio.falcon.setting.cluster.IClusterManager;
 import org.javenstudio.falcon.setting.cluster.IHostNode;
 import org.javenstudio.falcon.user.IUser;
 import org.javenstudio.falcon.user.IAuthService;
@@ -82,6 +83,11 @@ public class CoreStore implements IUserStore {
 	@Override
 	public IHostNode getHostNode() { 
 		return getContainers().getCluster().getHostSelf();
+	}
+	
+	@Override
+	public IClusterManager getClusterManager() {
+		return getContainers().getCluster();
 	}
 	
 	@Override

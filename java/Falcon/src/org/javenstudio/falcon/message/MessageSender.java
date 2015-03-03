@@ -11,8 +11,13 @@ import java.util.Map;
 import org.javenstudio.common.util.Logger;
 import org.javenstudio.common.util.Strings;
 import org.javenstudio.falcon.ErrorException;
+import org.javenstudio.falcon.setting.cluster.IClusterManager;
+import org.javenstudio.falcon.setting.cluster.IHostCluster;
+import org.javenstudio.falcon.setting.cluster.IHostInfo;
+import org.javenstudio.falcon.setting.cluster.IHostUserName;
 import org.javenstudio.falcon.user.IGroup;
 import org.javenstudio.falcon.user.IUser;
+import org.javenstudio.falcon.user.IUserName;
 import org.javenstudio.falcon.user.UserHelper;
 import org.javenstudio.falcon.user.profile.MemberManager;
 import org.javenstudio.falcon.util.job.JobContext;
@@ -70,7 +75,7 @@ public class MessageSender implements MessageSource {
 	public IMessageService getService() { return getMsg().getService(); }
 	public IUser getUser() { return getService().getManager().getUser(); }
 	
-	protected final boolean sendto(IUser user) throws ErrorException { 
+	protected final boolean sendtoLocal(IUser user) throws ErrorException { 
 		if (user == null) return false;
 		
 		try {
@@ -95,11 +100,11 @@ public class MessageSender implements MessageSource {
 									+ group.getUserName());
 				}
 				
-				return doSendto(user, MessageManager.TYPE_CHAT, 
+				return doSendtoLocal(user, MessageManager.TYPE_CHAT, 
 						IMessage.INBOX);
 			} else {
 				
-				return doSendto(user, MessageManager.TYPE_MAIL, 
+				return doSendtoLocal(user, MessageManager.TYPE_MAIL, 
 						IMessage.INBOX);
 			}
 		} catch (Throwable e) {
@@ -128,12 +133,17 @@ public class MessageSender implements MessageSource {
 							+ getMsg().getFrom());
 		}
 		
-		Map<String,IUser> users = new HashMap<String,IUser>();
+		Map<String,IUser> usersLocal = new HashMap<String,IUser>();
+		Map<String,IHostUserName> usersHttp = new HashMap<String,IHostUserName>();
+		
 		String to = getMsg().getTo();
 		String[] usernames = MessageHelper.splitAddresses(to);
 		int sentcount = 0;
 		
 		if (usernames != null) { 
+			IClusterManager cm = getUser().getUserManager().getStore().getClusterManager();
+			IHostCluster cluster = cm.getClusterSelf();
+			
 			for (String username : usernames) { 
 				if (job.isCanceled() || jc.isCancelled()) 
 					return sentcount;
@@ -141,16 +151,31 @@ public class MessageSender implements MessageSource {
 				if (username == null || username.length() == 0)
 					continue;
 				
-				if (users.containsKey(username))
+				if (usersLocal.containsKey(username) || usersHttp.containsKey(username))
 					continue;
+				
+				IUserName uname = cm.getClusterSelf().parseUserName(username);
+				if (uname == null) continue;
+				
+				IHostUserName userName = cluster.getHostUserName(uname);
+				IHostInfo userHost = userName != null ? userName.getHostNode() : null;
+				
+				if (userName == null || userHost == null) {
+					//throw new ErrorException(ErrorException.ErrorCode.NOT_FOUND, 
+					//		"Host of user: " + reqfrom + " not found");
+					//continue;
+				} else {
+					usersHttp.put(username, userName);
+					continue;
+				}
 				
 				IUser user = UserHelper.getLocalUserByName(username);
 				if (user != null)
-					users.put(user.getUserName(), user);
+					usersLocal.put(user.getUserName(), user);
 			}
 		}
 		
-		if (users.size() == 0) { 
+		if (usersLocal.size() == 0) { 
 			//throw new ErrorException(ErrorException.ErrorCode.BAD_REQUEST, 
 			//		"Message: " + getMsg().getMessageId() + " has wrong TO: " 
 			//				+ getMsg().getTo());
@@ -166,9 +191,9 @@ public class MessageSender implements MessageSource {
 			builder.save();
 			
 		} else {
-			for (IUser user : users.values()) { 
+			for (IUser user : usersLocal.values()) { 
 				if (job.isCanceled() || jc.isCancelled()) return sentcount;
-				if (sendto(user)) sentcount ++;
+				if (sendtoLocal(user)) sentcount ++;
 			}
 			
 			if (sentcount > 0) {
@@ -193,7 +218,7 @@ public class MessageSender implements MessageSource {
 		return sentcount;
 	}
 	
-	protected boolean doSendto(IUser user, String type, String folder) 
+	protected boolean doSendtoLocal(IUser user, String type, String folder) 
 			throws IOException, ErrorException { 
 		if (user == null || type == null || folder == null) 
 			return false;
